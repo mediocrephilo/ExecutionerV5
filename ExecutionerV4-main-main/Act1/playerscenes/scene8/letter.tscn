@@ -1,0 +1,105 @@
+[gd_scene load_steps=7 format=2]
+
+[ext_resource path="res://sprites/UI/baskerville-cufonfonts/BaskervilleBT.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://Act1/playerscenes/scene8/letter1.gd" type="Script" id=2]
+[ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=3]
+
+[sub_resource type="DynamicFont" id=1]
+size = 60
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 60
+font_data = ExtResource( 3 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "New Anim"
+length = 2.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:modulate:r")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:modulate:g")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
+tracks/2/type = "bezier"
+tracks/2/path = NodePath(".:modulate:b")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"points": PoolRealArray( 1, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
+tracks/3/type = "bezier"
+tracks/3/path = NodePath(".:modulate:a")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"points": PoolRealArray( 0, -0.25, 0, 0.25, 0, 1, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 2 )
+}
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+position = Vector2( 1931.63, 793.72 )
+scale = Vector2( 3.83662, 3.82386 )
+
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 1109.0
+margin_top = 219.0
+margin_right = 2516.0
+margin_bottom = 2067.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "E.Corps Branch 3 Station Vil 2  Report 2.23.XX
+No major movement from either faction. Vils generally working  in preparation for E.L.F announcement. Minor disturbance (M6) resolved through minor punishment. Possible violation of A13 at Vil 2 prison. Subject lives in vil outskirts and travels to the prison every seventh day between  23:00 and 01:00. Attached evidence including: hand-drawn map (1), witness testimony (2), missing rations (bread, foulmeat, fruit). Suggested course of action: termination.
+
+I confirm reception of the E.L.F candidate list and am making preparations to inform family. Normal procedures successfully executed. All is normal. May our loyalty protect us and the Council guide us.
+
+Executioner 87"
+text = "E.Corps Branch 3 Station Vil 2  Report 2.23.XX
+No major movement from either faction. Vils generally working  in preparation for E.L.F announcement. Minor disturbance (M6) resolved through minor punishment. Possible violation of A13 at Vil 2 prison. Subject lives in vil outskirts and travels to the prison every seventh day between  23:00 and 01:00. Attached evidence including: hand-drawn map (1), witness testimony (2), missing rations (bread, foulmeat, fruit). Suggested course of action: termination.
+
+I confirm reception of the E.L.F candidate list and am making preparations to inform family. Normal procedures successfully executed. All is normal. May our loyalty protect us and the Council guide us.
+
+Executioner 87"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1514.68
+margin_top = 1958.12
+margin_right = 1907.68
+margin_bottom = 2018.12
+custom_fonts/font = SubResource( 2 )
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_colors/font_outline_modulate = Color( 0, 0, 0, 1 )
+custom_colors/font_color_shadow = Color( 0, 0, 0, 1 )
+text = "Return [Esc]"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Label"]
+"anims/New Anim" = SubResource( 3 )
