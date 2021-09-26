@@ -1,7 +1,9 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://sprites/UI/baskerville-cufonfonts/BaskervilleBT.ttf" type="DynamicFontData" id=1]
 [ext_resource path="res://global/menu/credits.gd" type="Script" id=2]
+[ext_resource path="res://global/menu/whitearrow2.PNG" type="Texture" id=3]
+[ext_resource path="res://global/menu/whitearrow1.PNG" type="Texture" id=4]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -14,6 +16,14 @@ font_data = ExtResource( 1 )
 [sub_resource type="DynamicFont" id=3]
 size = 70
 font_data = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -244,3 +254,10 @@ __meta__ = {
 position = Vector2( 3592.97, 1822.29 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite"]
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 3360.63, 1940.94 )
+scale = Vector2( 0.398224, 0.423651 )
+frames = SubResource( 4 )
+frame = 1
+playing = true
