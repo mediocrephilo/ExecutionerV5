@@ -53,4 +53,4 @@ func _on_Tween_tween_completed(_object, _key):
 
 
 func _on_Control_tree_exited():
-	Transition.change_scene("res://act3/scene1/act3jailscene1.tscn")
+	Transition.change_scene("res://act3/initialscenes/title.tscn")
