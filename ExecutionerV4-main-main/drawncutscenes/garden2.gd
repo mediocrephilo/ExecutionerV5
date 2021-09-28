@@ -3,14 +3,14 @@ extends Control
 var dialogue = [
 	
 		"What do you guys think the moral of the story is?",
-		"I mean, there is a sample paragraph, but that doesn't mean we can't make our own morals",
-		"I think that perhaps. . . It's telling us that good intentions can lead to bad outcomes",
+		"I mean, there is a sample paragraph, but that doesn't mean we can't draw our own conclusions.",
+		"I think that perhaps . . . It's telling us that good intentions can lead to bad outcomes.",
 		"The parents wanted to put out the fire to save their son, but ended up killing him instead.",
-		". . . Well, I mean. . .",
+		". . . Well, I mean . . .",
 		"Nevermind, you're right. Let's meet again in a week."
 ]
 var reddialogue = [
-		"i think my teacher said to only write about the morals that they gave us."
+		"i think my teacher said that the textbook's answer was the only right one."
 ]
 var bluedialogue = [
 		". . . s-shouldn't we just go with what the teacher said?"
