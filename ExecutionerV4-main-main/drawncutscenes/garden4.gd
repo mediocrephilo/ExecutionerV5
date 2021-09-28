@@ -6,11 +6,11 @@ var dialogue = [
 #<<<<<<< HEAD
 #=======
 		"I-It's not my fault . . . ",
-		"Where did it go so wrong? All father wanted to do was create a safer environment for us citizens...",
-		"But what danger would my friends have created?",
+		"Where did it go so wrong? Is this . . . what father really wanted?",
+		"Why . . . why did it end up like this? It was supposed to be good, we were good . . .",
 		"It's alright . . . it's okay . . .",
-		"I need to focus on my studies. . . the one about the bird. . .",
-		". . . I can't concentrate. . ."
+		"I need to focus on my studies . . . the bird. . .",
+		". . . I can't concentrate . . ."
 		
 ]
 var dialogue_index = 0
