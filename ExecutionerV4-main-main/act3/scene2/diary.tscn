@@ -1,9 +1,10 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=8 format=2]
 
 [ext_resource path="res://Node2D.gd" type="Script" id=1]
 [ext_resource path="res://sprites/UI/JeanSunHo/JeanSunHoBold.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=3]
 [ext_resource path="res://sprites/Act1settings/sceneeleven/diary.PNG" type="Texture" id=4]
+[ext_resource path="res://sounds/Simple-Book-Page-Turn-www.fesliyanstudios.com-www.fesliyanstudios.com.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 500
@@ -43,3 +44,6 @@ text = "Press esc to exit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 5 )

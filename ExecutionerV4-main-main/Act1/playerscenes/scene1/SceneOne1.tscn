@@ -106,6 +106,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 17 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "fall",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 8 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "walk",
@@ -114,11 +119,6 @@ animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 17 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "fall",
 "speed": 5.0
 } ]
 
@@ -516,7 +516,6 @@ position = Vector2( 6065.61, 952.736 )
 scale = Vector2( 1.04841, 1.1256 )
 z_index = 2
 frames = SubResource( 14 )
-frame = 3
 playing = true
 flip_h = true
 __meta__ = {
@@ -529,7 +528,6 @@ rotation = -0.404916
 scale = Vector2( 0.666533, 0.709781 )
 z_index = 2
 frames = SubResource( 14 )
-frame = 3
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -653,6 +651,7 @@ __meta__ = {
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lamp"]
 position = Vector2( 11964.1, 1333.13 )
 shape = SubResource( 20 )
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]

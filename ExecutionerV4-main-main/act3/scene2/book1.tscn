@@ -1,8 +1,9 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=12 format=2]
 
 [ext_resource path="res://act3/scene2/textbook.gd" type="Script" id=1]
 [ext_resource path="res://sprites/UI/baskerville-cufonfonts/BASKE9.ttf" type="DynamicFontData" id=2]
 [ext_resource path="res://sprites/act3settings/scene2/books.jpg" type="Texture" id=3]
+[ext_resource path="res://sounds/Simple-Book-Page-Turn-www.fesliyanstudios.com-www.fesliyanstudios.com.wav" type="AudioStream" id=4]
 [ext_resource path="res://sprites/act3settings/factoryphoto.PNG" type="Texture" id=5]
 [ext_resource path="res://sprites/UI/baskerville-cufonfonts/BaskervilleBT.ttf" type="DynamicFontData" id=6]
 
@@ -149,3 +150,6 @@ text = "- 336 -"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )

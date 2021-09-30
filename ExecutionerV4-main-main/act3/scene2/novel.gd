@@ -7,6 +7,7 @@ extends Node2D
 
 
 func _ready():
+	$AudioStreamPlayer.play()
 	$Label.hide()
 	yield(get_tree().create_timer(5), "timeout")
 	$Label.show()
