@@ -26,7 +26,7 @@
 [ext_resource path="res://sprites/characters/consume.png" type="Texture" id=24]
 [ext_resource path="res://act2/scene4/fg.gd" type="Script" id=25]
 [ext_resource path="res://act2/scene4/bake.gd" type="Script" id=26]
-[ext_resource path="res://sounds/Creepy Dungeon Ambience Background Audio Sound Effects.wav" type="AudioStream" id=27]
+[ext_resource path="res://sounds/zapsplat_industrial_warehouse_medium_empty_drone_atmosphere_fans_distant_28779 (1).wav" type="AudioStream" id=27]
 [ext_resource path="res://sounds/Walking-on-Gravel--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=28]
 
 [sub_resource type="DynamicFont" id=1]
@@ -50,9 +50,19 @@ font_data = ExtResource( 20 )
 
 [sub_resource type="SpriteFrames" id=5]
 animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 17 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 10 ) ],
@@ -63,16 +73,6 @@ animations = [ {
 "frames": [ ExtResource( 24 ) ],
 "loop": true,
 "name": "eat",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 1 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 1 ) ],
-"loop": true,
-"name": "idle",
 "speed": 5.0
 } ]
 
@@ -216,7 +216,7 @@ limit_top = 0
 limit_right = 3840
 limit_bottom = 2160
 
-[node name="Walk" type="AudioStreamPlayer2D" parent="player"]
+[node name="Walk" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource( 28 )
 volume_db = 1.608
 pitch_scale = 0.79
@@ -244,7 +244,8 @@ shape = SubResource( 9 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 27 )
-volume_db = -19.69
+volume_db = -6.81
+autoplay = true
 
 [connection signal="body_entered" from="bred" to="bred" method="_on_bred_body_entered"]
 [connection signal="body_exited" from="bred" to="bred" method="_on_bred_body_exited"]

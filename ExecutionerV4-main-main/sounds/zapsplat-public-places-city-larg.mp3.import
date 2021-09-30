@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat-public-places-city-larg.mp3-18b2bd2ef58fa1fc8dba58bf43265485.mp3str"
+
+[deps]
+
+source_file="res://sounds/zapsplat-public-places-city-larg.mp3"
+dest_files=[ "res://.import/zapsplat-public-places-city-larg.mp3-18b2bd2ef58fa1fc8dba58bf43265485.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

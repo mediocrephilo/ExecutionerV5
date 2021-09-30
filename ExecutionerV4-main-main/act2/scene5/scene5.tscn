@@ -77,6 +77,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 16 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 9 ), ExtResource( 15 ), ExtResource( 12 ), ExtResource( 18 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 10 ), ExtResource( 17 ) ],
 "loop": true,
 "name": "walk",
@@ -85,11 +90,6 @@ animations = [ {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ) ],
-"loop": true,
-"name": "jump",
 "speed": 5.0
 } ]
 
@@ -294,6 +294,7 @@ texture = ExtResource( 30 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite4"]
 autoplay = "New Anim"
 "anims/New Anim" = SubResource( 14 )
+
 [connection signal="body_entered" from="ladder" to="ladder" method="_on_ladder_body_entered"]
 [connection signal="body_exited" from="ladder" to="ladder" method="_on_ladder_body_exited"]
 [connection signal="body_entered" from="gap" to="gap" method="_on_gap_body_entered"]

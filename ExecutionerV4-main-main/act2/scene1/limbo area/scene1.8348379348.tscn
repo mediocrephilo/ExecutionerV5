@@ -347,6 +347,7 @@ texture = ExtResource( 6 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+
 [connection signal="body_entered" from="enter" to="enter" method="_on_enter_body_entered"]
 [connection signal="body_exited" from="enter" to="enter" method="_on_enter_body_exited"]
 [connection signal="body_entered" from="enter2" to="enter2" method="_on_enter2_body_entered"]

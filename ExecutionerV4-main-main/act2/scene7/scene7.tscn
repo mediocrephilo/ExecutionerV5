@@ -53,14 +53,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 38 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ) ],
-"loop": true,
-"name": "squish",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 31 ), ExtResource( 39 ), ExtResource( 43 ), ExtResource( 22 ), ExtResource( 27 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 42 ) ],
@@ -68,9 +68,9 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 35 ), ExtResource( 14 ), ExtResource( 9 ), ExtResource( 31 ), ExtResource( 39 ), ExtResource( 43 ), ExtResource( 22 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 38 ), ExtResource( 25 ), ExtResource( 29 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ), ExtResource( 46 ) ],
 "loop": true,
-"name": "walk",
+"name": "squish",
 "speed": 5.0
 } ]
 
@@ -359,5 +359,6 @@ text = "inspect"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="body_entered" from="news" to="news" method="_on_news_body_entered"]
 [connection signal="body_exited" from="news" to="news" method="_on_news_body_exited"]

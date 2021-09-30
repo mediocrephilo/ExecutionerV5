@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/west_wolf_Early_Morning_City_Street_Ambience (1).wav-a391ab4c98a8f6bd1eeea284893b729f.sample"
+
+[deps]
+
+source_file="res://sounds/west_wolf_Early_Morning_City_Street_Ambience (1).wav"
+dest_files=[ "res://.import/west_wolf_Early_Morning_City_Street_Ambience (1).wav-a391ab4c98a8f6bd1eeea284893b729f.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

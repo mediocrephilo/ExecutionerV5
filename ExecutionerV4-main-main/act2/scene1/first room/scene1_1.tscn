@@ -55,14 +55,14 @@ animations = [ {
 "name": "jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 17 ) ],
-"loop": true,
-"name": "fall",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 20 ), ExtResource( 16 ), ExtResource( 13 ), ExtResource( 14 ), ExtResource( 15 ), ExtResource( 11 ), ExtResource( 12 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 17 ) ],
+"loop": true,
+"name": "fall",
 "speed": 5.0
 } ]
 
@@ -395,6 +395,7 @@ stream = ExtResource( 35 )
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 volume_db = -16.565
+
 [connection signal="body_entered" from="enter" to="enter" method="_on_enter_body_entered"]
 [connection signal="body_exited" from="enter" to="enter" method="_on_enter_body_exited"]
 [connection signal="body_entered" from="enter2" to="enter2" method="_on_enter2_body_entered"]

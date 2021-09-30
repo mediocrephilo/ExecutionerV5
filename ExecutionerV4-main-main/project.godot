@@ -48,6 +48,7 @@ Transition="*res://transition/Transition.tscn"
 Steer="*res://steer.gd"
 Exit="*res://global/menu/exit.tscn"
 FactorySound="*res://global/FactorySound.tscn"
+CitySound="*res://global/CitySound.tscn"
 
 [display]
 

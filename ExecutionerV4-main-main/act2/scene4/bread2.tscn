@@ -52,6 +52,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 12 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 11 ), ExtResource( 10 ), ExtResource( 2 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 17 ), ExtResource( 6 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "walk",
@@ -60,11 +65,6 @@ animations = [ {
 "frames": [ ExtResource( 14 ) ],
 "loop": true,
 "name": "fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 12 ) ],
-"loop": true,
-"name": "jump",
 "speed": 5.0
 } ]
 
@@ -248,6 +248,7 @@ text = "Enter"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
 [connection signal="body_entered" from="sewer" to="sewer" method="_on_sewer_body_entered"]
 [connection signal="body_exited" from="sewer" to="sewer" method="_on_sewer_body_exited"]
 [connection signal="body_entered" from="piano" to="piano" method="_on_piano_body_entered"]

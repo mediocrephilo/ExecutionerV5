@@ -20,3 +20,4 @@ func _on_enter4_body_exited(body):
 func _input(event):
 	if Input.is_action_just_pressed("ui_interact") and canInteract == true:
 		Transition.change_scene("res://act2/scene2/scene2_2.tscn")
+		CitySound.stopsound()

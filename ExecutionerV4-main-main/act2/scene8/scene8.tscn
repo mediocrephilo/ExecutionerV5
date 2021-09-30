@@ -327,4 +327,5 @@ script = ExtResource( 35 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
 position = Vector2( 12081.2, 974.493 )
 shape = SubResource( 9 )
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

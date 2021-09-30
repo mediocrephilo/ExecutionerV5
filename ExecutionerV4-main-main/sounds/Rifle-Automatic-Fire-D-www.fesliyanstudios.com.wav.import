@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/Rifle-Automatic-Fire-D-www.fesliyanstudios.com.wav-efb16e90577700d12228938ddf4110bc.sample"
+
+[deps]
+
+source_file="res://sounds/Rifle-Automatic-Fire-D-www.fesliyanstudios.com.wav"
+dest_files=[ "res://.import/Rifle-Automatic-Fire-D-www.fesliyanstudios.com.wav-efb16e90577700d12228938ddf4110bc.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=true
+compress/mode=0

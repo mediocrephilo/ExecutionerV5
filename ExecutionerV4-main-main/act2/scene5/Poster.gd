@@ -8,6 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _process(_delta):
+	SewerSound.playsound()
 	yield(get_tree().create_timer(0.5), "timeout")
 	if Input.is_action_just_pressed("ui_accept"):
 		get_tree().change_scene("res://act2/scene5/scene52.tscn")
