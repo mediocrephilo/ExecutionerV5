@@ -28,7 +28,7 @@
 [ext_resource path="res://act2/scene1/first room/enter.gd" type="Script" id=26]
 [ext_resource path="res://act2/scene1/first room/enter2.gd" type="Script" id=27]
 [ext_resource path="res://sounds/255715__klankbeeld__horror-ambience-78-130322-00.wav" type="AudioStream" id=28]
-[ext_resource path="res://sounds/Walking-on-Gravel--Medium--www.fesliyanstudios.com.wav" type="AudioStream" id=29]
+[ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=29]
 [ext_resource path="res://sprites/act 2 setting/scene1/buildings2.png" type="Texture" id=31]
 [ext_resource path="res://sprites/act 2 setting/scene1/stars.png" type="Texture" id=32]
 
@@ -47,9 +47,9 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 13 ) ],
+"frames": [ ExtResource( 6 ) ],
 "loop": true,
-"name": "jump",
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 25 ), ExtResource( 4 ), ExtResource( 21 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 14 ), ExtResource( 16 ) ],
@@ -57,9 +57,9 @@ animations = [ {
 "name": "walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ) ],
+"frames": [ ExtResource( 13 ) ],
 "loop": true,
-"name": "fall",
+"name": "jump",
 "speed": 5.0
 } ]
 
@@ -227,6 +227,8 @@ shape = SubResource( 3 )
 
 [node name="Walk" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource( 29 )
+volume_db = -4.0
+pitch_scale = 1.3
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2( 240.214, 1660.3 )
@@ -353,6 +355,7 @@ volume_db = -17.67
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 28 )
 volume_db = 2.524
+
 [connection signal="body_entered" from="enter" to="enter" method="_on_enter_body_entered"]
 [connection signal="body_exited" from="enter" to="enter" method="_on_enter_body_exited"]
 [connection signal="body_entered" from="enter2" to="enter2" method="_on_enter2_body_entered"]

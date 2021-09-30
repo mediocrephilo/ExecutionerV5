@@ -4,8 +4,8 @@ var dialogue = [
 #<<<<<<< HEAD
 #=======
 
-		"LISTEN . . . IF IT WASN'T FOR ME, THAT KID WOULD HAVE BEEN SENT TO THE E.L.F",
-		"IN THE END . . . DIDN'T I SAVE HIM?",
+		"LISTEN . . . IF IT WASN'T FOR ME, THAT KID WOULD HAVE BEEN SENT TO THE E.L.F.",
+		"IN THE END . . . DIDN'T I SAVE HIM? DIDN'T I PREVENT HIS SUFFERING? . . . HAH.",
 		". . . ATLAS, I SOUND LIKE POLLY'S DAD . . .",
 		"WHAT AM I THINKING? IT'S JUST A SORRY EXCUSE FOR . . .",
 		" . . ."
@@ -20,7 +20,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 4:

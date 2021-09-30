@@ -6,12 +6,14 @@ extends Node2D
 # var b = "text"
 var yay = false
 func _ready():
+	JailSound.playsound()
 	gameSaver.save_game("res://Act3/jailscenes/jail2.tscn")
 	$dialoguebox/continuesprite.hide()
 	$Label.hide()
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") and yay == true:
 		Transition.change_scene("res://act3/scene3/garden.tscn")
+		JailSound.stopsound()
 func _on_dialoguebox_tree_exited():
 	$paris/Label.hide()
 	$Label.show()

@@ -1,4 +1,4 @@
-[gd_scene load_steps=14 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=1]
 [ext_resource path="res://sprites/Act1settings/sceneone/back tree.png" type="Texture" id=2]
@@ -10,6 +10,8 @@
 [ext_resource path="res://act2/scene9/scene9.gd" type="Script" id=8]
 [ext_resource path="res://sounds/zapsplat-public-places-city-larg.mp3" type="AudioStream" id=9]
 [ext_resource path="res://sounds/234122__klankbeeld__horror-prayer-roman-catholic-02-120306-01.wav" type="AudioStream" id=10]
+[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=11]
+[ext_resource path="res://sprites/UI/continuesprite.png" type="Texture" id=12]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 65.7756, 1223.77 )
@@ -20,6 +22,31 @@ extents = Vector2( 2752.58, 184.564 )
 [sub_resource type="DynamicFont" id=3]
 size = 100
 font_data = ExtResource( 7 )
+
+[sub_resource type="Animation" id=4]
+resource_name = "New Anim"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2483.39, -0.25, 0, 0.25, 0, 2483.39, -0.25, 0, 0.25, 0, 2483.39, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 182.228, -0.25, 0, 0.25, 0, 278, -0.25, 0, 0.25, 0, 182.228, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 8 )
@@ -73,6 +100,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="control"]
+stream = ExtResource( 11 )
 
 [node name="Sprite" type="Sprite" parent="control"]
 position = Vector2( 2334.11, 519.202 )
@@ -91,6 +119,15 @@ __meta__ = {
 }
 
 [node name="Tween" type="Tween" parent="control"]
+
+[node name="continuesprite" type="Sprite" parent="control"]
+position = Vector2( 2483.39, 278 )
+scale = Vector2( 1.57635, 2.13575 )
+texture = ExtResource( 12 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="control/continuesprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 4 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 9 )

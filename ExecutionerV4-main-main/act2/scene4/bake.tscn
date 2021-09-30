@@ -27,7 +27,7 @@
 [ext_resource path="res://act2/scene4/fg.gd" type="Script" id=25]
 [ext_resource path="res://act2/scene4/bake.gd" type="Script" id=26]
 [ext_resource path="res://sounds/zapsplat_industrial_warehouse_medium_empty_drone_atmosphere_fans_distant_28779 (1).wav" type="AudioStream" id=27]
-[ext_resource path="res://sounds/Walking-on-Gravel--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=28]
+[ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=28]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -55,9 +55,9 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 17 ) ],
+"frames": [ ExtResource( 10 ) ],
 "loop": true,
-"name": "jump",
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 7 ), ExtResource( 2 ), ExtResource( 9 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 12 ) ],
@@ -65,9 +65,9 @@ animations = [ {
 "name": "walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 17 ) ],
 "loop": true,
-"name": "fall",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 24 ) ],
@@ -219,7 +219,7 @@ limit_bottom = 2160
 [node name="Walk" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource( 28 )
 volume_db = 1.608
-pitch_scale = 0.79
+pitch_scale = 1.3
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
