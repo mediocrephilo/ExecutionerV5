@@ -10,7 +10,7 @@ size = 100
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 50
+size = 40
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -38,7 +38,6 @@ __meta__ = {
 }
 
 [node name="SoundsLinks" type="Control" parent="."]
-visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
@@ -96,6 +95,10 @@ Crowd - https://www.zapsplat.com/?s=mob&post_type=music&sound-effect-category-id
 Gunshot - https://www.zapsplat.com/?s=2x+gunshot&post_type=music&sound-effect-category-id=
 Ear ring - https://www.zapsplat.com/music/increasing-in-loudness-high-pitched-shrill-tone-good-for-ringing-in-ear-or-tinnitus-or-to-convey-a-sense-of-immediate-shock/
 Breathing - https://www.zapsplat.com/music/male-breathing-medium-fast-panting-panicking/
+Concrete Walking - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/footsteps-31
+Construction - https://www.zapsplat.com/sound-effect-category/construction-site/page/3/
+Factory/Warehouse - https://www.zapsplat.com/sound-effect-category/factory-and-warehouse/page/2/
+Automatic Gunfire - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/automatic-gunfire-rifle-299
 "
 text = "Horror Ambience 1 by Klankbeeld - https://freesound.org/people/klankbeeld/sounds/255715/
 Closing Squeaky Door 1 by fesliyanstudios - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-squeaking-50
@@ -123,6 +126,10 @@ Crowd - https://www.zapsplat.com/?s=mob&post_type=music&sound-effect-category-id
 Gunshot - https://www.zapsplat.com/?s=2x+gunshot&post_type=music&sound-effect-category-id=
 Ear ring - https://www.zapsplat.com/music/increasing-in-loudness-high-pitched-shrill-tone-good-for-ringing-in-ear-or-tinnitus-or-to-convey-a-sense-of-immediate-shock/
 Breathing - https://www.zapsplat.com/music/male-breathing-medium-fast-panting-panicking/
+Concrete Walking - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/footsteps-31
+Construction - https://www.zapsplat.com/sound-effect-category/construction-site/page/3/
+Factory/Warehouse - https://www.zapsplat.com/sound-effect-category/factory-and-warehouse/page/2/
+Automatic Gunfire - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/automatic-gunfire-rifle-299
 "
 __meta__ = {
 "_edit_lock_": true,
@@ -130,6 +137,7 @@ __meta__ = {
 }
 
 [node name="People" type="Control" parent="."]
+visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
