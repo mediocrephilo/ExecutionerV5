@@ -63,4 +63,4 @@ limit_bottom = 2160
 
 [node name="Walk" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 13 )
-pitch_scale = 1.2
+pitch_scale = 1.12

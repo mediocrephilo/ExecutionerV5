@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/yfs_vancouver_stanley_park_airplane_birds_cracklingnoise_114.mp3-4027b9190d2651b3c5d45872eefb83e0.mp3str"
+
+[deps]
+
+source_file="res://sounds/yfs_vancouver_stanley_park_airplane_birds_cracklingnoise_114.mp3"
+dest_files=[ "res://.import/yfs_vancouver_stanley_park_airplane_birds_cracklingnoise_114.mp3-4027b9190d2651b3c5d45872eefb83e0.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

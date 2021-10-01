@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	FactorySound.playsound()
+	CitySound.playsound()
 	gameSaver.save_game("res://Act3/scene5/obstaclecourse3.tscn")
 
 

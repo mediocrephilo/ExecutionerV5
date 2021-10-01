@@ -60,14 +60,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 25 ) ],
-"loop": true,
-"name": "fall",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 25 ) ],
+"loop": true,
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 22 ) ],
@@ -492,6 +492,7 @@ script = ExtResource( 34 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( 560.143, -3458.64 )
 shape = SubResource( 13 )
+
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D" to="bigboi/PathFollow2D/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D2" to="bigboi/PathFollow2D/Area2D2" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
