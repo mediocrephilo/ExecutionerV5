@@ -238,7 +238,7 @@ flip_v = true
 position = Vector2( 6829.6, 1042.93 )
 z_index = -1
 frames = SubResource( 9 )
-frame = 10
+frame = 5
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -292,6 +292,7 @@ autoplay = "New Anim"
 
 [node name="Type" type="AudioStreamPlayer" parent="dialoguebox"]
 stream = ExtResource( 20 )
+
 [connection signal="body_entered" from="pothole" to="pothole" method="_on_pothole_body_entered"]
 [connection signal="body_exited" from="pothole" to="pothole" method="_on_pothole_body_exited"]
 [connection signal="tween_completed" from="dialoguebox/Tween" to="dialoguebox" method="_on_Tween_tween_completed"]

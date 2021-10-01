@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://act3/scene3/girl2.gd" type="Script" id=1]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=2]
@@ -12,6 +12,8 @@
 [ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=10]
 [ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=11]
 [ext_resource path="res://act3/scene3/normal4.gd" type="Script" id=12]
+[ext_resource path="res://sounds/ftus_building_abandoned_derelict_water_drips_distant_traffic_625.mp3" type="AudioStream" id=13]
+[ext_resource path="res://sounds/ftus_electromanetic_field_street_light_002_335.mp3" type="AudioStream" id=14]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -179,6 +181,17 @@ texture = ExtResource( 11 )
 [node name="AnimationPlayer" type="AnimationPlayer" parent="chest/dialoguebox/continuesprite"]
 autoplay = "New Anim"
 "anims/New Anim" = SubResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 13 )
+volume_db = -23.0
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
+volume_db = -15.0
+autoplay = true
+
 [connection signal="body_entered" from="chest" to="chest" method="_on_chest_body_entered"]
 [connection signal="body_exited" from="chest" to="chest" method="_on_chest_body_exited"]
 [connection signal="tween_completed" from="chest/dialoguebox/Tween" to="chest" method="_on_Tween_tween_completed"]

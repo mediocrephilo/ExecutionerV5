@@ -170,7 +170,7 @@ position = Vector2( 3394.78, 1415.81 )
 position = Vector2( 7028.91, 1536.95 )
 scale = Vector2( 3.43735, 1.08666 )
 frames = SubResource( 5 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite"]
@@ -239,5 +239,6 @@ texture = ExtResource( 12 )
 position = Vector2( 3806.11, 1026.3 )
 scale = Vector2( 1.04429, 1.03751 )
 texture = ExtResource( 13 )
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="tween_completed" from="dialoguebox/Tween" to="dialoguebox" method="_on_Tween_tween_completed"]

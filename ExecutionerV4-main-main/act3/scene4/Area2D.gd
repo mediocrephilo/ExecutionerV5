@@ -10,6 +10,7 @@ func _ready():
 func _input(event):
 	if Input.is_action_just_pressed("ui_interact") and canInteract == true:
 		Transition.change_scene("res://drawncutscenes/meetingcutscene.tscn")
+		SewerSound.stopsound()
 		
 func _on_Area2D_body_entered(body):
 	if body.name == "player":

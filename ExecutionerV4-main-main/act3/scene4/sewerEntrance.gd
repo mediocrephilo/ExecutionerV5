@@ -16,6 +16,7 @@ func _ready():
 func _on_ladder_body_entered(body):
 	if body.name == "player" and Input.is_action_just_pressed("ui_accept"):
 		Transition.change_scene("res://Act3/scene4/Scene4Surface.tscn")
+		SewerSound.stopsound()
 
 
 func _on_leftExit_body_entered(body):

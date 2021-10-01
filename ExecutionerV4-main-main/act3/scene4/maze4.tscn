@@ -1,8 +1,9 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://sprites/act3settings/scene3/maze4.png" type="Texture" id=1]
 [ext_resource path="res://smolplayer.tscn" type="PackedScene" id=2]
 [ext_resource path="res://sprites/act3settings/scene2/spotlight.png" type="Texture" id=3]
+[ext_resource path="res://sounds/255715__klankbeeld__horror-ambience-78-130322-00.wav" type="AudioStream" id=4]
 [ext_resource path="res://act3/scene4/ghost4.gd" type="Script" id=5]
 [ext_resource path="res://sprites/Act1settings/sceneone/dark filter.png" type="Texture" id=8]
 
@@ -1686,6 +1687,10 @@ texture = ExtResource( 8 )
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 1932.52, 540.818 )
 texture = ExtResource( 8 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 4 )
+autoplay = true
 
 [connection signal="body_entered" from="ghost" to="ghost" method="_on_ghost_body_entered"]
 [connection signal="body_exited" from="ghost" to="ghost" method="_on_ghost_body_exited"]
