@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3-4dd410c3c9f7d71174a89ae20cd67002.mp3str"
+
+[deps]
+
+source_file="res://sounds/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3"
+dest_files=[ "res://.import/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3-4dd410c3c9f7d71174a89ae20cd67002.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

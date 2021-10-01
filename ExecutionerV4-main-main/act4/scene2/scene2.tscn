@@ -1,4 +1,4 @@
-[gd_scene load_steps=33 format=2]
+[gd_scene load_steps=34 format=2]
 
 [ext_resource path="res://sprites/act4setting/scene2/courtfbackmount.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act4setting/scene2/courtroad.png" type="Texture" id=2]
@@ -25,6 +25,7 @@
 [ext_resource path="res://act4/scene2/road.gd" type="Script" id=23]
 [ext_resource path="res://sprites/characters/squish3.png" type="Texture" id=24]
 [ext_resource path="res://sounds/Slide On Gravel Series [SOUND EFFECT].wav" type="AudioStream" id=25]
+[ext_resource path="res://sounds/west_wolf_Early_Morning_City_Street_Ambience (1).wav" type="AudioStream" id=26]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 93.096
@@ -42,9 +43,9 @@ animations = [ {
 "name": "down",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 14 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 8 ) ],
 "loop": true,
-"name": "jump",
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 11 ) ],
@@ -52,9 +53,9 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 14 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 8 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "walk",
+"name": "jump",
 "speed": 5.0
 } ]
 
@@ -1023,6 +1024,11 @@ texture = ExtResource( 21 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ball48"]
 position = Vector2( -101.367, -97.6317 )
 shape = SubResource( 7 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 26 )
+autoplay = true
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
