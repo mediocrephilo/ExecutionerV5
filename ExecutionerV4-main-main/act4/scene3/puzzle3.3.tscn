@@ -1,4 +1,4 @@
-[gd_scene load_steps=23 format=2]
+[gd_scene load_steps=24 format=2]
 
 [ext_resource path="res://act4/scene3/pixelgreenquare.png" type="Texture" id=1]
 [ext_resource path="res://act4/scene3/pixelblacksquare.png" type="Texture" id=2]
@@ -15,6 +15,7 @@
 [ext_resource path="res://act4/scene3/bluebox.tscn" type="PackedScene" id=13]
 [ext_resource path="res://act4/scene3/puzzle3.3.gd" type="Script" id=14]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://sounds/ftus_electromanetic_field_street_light_002_335.mp3" type="AudioStream" id=16]
 
 [sub_resource type="TileSet" id=1]
 0/name = "pixelblacksquare.png 0"
@@ -268,6 +269,11 @@ text = "Press esc to exit"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -20.194
+autoplay = true
 
 [connection signal="body_entered" from="red" to="." method="_on_red_body_entered"]
 [connection signal="body_exited" from="red" to="." method="_on_red_body_exited"]

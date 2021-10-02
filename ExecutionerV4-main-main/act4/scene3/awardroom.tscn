@@ -143,5 +143,6 @@ limit_left = 0
 limit_top = 0
 limit_right = 7680
 limit_bottom = 2160
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
