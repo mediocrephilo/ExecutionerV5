@@ -4,7 +4,7 @@ var dialogue = [
 #<<<<<<< HEAD
 #=======
 
-		"THAT WAS THE WRONG ANSWER"
+		"W R O N G   A N S W E R"
 ]
 var dialogue_index = 0
 var finished = false
@@ -14,16 +14,11 @@ func _ready():
 	$Sprite.hide()
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
-
-func _process(_delta):
-	#$"continuesprite".visible = finished
-	if Input.is_action_just_pressed("ui_accept") and finished == true:
-		load_dialogue()
-	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 1:
-		GameOver.transition("res://Act1/playerscenes/scene5/scene5.tscn")
-		GameOver.change(true)
-		Transition.change_scene("res://global/gameover/gameOver.tscn")
-		
+	yield(get_tree().create_timer(4), "timeout")
+	GameOver.transition("res://Act1/playerscenes/scene5/scene5.tscn")
+	GameOver.change(true)
+	Transition.change_scene("res://global/gameover/gameOver.tscn")
+	
 func load_dialogue():
 	$Sprite.show()
 	yield(get_tree().create_timer(0.5), "timeout")
