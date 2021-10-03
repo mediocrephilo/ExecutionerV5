@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_multimedia_game_tone_toggle_scroll_003_38547.mp3-d08ea427bad11602ed3bb1b77c0fdd02.mp3str"
+
+[deps]
+
+source_file="res://sounds/zapsplat_multimedia_game_tone_toggle_scroll_003_38547.mp3"
+dest_files=[ "res://.import/zapsplat_multimedia_game_tone_toggle_scroll_003_38547.mp3-d08ea427bad11602ed3bb1b77c0fdd02.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

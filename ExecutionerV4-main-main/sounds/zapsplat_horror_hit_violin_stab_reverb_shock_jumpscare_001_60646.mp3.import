@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_horror_hit_violin_stab_reverb_shock_jumpscare_001_60646.mp3-528683c32f849f71f319a29512220f9c.mp3str"
+
+[deps]
+
+source_file="res://sounds/zapsplat_horror_hit_violin_stab_reverb_shock_jumpscare_001_60646.mp3"
+dest_files=[ "res://.import/zapsplat_horror_hit_violin_stab_reverb_shock_jumpscare_001_60646.mp3-528683c32f849f71f319a29512220f9c.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
