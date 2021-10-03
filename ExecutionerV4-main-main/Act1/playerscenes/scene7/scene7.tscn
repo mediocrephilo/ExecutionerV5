@@ -50,11 +50,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "jump",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "fall",
@@ -63,6 +58,11 @@ animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 15 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "jump",
 "speed": 5.0
 } ]
 
@@ -1615,6 +1615,7 @@ script = ExtResource( 23 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 10062.3, 3056.63 )
 shape = SubResource( 16 )
+
 [connection signal="body_entered" from="deathclownR" to="deathclownR" method="_on_deathclownR_body_entered"]
 [connection signal="body_entered" from="deathclownR2" to="deathclownR2" method="_on_deathclownR_body_entered"]
 [connection signal="body_entered" from="deathclownR4" to="deathclownR4" method="_on_deathclownR_body_entered"]
