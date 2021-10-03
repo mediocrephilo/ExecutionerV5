@@ -445,7 +445,7 @@ limit_top = 0
 limit_right = 8500
 limit_bottom = 2160
 
-[node name="Walk" type="AudioStreamPlayer2D" parent="player2"]
+[node name="Walk" type="AudioStreamPlayer" parent="player2"]
 stream = ExtResource( 4 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
@@ -616,7 +616,7 @@ flip_h = true
 position = Vector2( 1458.69, 696.195 )
 scale = Vector2( 0.598925, 0.600942 )
 frames = SubResource( 10 )
-frame = 5
+frame = 9
 playing = true
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground5/ParallaxLayer"]
@@ -764,6 +764,7 @@ texture = ExtResource( 37 )
 __meta__ = {
 "_edit_lock_": true
 }
+
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
 [connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
 [connection signal="body_entered" from="Area2D" to="." method="_on_Area2D_body_entered"]

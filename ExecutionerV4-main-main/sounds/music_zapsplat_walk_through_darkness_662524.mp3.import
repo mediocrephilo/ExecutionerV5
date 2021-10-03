@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/music_zapsplat_walk_through_darkness_662524.mp3-0527b98436b11dc372f7e1a0916407d5.mp3str"
+
+[deps]
+
+source_file="res://sounds/music_zapsplat_walk_through_darkness_662524.mp3"
+dest_files=[ "res://.import/music_zapsplat_walk_through_darkness_662524.mp3-0527b98436b11dc372f7e1a0916407d5.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

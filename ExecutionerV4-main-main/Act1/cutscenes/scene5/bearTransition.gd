@@ -8,6 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	HorrorSound.playsound()
 	$player/playerSprite.play("idle")
 
 func _on_dialoguebox_tree_exited():
