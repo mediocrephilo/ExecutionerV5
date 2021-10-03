@@ -183,7 +183,7 @@ visible = false
 position = Vector2( 2523.11, 867.674 )
 scale = Vector2( 1.57678, 1.42284 )
 frames = SubResource( 10 )
-frame = 6
+frame = 9
 playing = true
 
 [connection signal="body_entered" from="door2" to="door2" method="_on_door2_body_entered"]

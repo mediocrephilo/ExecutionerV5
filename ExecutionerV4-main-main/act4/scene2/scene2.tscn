@@ -1029,6 +1029,8 @@ shape = SubResource( 7 )
 stream = ExtResource( 26 )
 autoplay = true
 
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

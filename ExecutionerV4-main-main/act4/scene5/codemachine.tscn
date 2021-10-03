@@ -12,14 +12,14 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "wrong",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "wrong",
 "speed": 5.0
 } ]
 
@@ -120,5 +120,5 @@ position = Vector2( 1956.94, 1053.16 )
 scale = Vector2( 1.0196, 1.09954 )
 z_index = 9
 frames = SubResource( 3 )
-frame = 6
+frame = 5
 playing = true

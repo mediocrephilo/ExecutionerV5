@@ -4,6 +4,9 @@ var blue = false
 var red = false
 var green = false
 
+func _ready():
+	RoomSound.playsound()
+	
 func _on_blue_body_entered(body):
 	if body is BluBox:
 		blue = true

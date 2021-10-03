@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://act4/scene3/door3a.gd" type="Script" id=1]
 [ext_resource path="res://act4/scene3/halldoor1.png" type="Texture" id=2]
@@ -6,6 +6,8 @@
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=4]
 [ext_resource path="res://sprites/Act1settings/sceneone/vignette.png" type="Texture" id=5]
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=6]
+[ext_resource path="res://act4/scene3/scene3.3.after.gd" type="Script" id=7]
+[ext_resource path="res://sounds/ftus_electromanetic_field_street_light_002_335.mp3" type="AudioStream" id=8]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -29,6 +31,7 @@ extents = Vector2( 116.417, 1188.48 )
 extents = Vector2( 2131.67, 94.1062 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 7 )
 
 [node name="door" type="Area2D" parent="."]
 script = ExtResource( 1 )
@@ -74,5 +77,11 @@ position = Vector2( 1670.72, 1748.93 )
 position = Vector2( 1871.97, 1080.85 )
 scale = Vector2( 0.517358, 1.07116 )
 texture = ExtResource( 5 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 8 )
+volume_db = -20.0
+autoplay = true
+
 [connection signal="body_entered" from="door" to="door" method="_on_door_body_entered"]
 [connection signal="body_exited" from="door" to="door" method="_on_door_body_exited"]

@@ -4,6 +4,7 @@ var counter = 1
 var codename
 
 func _ready():
+	FactorySound.playsound()
 	$Sprite.hide()
 	$Sprite2.hide()
 	$Sprite3.hide()

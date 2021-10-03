@@ -50,6 +50,7 @@ Exit="*res://global/menu/exit.tscn"
 FactorySound="*res://global/FactorySound.tscn"
 CitySound="*res://global/CitySound.tscn"
 CitySound2="*res://global/CitySound2.gd"
+RoomSound="*res://global/RoomSound.gd"
 
 [display]
 
