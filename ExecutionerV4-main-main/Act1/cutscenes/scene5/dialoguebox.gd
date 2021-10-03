@@ -4,9 +4,9 @@ extends Control
 var dialogue = [
 #<<<<<<< HEAD
 #=======
-		"I HAVEN'T . . . POLLY . . . IT'S BEEN YEARS . . .",
-		"I HAVEN'T THOUGHT ABOUT IT IN SO LONG UNTIL NOW . . .",
-		"WHY AM I SUDDENLY REMEBERING IT?",
+		"POLLY . . . IT'S BEEN YEARS . . .",
+		"I HAVEN'T THOUGHT ABOUT IT IN SO LONG . . .",
+		"WHY AM I SUDDENLY REMEBERING IT? WHY NOW?",
 		"WAIT A MINUTE, SOMETHING'S COMING . . ."
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
