@@ -13,6 +13,7 @@ func _ready():
 func _on_exit_body_entered(body):
 	if body.name == "player":
 		Transition.change_scene("res://Act1/playerscenes/scenez11/SceneEleven.tscn")
+		ForestSound.fade_out()
 		
 func _process(delta):
 	if Input.is_action_just_pressed("ui_cancel"):
