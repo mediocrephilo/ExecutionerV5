@@ -26,6 +26,7 @@ position = Vector2( -28.5748, 74.165 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="visibility"]
 
 [node name="Timer" type="Timer" parent="."]
+
 [connection signal="body_entered" from="visibility" to="." method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="visibility" to="." method="_on_Area2D_body_exited"]
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

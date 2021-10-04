@@ -27,4 +27,4 @@ func _input(event):
 		GameOver.transition("res://act2/scene5/scene5.tscn")
 		GameOver.change(true)
 		Transition.change_scene("res://global/gameover/gameOver.tscn")
-		
+		CitySound.stopsound()
