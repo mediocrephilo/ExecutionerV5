@@ -8,6 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	RoomSound.playsound()
 	gameSaver.save_game("res://Act3/lastscene/last.tscn")
 
 
