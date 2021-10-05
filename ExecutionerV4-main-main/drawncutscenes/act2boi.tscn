@@ -42,6 +42,7 @@ tracks/0/keys = {
 position = Vector2( 1901.42, 1066.78 )
 scale = Vector2( 2.03142, 2.07992 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
 [node name="Control" type="Control" parent="."]
@@ -89,5 +90,6 @@ autoplay = "New Anim"
 stream = ExtResource( 7 )
 volume_db = 10.0
 autoplay = true
+
 [connection signal="tree_exited" from="Control" to="Control" method="_on_Control_tree_exited"]
 [connection signal="tween_completed" from="Control/Tween" to="Control" method="_on_Tween_tween_completed"]

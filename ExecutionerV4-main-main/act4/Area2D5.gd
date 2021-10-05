@@ -7,3 +7,4 @@ func _on_Area2D5_body_entered(body):
 		GameOver.transition("res://act4/scene4.tscn")
 		GameOver.change(true)
 		Transition.change_scene("res://global/gameover/gameOver.tscn")
+		ForestSound.stopsound()

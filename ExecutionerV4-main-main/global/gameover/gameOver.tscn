@@ -34,7 +34,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1919.13, 1082.83 )
 frames = SubResource( 1 )
-frame = 2
+frame = 1
 playing = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
@@ -56,8 +56,6 @@ __meta__ = {
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 6 )
-autoplay = true
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 7 )
-autoplay = true
