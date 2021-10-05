@@ -1,8 +1,9 @@
-[gd_scene load_steps=32 format=2]
+[gd_scene load_steps=33 format=2]
 
 [ext_resource path="res://act4/scene5/door.gd" type="Script" id=1]
 [ext_resource path="res://sprites/act4setting/scene5/metaldoor2.png" type="Texture" id=2]
 [ext_resource path="res://sprites/characters/idle right 1.png" type="Texture" id=3]
+[ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=4]
 [ext_resource path="res://sprites/act4setting/scene5/smallcode1.png" type="Texture" id=5]
 [ext_resource path="res://sprites/act4setting/scene5/smallcode2.png" type="Texture" id=6]
 [ext_resource path="res://sprites/characters/right walk 2.png" type="Texture" id=7]
@@ -176,14 +177,16 @@ limit_top = 0
 limit_right = 3840
 limit_bottom = 2160
 
-[node name="Walk" type="AudioStreamPlayer2D" parent="player"]
+[node name="Walk" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource( 4 )
+pitch_scale = 1.12
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 visible = false
 position = Vector2( 2523.11, 867.674 )
 scale = Vector2( 1.57678, 1.42284 )
 frames = SubResource( 10 )
-frame = 9
+frame = 5
 playing = true
 
 [connection signal="body_entered" from="door2" to="door2" method="_on_door2_body_entered"]

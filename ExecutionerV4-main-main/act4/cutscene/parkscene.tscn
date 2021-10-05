@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=15 format=2]
 
 [ext_resource path="res://sprites/UI/dialoguebox copy.png" type="Texture" id=1]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=2]
@@ -10,6 +10,7 @@
 [ext_resource path="res://drawncutscenes/image4 copy.png" type="Texture" id=8]
 [ext_resource path="res://drawncutscenes/image0 (1) copy.png" type="Texture" id=9]
 [ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=10]
+[ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=11]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -18,14 +19,14 @@ animations = [ {
 "name": "2",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "3",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 9 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "3",
 "speed": 5.0
 } ]
 
@@ -33,6 +34,31 @@ animations = [ {
 size = 100
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 2 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "New Anim"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2200, -0.25, 0, 0.25, 0, 2200, -0.25, 0, 0.25, 0, 2200, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1430, -0.25, 0, 0.25, 0, 1500, -0.25, 0, 0.25, 0, 1430, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
 
 [node name="Node2D" type="Node2D"]
 
@@ -74,6 +100,15 @@ text = "\\"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="continuesprite" type="Sprite" parent="Control"]
+position = Vector2( 2200, 1500 )
+scale = Vector2( 1.64222, 2.38631 )
+texture = ExtResource( 11 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/continuesprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 3 )
 
 [connection signal="tree_exited" from="Control" to="Control" method="_on_Control_tree_exited"]
 [connection signal="tween_completed" from="Control/Tween" to="Control" method="_on_Tween_tween_completed"]

@@ -2,7 +2,7 @@ extends Area2D
 
 var canInteract = false
 func _ready():
-	FactorySound.playsound
+	FactorySound.playsound()
 	$Label.hide()
 
 func _input(event):
