@@ -9,6 +9,7 @@ func _ready():
 func _input(event):
 	if Input.is_action_just_pressed("ui_interact") and canInteract == true:
 		Transition.change_scene("act4/scene3/awardroom.tscn")
+		RoomSound.stopsound()
 
 func _on_door_body_entered(body):
 	if body.name == "player":
