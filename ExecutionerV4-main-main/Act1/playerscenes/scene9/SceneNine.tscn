@@ -273,7 +273,6 @@ __meta__ = {
 position = Vector2( 3657.56, 1406.76 )
 z_index = 2
 frames = SubResource( 7 )
-frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -284,7 +283,6 @@ position = Vector2( 6065.61, 952.736 )
 scale = Vector2( 1.04841, 1.1256 )
 z_index = 2
 frames = SubResource( 8 )
-frame = 1
 playing = true
 flip_h = true
 __meta__ = {
@@ -297,7 +295,6 @@ rotation = -0.404916
 scale = Vector2( 0.666533, 0.709781 )
 z_index = 2
 frames = SubResource( 8 )
-frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
