@@ -13,11 +13,13 @@ func _process(delta):
 		$AnimatedSprite.show()
 		$RichTextLabel.show()
 		$AudioStreamPlayer.play()
+		$AudioStreamPlayer2.play()
 		
 	if change == false:
 		$ColorRect.hide()
 		$AnimatedSprite.hide()
 		$AudioStreamPlayer.stop()
+		$AudioStreamPlayer2.stop()
 		$RichTextLabel.hide()
 		
 	if Input.is_action_just_pressed("ui_select") and change == true:

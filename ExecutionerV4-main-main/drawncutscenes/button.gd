@@ -4,10 +4,10 @@ extends Control
 var dialogue = [
 #<<<<<<< HEAD
 #=======
-	"I have placed bombs underneath the E.L.F Factory",
-	"To destroy it for good. No children should have to suffer like this",
-	"This is the detonator. All you have to do is press this, and it would be destroyed",
-	"Perhaps it could redeem you from all the pain you have caused"
+	"Before my capture . . . the resistance placed bombs around the E.L.F factories.",
+	"Seeing as I have the sole detonator, I assume they haven't been blown up yet.",
+	"Take it. All you have to do is press the big red button, and everything can come to an end.",
+	"Maybe this can be your redemption. Maybe not. At least we will have done something."
 ]
 var dialogue_index = 0
 var finished = false
