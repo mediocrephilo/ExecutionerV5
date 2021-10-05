@@ -45,11 +45,6 @@ extents = Vector2( 345.366, 1491.12 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 7 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "fall",
@@ -63,6 +58,11 @@ animations = [ {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -83,15 +83,15 @@ extents = Vector2( 1755.97, 173.467 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ ExtResource( 33 ) ],
-"loop": false,
-"name": "default",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 35 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 31 ), ExtResource( 33 ) ],
 "loop": false,
 "name": "reversenom",
 "speed": 7.0
+}, {
+"frames": [ ExtResource( 33 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
 }, {
 "frames": [ ExtResource( 33 ), ExtResource( 31 ), ExtResource( 34 ), ExtResource( 32 ), ExtResource( 35 ) ],
 "loop": false,
@@ -154,7 +154,7 @@ position = Vector2( 3943.19, 942.398 )
 shape = SubResource( 2 )
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( -1780.73, -147.829 )
+position = Vector2( -1511.28, -179.529 )
 z_index = 100
 script = ExtResource( 1 )
 __meta__ = {
@@ -1497,7 +1497,7 @@ position = Vector2( -9210.26, -16246.9 )
 frames = SubResource( 12 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="table"]
-position = Vector2( -9186.72, -16200.9 )
+position = Vector2( -9186.72, -16196.4 )
 shape = SubResource( 13 )
 
 [node name="StaticBody2D6" type="StaticBody2D" parent="."]

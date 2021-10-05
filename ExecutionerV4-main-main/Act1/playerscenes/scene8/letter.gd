@@ -1,4 +1,4 @@
-extends Control
+extends Area2D
 
 
 var interact = false

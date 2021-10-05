@@ -1,4 +1,4 @@
-[gd_scene load_steps=40 format=2]
+[gd_scene load_steps=41 format=2]
 
 [ext_resource path="res://sprites/Act1settings/sceneone/roady2.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Act1settings/sceneone/unnamed.png" type="Texture" id=2]
@@ -30,15 +30,16 @@
 [ext_resource path="res://Act1/playerscenes/scene9/Area2D2.gd" type="Script" id=28]
 [ext_resource path="res://sounds/Closing-Squeaky-Door-1-www.fesliyanstudios.com.wav" type="AudioStream" id=29]
 [ext_resource path="res://sounds/Walking-on-Gravel--Medium--www.fesliyanstudios.com.wav" type="AudioStream" id=30]
+[ext_resource path="res://Act1/playerscenes/scene9/SceneNine.gd" type="Script" id=31]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 495.271, 1199.13 )
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 14 ), ExtResource( 15 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 22 ) ],
 "loop": true,
-"name": "idle",
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 20 ), ExtResource( 16 ), ExtResource( 18 ), ExtResource( 13 ), ExtResource( 21 ), ExtResource( 19 ), ExtResource( 12 ) ],
@@ -46,14 +47,14 @@ animations = [ {
 "name": "walk",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 22 ) ],
-"loop": true,
-"name": "fall",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 23 ), ExtResource( 10 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 14 ), ExtResource( 15 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -90,6 +91,7 @@ animations = [ {
 extents = Vector2( 251.429, 2199.46 )
 
 [node name="scene 1" type="Node2D"]
+script = ExtResource( 31 )
 
 [node name="Area2D" type="Area2D" parent="."]
 position = Vector2( 1822.37, 1196.02 )
@@ -282,7 +284,7 @@ position = Vector2( 6065.61, 952.736 )
 scale = Vector2( 1.04841, 1.1256 )
 z_index = 2
 frames = SubResource( 8 )
-frame = 3
+frame = 1
 playing = true
 flip_h = true
 __meta__ = {
@@ -295,7 +297,7 @@ rotation = -0.404916
 scale = Vector2( 0.666533, 0.709781 )
 z_index = 2
 frames = SubResource( 8 )
-frame = 3
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -307,6 +309,7 @@ script = ExtResource( 28 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exiting"]
 position = Vector2( -20.8533, 594.319 )
 shape = SubResource( 9 )
+
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
 [connection signal="body_entered" from="exiting" to="exiting" method="_on_exiting_body_entered"]
