@@ -18,7 +18,7 @@ var dialogue = [
 		"It should be easy for you though, you're number one in almost every test! I wish I could be more like you . . .",
 		". . . Yeah... I guess I should train some more. . .",
 		"It's just that I can't focus at all on Corps training! It's so boring, and all the running makes me sick . . .",
-		"It's okay . . . maybe I'll better when I'm older!"
+		"It's okay . . . maybe I'll be better when I'm older!"
 
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
@@ -33,7 +33,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		
