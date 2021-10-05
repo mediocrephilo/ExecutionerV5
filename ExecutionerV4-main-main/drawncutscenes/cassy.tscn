@@ -28,6 +28,16 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 6 ) ],
+"loop": true,
+"name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 9 ) ],
 "loop": true,
 "name": "1",
@@ -38,24 +48,14 @@ animations = [ {
 "name": "blush",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ) ],
+"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": true,
-"name": "3",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ) ],
-"loop": true,
-"name": "2",
+"name": "happ",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "4",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "happ",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 7 ), ExtResource( 4 ) ],
@@ -129,7 +129,6 @@ position = Vector2( 1900.28, 1909.67 )
 scale = Vector2( 1.35088, 1.3549 )
 frames = SubResource( 1 )
 animation = "happ"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Control"]
@@ -143,13 +142,14 @@ frame = 1
 position = Vector2( 2214.63, 446.539 )
 scale = Vector2( 1, 0.43358 )
 frames = SubResource( 2 )
-frame = 3
+frame = 6
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Control"]
 position = Vector2( 2272.79, 538.857 )
 scale = Vector2( 1.06687, 0.733301 )
 frames = SubResource( 3 )
+frame = 3
 playing = true
 
 [node name="Type" type="AudioStreamPlayer" parent="Control"]
@@ -229,13 +229,13 @@ __meta__ = {
 position = Vector2( 3010.44, 1725.3 )
 scale = Vector2( 0.326183, 0.299013 )
 frames = SubResource( 8 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="choiceBox"]
 position = Vector2( 3013.16, 1937.22 )
 scale = Vector2( 0.309881, 0.342485 )
 frames = SubResource( 9 )
+frame = 1
 playing = true
 flip_v = true
 
