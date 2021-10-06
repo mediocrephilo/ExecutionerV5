@@ -101,6 +101,7 @@ func load_dialogue(dialogue_type, type):
 		if dialogue_index == 8:
 			$AnimatedSprite.play("kalm")
 		if dialogue_index == 12:
+			get_parent().get_node("AudioStreamPlayer").stop()
 			$AnimatedSprite.play("1")
 		if dialogue_index == 13:
 			$AnimatedSprite.play("2")

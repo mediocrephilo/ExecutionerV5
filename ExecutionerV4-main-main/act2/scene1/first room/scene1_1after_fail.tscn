@@ -1,4 +1,4 @@
-[gd_scene load_steps=48 format=2]
+[gd_scene load_steps=49 format=2]
 
 [ext_resource path="res://sprites/act 2 setting/scene1/black background.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Act1settings/sceneone/vignette.png" type="Texture" id=2]
@@ -29,6 +29,7 @@
 [ext_resource path="res://act2/scene1/first room/enter2.gd" type="Script" id=27]
 [ext_resource path="res://sounds/255715__klankbeeld__horror-ambience-78-130322-00.wav" type="AudioStream" id=28]
 [ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=29]
+[ext_resource path="res://sounds/zapsplat_human_child_boy_6_years_laugh_short_005_19739.mp3" type="AudioStream" id=30]
 [ext_resource path="res://sprites/act 2 setting/scene1/buildings2.png" type="Texture" id=31]
 [ext_resource path="res://sprites/act 2 setting/scene1/stars.png" type="Texture" id=32]
 
@@ -42,11 +43,6 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 25 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "fall",
@@ -60,6 +56,11 @@ animations = [ {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 3 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -343,6 +344,7 @@ __meta__ = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="enter5"]
+stream = ExtResource( 30 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 3852.94, 1117.9 )
