@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/parisMarch.mp3-b4c0a2b0a5647e00a9e917b6dbbba438.mp3str"
+
+[deps]
+
+source_file="res://sounds/parisMarch.mp3"
+dest_files=[ "res://.import/parisMarch.mp3-b4c0a2b0a5647e00a9e917b6dbbba438.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
