@@ -43,6 +43,7 @@ func _process(_delta):
 		load_dialogue(choice4)
 	if (Input.is_action_just_pressed("ui_up") or Input.is_action_just_pressed("ui_down")) and finished == true and number == 11:
 		load_dialogue(choice5)
+		
 	if Input.is_action_just_pressed("ui_accept") and finished == true and number == 13:
 		load_dialogue2(choice6)
 		
