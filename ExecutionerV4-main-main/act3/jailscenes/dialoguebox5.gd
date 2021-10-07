@@ -2,8 +2,8 @@ extends Control
 var dialogue = [
 		". . . 161.",
 		"I see now why you refused to tell me your name.",
-		"That is why you know so much about me, isn't it?",
-		"I must have told you everything... the location of our meetings, our plans, even my childhood during questioning",
+		"We've not only met, but you were the one who . . . this is why you know so much about me, isn't it?",
+		"To be honest, I do resent you, just a little bit. But at least . . . you seem to have kept your promise.",
 		". . . I may have been a little harsh when speaking of the Corps before.",
 		"But I stand by it. People join the Corps because of greed.",
 		"And the citizens are the ones who suffer from their ambition.",

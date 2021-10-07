@@ -92,7 +92,7 @@ __meta__ = {
 [node name="Tween" type="Tween" parent="Control"]
 
 [node name="continuesprite" type="Sprite" parent="Control"]
-position = Vector2( 2524, 1680 )
+position = Vector2( 2524, 1600 )
 scale = Vector2( 1.432, 2.056 )
 texture = ExtResource( 9 )
 
