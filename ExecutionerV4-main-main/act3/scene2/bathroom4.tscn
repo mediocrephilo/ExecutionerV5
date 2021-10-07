@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=19 format=2]
 
 [ext_resource path="res://sprites/act3settings/cracked1.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Act1settings/sceneone/dark filter.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://player/player.tscn" type="PackedScene" id=7]
 [ext_resource path="res://sounds/Closing-Squeaky-Door-1-www.fesliyanstudios.com.wav" type="AudioStream" id=8]
 [ext_resource path="res://act3/scene2/bathroomexit.gd" type="Script" id=9]
+[ext_resource path="res://sounds/ftus_building_abandoned_derelict_water_drips_distant_traffic_625.mp3" type="AudioStream" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -132,6 +133,11 @@ shape = SubResource( 8 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Area2D"]
 stream = ExtResource( 8 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 10 )
+volume_db = -5.0
+autoplay = true
 
 [connection signal="body_entered" from="tub" to="tub" method="_on_tub_body_entered"]
 [connection signal="body_exited" from="tub" to="tub" method="_on_tub_body_exited"]

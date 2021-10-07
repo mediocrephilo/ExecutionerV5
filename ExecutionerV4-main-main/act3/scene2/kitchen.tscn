@@ -219,6 +219,7 @@ shape = SubResource( 4 )
 
 [node name="Walk" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource( 20 )
+pitch_scale = 0.7
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 current = true

@@ -1,4 +1,4 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://act3/scene2/Area2D3.gd" type="Script" id=1]
 [ext_resource path="res://act3/scene2/Area2D.gd" type="Script" id=2]
@@ -9,7 +9,9 @@
 [ext_resource path="res://sprites/act3settings/homewall.png" type="Texture" id=7]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=8]
 [ext_resource path="res://sprites/act3settings/ballthings.png" type="Texture" id=9]
+[ext_resource path="res://sounds/Squeaky-Wooden-Floor-Footsteps--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=10]
 [ext_resource path="res://sounds/Closing-Squeaky-Door-1-www.fesliyanstudios.com.wav" type="AudioStream" id=11]
+[ext_resource path="res://player/playerLibrary.gd" type="Script" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -97,6 +99,11 @@ frames = SubResource( 1 )
 
 [node name="player" parent="." instance=ExtResource( 3 )]
 position = Vector2( 315.699, 1636.12 )
+script = ExtResource( 12 )
+
+[node name="Walk2" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource( 10 )
+pitch_scale = 0.7
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
