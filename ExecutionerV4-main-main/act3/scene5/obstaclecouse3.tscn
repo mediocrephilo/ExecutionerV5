@@ -28,7 +28,7 @@
 [ext_resource path="res://act3/scene5/3Area2D3.gd" type="Script" id=26]
 [ext_resource path="res://act3/scene5/3Area2D.gd" type="Script" id=27]
 [ext_resource path="res://act3/scene5/Area2D4.gd" type="Script" id=28]
-[ext_resource path="res://sounds/ftus_building_abandoned_derelict_water_drips_distant_traffic_625.mp3" type="AudioStream" id=30]
+[ext_resource path="res://sounds/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3" type="AudioStream" id=29]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1671.91, 96.1583 )
@@ -408,8 +408,9 @@ position = Vector2( -407.529, 3141.93 )
 shape = SubResource( 9 )
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 30 )
-volume_db = -5.0
+stream = ExtResource( 29 )
+volume_db = -20.0
+autoplay = true
 
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D" to="bigboi/PathFollow2D/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D2" to="bigboi/PathFollow2D/Area2D2" method="_on_Area2D_body_entered"]

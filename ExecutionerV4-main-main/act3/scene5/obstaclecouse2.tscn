@@ -1,4 +1,4 @@
-[gd_scene load_steps=44 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://sprites/act3settings/scene5/tallbuilding.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Act1settings/sceneone/roady2.png" type="Texture" id=2]
@@ -32,6 +32,7 @@
 [ext_resource path="res://act3/scene5/Area2D2a.gd" type="Script" id=30]
 [ext_resource path="res://act3/scene5/obstaclecouse2.gd" type="Script" id=31]
 [ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=32]
+[ext_resource path="res://sounds/skyclad_sound_horror_ambience_loop_rumble_regular_swells_and_receeds_metallic_screech_squeak_grind_eerie_sinister_distant.mp3" type="AudioStream" id=33]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 1674.53, 96.1583 )
@@ -404,6 +405,11 @@ script = ExtResource( 30 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 590.763, 3129.78 )
 shape = SubResource( 11 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 33 )
+volume_db = -20.0
+autoplay = true
 
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D" to="bigboi/PathFollow2D/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D2" to="bigboi/PathFollow2D/Area2D2" method="_on_Area2D_body_entered"]
