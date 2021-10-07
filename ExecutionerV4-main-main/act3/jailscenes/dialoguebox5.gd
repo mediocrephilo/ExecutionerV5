@@ -12,9 +12,9 @@ var dialogue = [
 		"If you are, well, it's not the first time I've been a bad judge of character.",
 		"I hope you are not. In any case, you are my-our last chance.",
 		"Do you still remember the story my father told me?",
-		"The city of Omelas runs on the suffering of children. That is what keeps people like you in power.",
-		"Will you celebrate, or will you fight? Leaving, at least for you, is not an option.",
-		"I hope you will remember your decision when the time comes. Take this."
+		"We run on the suffering of the weak. It is what keeps us in power, what keeps us alive. You've gathered this much, yes?",
+		"So now I'll ask you, will you stay, or will you fight? Leaving, at least for you, is not an option.",
+		"No-don't tell me. Just remember your decision when the time comes. Take this."
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
 #var dialogue2 = [
