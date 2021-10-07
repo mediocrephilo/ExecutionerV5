@@ -1,4 +1,4 @@
-[gd_scene load_steps=92 format=2]
+[gd_scene load_steps=91 format=2]
 
 [ext_resource path="res://sprites/act3settings/scene2/box.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act3settings/scene2/table2.png" type="Texture" id=2]
@@ -39,7 +39,6 @@
 [ext_resource path="res://act3/scene3/skull12.gd" type="Script" id=37]
 [ext_resource path="res://act3/scene3/Path2D12.gd" type="Script" id=38]
 [ext_resource path="res://sprites/act3settings/scene2/comb.png" type="Texture" id=39]
-[ext_resource path="res://sounds/234122__klankbeeld__horror-prayer-roman-catholic-02-120306-01.wav" type="AudioStream" id=40]
 
 [sub_resource type="TileSet" id=1]
 0/name = "pixelinsquare.png 0"
@@ -1467,11 +1466,6 @@ centered = false
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Path2D12/PathFollow2D/skull12"]
 position = Vector2( 94.9885, 24.0942 )
 shape = SubResource( 51 )
-
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 40 )
-volume_db = -10.0
-autoplay = true
 
 [connection signal="body_entered" from="pick/Area2D" to="pick" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="pick/Area2D" to="pick" method="_on_Area2D_body_exited"]

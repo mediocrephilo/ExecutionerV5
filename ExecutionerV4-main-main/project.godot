@@ -53,6 +53,7 @@ Girlsong="*res://global/girlsong.tscn"
 CitySound2="*res://global/CitySound2.tscn"
 RoomSound="*res://global/RoomSound.tscn"
 Boysong="*res://global/boysong.tscn"
+ObstacleSound="*res://global/ObstacleSound.tscn"
 
 [display]
 

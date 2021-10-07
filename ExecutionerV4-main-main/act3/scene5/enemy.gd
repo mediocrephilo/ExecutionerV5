@@ -31,4 +31,6 @@ func _on_Area2D_body_entered(body):
 		GameOver.transition("res://act3/scene5/obstaclecouse.tscn")
 		GameOver.change(true)
 		Transition.change_scene("res://global/gameover/gameOver.tscn")
+		CitySound.stopsound()
+		ObstacleSound.stopsound()
 	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=49 format=2]
+[gd_scene load_steps=50 format=2]
 
 [ext_resource path="res://sprites/act 2 setting/scene 4/sky.png" type="Texture" id=1]
 [ext_resource path="res://act3/scene5/player2.gd" type="Script" id=2]
@@ -35,6 +35,7 @@
 [ext_resource path="res://act3/scene5/Area2D2.gd" type="Script" id=33]
 [ext_resource path="res://act3/scene5/Area2D3.gd" type="Script" id=34]
 [ext_resource path="res://act3/scene5/obstaclecouse.gd" type="Script" id=35]
+[ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=36]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 487.299, 71.4017 )
@@ -60,11 +61,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 25 ) ],
 "loop": true,
 "name": "fall",
@@ -73,6 +69,11 @@ animations = [ {
 "frames": [ ExtResource( 22 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -306,7 +307,9 @@ limit_top = -10900
 limit_right = 6000
 limit_bottom = 2160
 
-[node name="Walk" type="AudioStreamPlayer2D" parent="player2"]
+[node name="Walk" type="AudioStreamPlayer" parent="player2"]
+stream = ExtResource( 36 )
+pitch_scale = 1.12
 
 [node name="KinematicBody2D2" parent="." instance=ExtResource( 9 )]
 position = Vector2( 1859.54, 1356.03 )
