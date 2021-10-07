@@ -1,4 +1,4 @@
-[gd_scene load_steps=42 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://sprites/Act1settings/sceneone/dark filter.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act3settings/desk1.png" type="Texture" id=2]
@@ -28,6 +28,7 @@
 [ext_resource path="res://sprites/act3settings/shelf1.png" type="Texture" id=26]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=27]
 [ext_resource path="res://sounds/Squeaky-Wooden-Floor-Footsteps--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=28]
+[ext_resource path="res://sounds/menu1.wav" type="AudioStream" id=29]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -582,6 +583,11 @@ shape = SubResource( 12 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
 position = Vector2( 11354.9, 927.343 )
 shape = SubResource( 13 )
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 29 )
+volume_db = -5.0
+autoplay = true
 
 [connection signal="body_entered" from="book" to="book" method="_on_book_body_entered"]
 [connection signal="body_exited" from="book" to="book" method="_on_book_body_exited"]

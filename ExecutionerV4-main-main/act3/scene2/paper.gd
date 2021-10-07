@@ -5,6 +5,7 @@ func _ready():
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_accept") and canInteract == true:
+		$AudioStreamPlayer.play()
 		Transition.change_scene("act3/scene2/news.tscn")
 		
 func _on_paper_body_entered(body):
