@@ -26,7 +26,7 @@ func _ready():
 	load_reddialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		if dialogue_index2 == 1 and dialogue_index == 0:
 			load_dialogue()

@@ -181,7 +181,6 @@ autoplay = "New Anim"
 stream = ExtResource( 15 )
 
 [node name="dialoguebox2" type="Control" parent="dialoguebox"]
-visible = false
 margin_left = 392.955
 margin_top = 1191.54
 margin_right = 432.955

@@ -6,7 +6,7 @@ var dialogue = [
 		"Getting a little worn out, are we? I'll say, if the Eali Corps were full of people like you, it would've made my job much easier.",
 		"Oh, don't look at me like that. Although, I suppose it's not a good idea to insult the executioner overseeing my, well, execution . . . ",
 		"Not a very talkative one, huh? No matter. It's been a while since I've been able to talk so freely like this. Congragulations on the promotion, by the way.",
-		"You know, I think this conversation is going fairly well, all things considered. I have a feeling you and I would've been great friends if, you know, you weren't out to kill me.",
+		"You know, I think this conversation is going fairly well, all things considered. I have a feeling you and I would've been great friends if, you know, you weren't out to murk me.",
 		". . . WHAT IS YOUR NAME?",
 		"Oh, this brings me back to-Excuse me?",
 		"I ASKED YOU FOR YOUR NAME. THE COUNCILORS CALL YOU TRAITOR, BUT I'M ASSUMING YOU PREFER TO BE CALLED SOMETHING ELSE.",
@@ -32,7 +32,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		
@@ -63,3 +63,5 @@ func _on_Tween_tween_completed(_object, _key):
 
 func _on_Control_tree_exited():
 	Transition.change_scene("res://act3/jailscenes/jail5.tscn")
+	ForestSound.stopsound()
+	HorrorSound.stopsound()
