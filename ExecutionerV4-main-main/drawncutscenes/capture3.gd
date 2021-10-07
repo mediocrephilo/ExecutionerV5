@@ -6,7 +6,7 @@ var dialogue = [
 		"Getting a little worn out, are we? I'll say, if the Eali Corps were full of people like you, it would've made my job much easier.",
 		"Oh, don't look at me like that. Although, I suppose it's not a good idea to insult the executioner overseeing my, well, execution . . . ",
 		"Not a very talkative one, huh? No matter. It's been a while since I've been able to talk so freely like this. Congragulations on the promotion, by the way.",
-		"You know, I think this conversation is going fairly well, all things considered. I have a feeling you and I would've been great friends. Maybe in another lifetime.",
+		"You know, I think this conversation is going fairly well, all things considered. I have a feeling you and I would've been great friends if, you know, you weren't out to kill me.",
 		". . . WHAT IS YOUR NAME?",
 		"Oh, this brings me back to-Excuse me?",
 		"I ASKED YOU FOR YOUR NAME. THE COUNCILORS CALL YOU TRAITOR, BUT I'M ASSUMING YOU PREFER TO BE CALLED SOMETHING ELSE.",
@@ -18,9 +18,9 @@ var dialogue = [
 		". . .  . . .",
 		"My name is Paris.",
 		"PARIS . . . THE FALLEN PRINCE.",
-		"You know your chronology, I'm impressed.",
+		"You know your fairy tales, I'm impressed.",
 		"I WILL REMEMBER YOU, PARIS . . . TRAITOR.",
-		"I'll hold you to that promise, Executioner 161."
+		"Well, as long as someone does. I'll hold you to that promise, 161."
 ]
 var dialogue_index = 0
 var finished = false

@@ -10,7 +10,7 @@ extends Node2D
 func _ready():
 	CitySound.playsound()
 	ObstacleSound.playsound()
-	gameSaver.save_game("res://Act3/scene5/obstaclecourse2.tscn")
+	gameSaver.save_game("res://Act3/scene5/obstaclecouse2.tscn")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

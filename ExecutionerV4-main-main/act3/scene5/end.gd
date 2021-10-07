@@ -8,8 +8,7 @@ func _ready():
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_interact") and canInteract == true:
-		print("sasdjfh")
-
+		Transition.change_scene("res://drawncutscenes/capture1.tscn")
 func _on_end_body_entered(body):
 	if body.name == "player2":
 		$Label.show()

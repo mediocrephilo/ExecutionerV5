@@ -49,6 +49,7 @@ func _process(_delta):
 		if dialogue_index == 3 and dialogue_index2 == 5:
 			load_dialogue()
 		if dialogue_index == 4 and dialogue_index2 == 5:
+			MilitaryMarch.stopsound()
 			Transition.change_scene("res://drawncutscenes/caprture3.tscn")
 			
 func load_dialogue():
