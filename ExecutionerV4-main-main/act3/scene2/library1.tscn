@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://sprites/act3settings/desk1.png" type="Texture" id=1]
 [ext_resource path="res://sprites/Act1settings/sceneone/dark filter.png" type="Texture" id=2]
@@ -16,6 +16,8 @@
 [ext_resource path="res://act3/scene2/book3.gd" type="Script" id=14]
 [ext_resource path="res://act3/scene2/book4.gd" type="Script" id=15]
 [ext_resource path="res://act3/scene2/library.gd" type="Script" id=16]
+[ext_resource path="res://player/playerLibrary.gd" type="Script" id=17]
+[ext_resource path="res://sounds/Squeaky-Wooden-Floor-Footsteps--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=18]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -224,6 +226,7 @@ flip_h = true
 
 [node name="player" parent="." instance=ExtResource( 8 )]
 position = Vector2( 3579.14, 1639.09 )
+script = ExtResource( 17 )
 
 [node name="Camera2D2" type="Camera2D" parent="player"]
 current = true
@@ -231,6 +234,10 @@ limit_left = 0
 limit_top = 0
 limit_right = 9338
 limit_bottom = 2160
+
+[node name="Walk2" type="AudioStreamPlayer" parent="player"]
+stream = ExtResource( 18 )
+pitch_scale = 0.7
 
 [node name="book" type="Area2D" parent="."]
 script = ExtResource( 11 )
@@ -514,6 +521,7 @@ shape = SubResource( 10 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="exit"]
 position = Vector2( 11354.9, 927.343 )
 shape = SubResource( 11 )
+
 [connection signal="body_entered" from="book" to="book" method="_on_book_body_entered"]
 [connection signal="body_exited" from="book" to="book" method="_on_book_body_exited"]
 [connection signal="tween_completed" from="book/dialoguebox/Tween" to="book" method="_on_Tween_tween_completed"]
