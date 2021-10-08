@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/soundbits_CHT2_Cinematic_Transition_101.mp3-9d70f53e4fa1b603e28343c02cbc4c0b.mp3str"
+
+[deps]
+
+source_file="res://sounds/soundbits_CHT2_Cinematic_Transition_101.mp3"
+dest_files=[ "res://.import/soundbits_CHT2_Cinematic_Transition_101.mp3-9d70f53e4fa1b603e28343c02cbc4c0b.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

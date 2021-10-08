@@ -15,6 +15,7 @@ var finished = false
 var interact = false
 
 func _ready():
+	HorrorSound.playsound()
 	$Sprite.hide()
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
@@ -50,4 +51,5 @@ func _on_Tween_tween_completed(_object, _key):
 
 
 func _on_Control_tree_exited():
-	Transition.change_scene("res://drawncutscenes/deadlol.tscn")
+	$AudioStreamPlayer.play()
+	get_tree().change_scene("res://drawncutscenes/deadbeforelol.tscn")
