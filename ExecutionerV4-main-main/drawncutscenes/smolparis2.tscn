@@ -105,6 +105,7 @@ script = ExtResource( 10 )
 position = Vector2( 1933.5, 1105.17 )
 scale = Vector2( 1.0027, 1.03152 )
 frames = SubResource( 1 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
@@ -112,7 +113,6 @@ modulate = Color( 1, 1, 1, 0 )
 position = Vector2( 1933.5, 1105.17 )
 scale = Vector2( 1.003, 1.032 )
 frames = SubResource( 2 )
-frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite2"]

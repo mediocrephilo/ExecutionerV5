@@ -11,8 +11,6 @@ var dialogue = [
 		"''GOOD. YOU WILL MAKE ME PROUD.''",
 		". . . Thank you, father. May I leave?",
 		"''OF COURSE. TODAY'S LESSON IS FINISHED.''",
-		"''. . .  . . .''",
-		"''I WONDER . . . HAS THE SACRIFICE BEEN WORTH IT? I SUPPOSE THE ONLY THING I CAN DO IS LIVE, UNTIL I AM JUDGED GUILTY.''",
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
 
@@ -21,6 +19,7 @@ var finished = false
 var interact = false
 
 func _ready():
+	MilitaryMarch.playsound()
 	$Control/Sprite.hide()
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()

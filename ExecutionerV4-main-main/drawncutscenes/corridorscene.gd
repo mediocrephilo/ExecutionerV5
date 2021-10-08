@@ -19,7 +19,7 @@ var dialogue = [
 		". . .  . . .  . . .",
 		
 		"You know what? if you want to act like that, fine.",
-		"I was only trying to hep you.",
+		"I was only trying to help you.",
 
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
@@ -66,6 +66,7 @@ func load_dialogue():
 			$AnimatedSprite.play("2")
 		if dialogue_index == 11:
 			$AnimatedSprite.play("4")
+			$AudioStreamPlayer4.play()
 		if dialogue_index == 12:
 			$AnimatedSprite.play("5")
 		if dialogue_index == 13:

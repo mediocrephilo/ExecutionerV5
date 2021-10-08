@@ -26,6 +26,7 @@ var finished = false
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	MilitaryMarch.stopsound()
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
 	$Sprite/AnimationPlayer.play("New Anim")

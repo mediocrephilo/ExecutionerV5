@@ -11,5 +11,5 @@ dest_files=[ "res://.import/zapsplat_foley_footstep_single_boys_sneaker_on_concr
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

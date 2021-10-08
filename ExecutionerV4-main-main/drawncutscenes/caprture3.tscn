@@ -1,4 +1,4 @@
-[gd_scene load_steps=13 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://drawncutscenes/capture6.png" type="Texture" id=1]
 [ext_resource path="res://drawncutscenes/capture5.png" type="Texture" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://drawncutscenes/caprture3.gd" type="Script" id=7]
 [ext_resource path="res://sounds/menu1.wav" type="AudioStream" id=8]
 [ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=9]
+[ext_resource path="res://sprites/UI/dialoguebox.png" type="Texture" id=10]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -54,7 +55,6 @@ script = ExtResource( 7 )
 position = Vector2( 2039.47, 1215.54 )
 scale = Vector2( 1.08693, 1.15963 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="Control" type="Control" parent="."]
@@ -69,9 +69,15 @@ __meta__ = {
 stream = ExtResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="Control"]
-position = Vector2( 2103.67, 1853.87 )
-scale = Vector2( 2.07225, 1.25363 )
+position = Vector2( 2103.67, 1907.13 )
+scale = Vector2( 2.07225, 1.46666 )
 texture = ExtResource( 4 )
+
+[node name="Sprite2" type="Sprite" parent="Control"]
+visible = false
+position = Vector2( 2111.88, 1896.98 )
+scale = Vector2( 2.06376, 1.43473 )
+texture = ExtResource( 10 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="Control"]
 anchor_left = 16.7
@@ -81,7 +87,7 @@ anchor_bottom = 47.325
 margin_left = 107.0
 margin_top = 38.0
 margin_right = 130.0
-margin_bottom = 160.0
+margin_bottom = 245.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
