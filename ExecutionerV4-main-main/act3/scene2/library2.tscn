@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=45 format=2]
 
 [ext_resource path="res://sprites/Act1settings/sceneone/dark filter.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act3settings/desk1.png" type="Texture" id=2]
@@ -28,20 +28,11 @@
 [ext_resource path="res://sprites/act3settings/shelf1.png" type="Texture" id=26]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=27]
 [ext_resource path="res://sounds/Squeaky-Wooden-Floor-Footsteps--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=28]
-[ext_resource path="res://sounds/menu1.wav" type="AudioStream" id=29]
+[ext_resource path="res://act3/scene2/Sa.gd" type="Script" id=29]
+[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=30]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 5 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "jump",
@@ -50,6 +41,16 @@ animations = [ {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 5 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -180,6 +181,9 @@ extents = Vector2( 6718.83, 415.299 )
 [sub_resource type="RectangleShape2D" id=13]
 extents = Vector2( 512.161, 1810.08 )
 
+[sub_resource type="RectangleShape2D" id=14]
+extents = Vector2( 7265.15, 575.157 )
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 20 )
 
@@ -262,7 +266,7 @@ flip_h = true
 [node name="Sprite5" type="Sprite" parent="background"]
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( 1440.04, 363.516 )
+position = Vector2( 1495.13, 376.706 )
 script = ExtResource( 22 )
 __meta__ = {
 "_edit_group_": true
@@ -277,9 +281,8 @@ animation = "fall"
 position = Vector2( 50.0258, 1243.97 )
 shape = SubResource( 2 )
 
-[node name="Walk" type="AudioStreamPlayer" parent="player"]
+[node name="Walk" type="AudioStreamPlayer2D" parent="player"]
 stream = ExtResource( 28 )
-pitch_scale = 0.7
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2( 96.7164, 1253.98 )
@@ -312,6 +315,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book/dialoguebox"]
+stream = ExtResource( 30 )
 
 [node name="TextureRect" type="TextureRect" parent="book/dialoguebox"]
 margin_right = 1500.0
@@ -519,6 +523,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book4/dialoguebox"]
+stream = ExtResource( 30 )
 
 [node name="TextureRect" type="TextureRect" parent="book4/dialoguebox"]
 margin_right = 1500.0
@@ -584,10 +589,12 @@ shape = SubResource( 12 )
 position = Vector2( 11354.9, 927.343 )
 shape = SubResource( 13 )
 
-[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 29 )
-volume_db = -5.0
-autoplay = true
+[node name="Area2D" type="Area2D" parent="."]
+script = ExtResource( 29 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D"]
+position = Vector2( 5017.75, 2763.84 )
+shape = SubResource( 14 )
 
 [connection signal="body_entered" from="book" to="book" method="_on_book_body_entered"]
 [connection signal="body_exited" from="book" to="book" method="_on_book_body_exited"]
@@ -602,3 +609,4 @@ autoplay = true
 [connection signal="body_exited" from="book4" to="book4" method="_on_book4_body_exited"]
 [connection signal="tween_completed" from="book4/dialoguebox/Tween" to="book4" method="_on_Tween_tween_completed"]
 [connection signal="body_entered" from="exit" to="." method="_on_exit_body_entered"]
+[connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]

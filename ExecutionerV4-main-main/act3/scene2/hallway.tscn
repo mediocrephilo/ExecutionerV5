@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=21 format=2]
 
 [ext_resource path="res://act3/scene2/Area2D3.gd" type="Script" id=1]
 [ext_resource path="res://act3/scene2/Area2D.gd" type="Script" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://sounds/Squeaky-Wooden-Floor-Footsteps--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=10]
 [ext_resource path="res://sounds/Closing-Squeaky-Door-1-www.fesliyanstudios.com.wav" type="AudioStream" id=11]
 [ext_resource path="res://player/playerLibrary.gd" type="Script" id=12]
+[ext_resource path="res://act3/scene2/hallway.gd" type="Script" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -41,6 +42,7 @@ extents = Vector2( 99.0625, 967.65 )
 extents = Vector2( 284.223, 535.892 )
 
 [node name="Node2D" type="Node2D"]
+script = ExtResource( 13 )
 
 [node name="wall" type="Sprite" parent="."]
 position = Vector2( 1958.01, 1052.95 )

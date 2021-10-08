@@ -30,16 +30,6 @@ extents = Vector2( 173.753, 1948.1 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 11 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 11 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 6 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "jump",
@@ -48,6 +38,16 @@ animations = [ {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 13 ), ExtResource( 16 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 6 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 11 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -257,7 +257,6 @@ shape = SubResource( 6 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 21 )
-autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]

@@ -22,6 +22,8 @@ var finished = false
 var interact = false
 
 func _ready():
+	Pariswaltz.stopsound()
+	MilitaryMarch.playsound()
 	$Sprite.hide()
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
