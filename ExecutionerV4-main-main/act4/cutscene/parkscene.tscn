@@ -16,6 +16,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 4 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "2",
@@ -24,11 +29,6 @@ animations = [ {
 "frames": [ ExtResource( 9 ), ExtResource( 6 ) ],
 "loop": true,
 "name": "1",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 3 ) ],
-"loop": true,
-"name": "3",
 "speed": 5.0
 } ]
 
@@ -77,6 +77,7 @@ position = Vector2( 1888.4, 1081.94 )
 scale = Vector2( 1.0334, 1.00999 )
 frames = SubResource( 1 )
 animation = "1"
+frame = 1
 playing = true
 
 [node name="Tween" type="Tween" parent="Control"]

@@ -39,16 +39,6 @@ height = 249.157
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 4 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 1 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 16 ) ],
 "loop": true,
 "name": "fall",
@@ -57,6 +47,16 @@ animations = [ {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 7 ), ExtResource( 9 ), ExtResource( 8 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 3 ), ExtResource( 1 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -73,13 +73,13 @@ extents = Vector2( 957.031, 555.462 )
 extents = Vector2( 75541.9, 531.525 )
 
 [sub_resource type="RectangleShape2D" id=7]
-extents = Vector2( 212.734, 60.959 )
+extents = Vector2( 184.059, 60.959 )
 
 [sub_resource type="RectangleShape2D" id=8]
-extents = Vector2( 220.902, 56.4849 )
+extents = Vector2( 178.605, 56.4849 )
 
 [sub_resource type="RectangleShape2D" id=9]
-extents = Vector2( 208.73, 77.6323 )
+extents = Vector2( 173.922, 77.6323 )
 
 [sub_resource type="RectangleShape2D" id=10]
 extents = Vector2( 1746.94, 235.155 )
@@ -88,7 +88,7 @@ extents = Vector2( 1746.94, 235.155 )
 extents = Vector2( 955.973, 120.887 )
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 985.938, 91.5921 )
+extents = Vector2( 885.352, 91.5921 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 30 )
@@ -955,7 +955,7 @@ shape = SubResource( 11 )
 script = ExtResource( 29 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D8"]
-position = Vector2( 48149.2, 2711.2 )
+position = Vector2( 48133.2, 2702.3 )
 shape = SubResource( 12 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]

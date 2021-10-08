@@ -27,6 +27,7 @@ var finished = false
 var interact = false
 
 func _ready():
+	Cassysong.stopsound()
 	$Sprite.hide()
 	$AnimatedSprite.play("3")
 	yield(get_tree().create_timer(1), "timeout")

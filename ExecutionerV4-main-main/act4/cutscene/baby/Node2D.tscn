@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=2]
+[gd_scene load_steps=20 format=2]
 
 [ext_resource path="res://drawncutscenes/act4cutscene13.png" type="Texture" id=1]
 [ext_resource path="res://drawncutscenes/act4cutscene15.png" type="Texture" id=2]
@@ -15,17 +15,18 @@
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=13]
 [ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=14]
 [ext_resource path="res://sounds/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3" type="AudioStream" id=15]
+[ext_resource path="res://sounds/cassy.wav" type="AudioStream" id=16]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 1 ), ExtResource( 10 ) ],
-"loop": true,
-"name": "2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 2 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "3",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 10 ) ],
+"loop": true,
+"name": "2",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ), ExtResource( 5 ) ],
@@ -92,7 +93,7 @@ __meta__ = {
 position = Vector2( 1932.8, 1042.72 )
 scale = Vector2( 1.03311, 1.16752 )
 frames = SubResource( 3 )
-frame = 2
+frame = 1
 speed_scale = 0.25
 playing = true
 flip_h = true
@@ -100,6 +101,11 @@ flip_v = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 15 )
+autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 16 )
+volume_db = -7.573
 autoplay = true
 
 [connection signal="tree_exited" from="Control" to="Control" method="_on_Control_tree_exited"]

@@ -1,49 +1,49 @@
 [gd_scene load_steps=54 format=2]
 
-[ext_resource path="res://sprites/act4setting/scene 1/snowfall2.png" type="Texture" id=1]
-[ext_resource path="res://sprites/Act1settings/sceneone/middle tree.png" type="Texture" id=2]
-[ext_resource path="res://sprites/act4setting/scene 1/cloudbg.png" type="Texture" id=3]
-[ext_resource path="res://sprites/act4setting/scene 1/snowpath.png" type="Texture" id=4]
-[ext_resource path="res://sprites/Act1settings/sceneone/back tree.png" type="Texture" id=5]
-[ext_resource path="res://sprites/Act1settings/sceneone/front tree.png" type="Texture" id=6]
-[ext_resource path="res://sprites/act4setting/scene 1/snowfall1.png" type="Texture" id=7]
-[ext_resource path="res://sprites/act4setting/scene 1/snow.png" type="Texture" id=8]
-[ext_resource path="res://sprites/act4setting/scene 1/snowfall1 copy.png" type="Texture" id=9]
-[ext_resource path="res://sprites/Act1settings/scenefive/pillar.png" type="Texture" id=10]
-[ext_resource path="res://sprites/act4setting/scene 1/snowfall2 copy.png" type="Texture" id=11]
-[ext_resource path="res://movingwood.tscn" type="PackedScene" id=12]
-[ext_resource path="res://sprites/act4setting/scene 1/snowblock.png" type="Texture" id=13]
-[ext_resource path="res://sprites/characters/right walk 2.png" type="Texture" id=14]
-[ext_resource path="res://sprites/characters/jump 1.png" type="Texture" id=15]
-[ext_resource path="res://sprites/characters/right walk 8.png" type="Texture" id=16]
-[ext_resource path="res://sprites/characters/right walk 3.png" type="Texture" id=17]
-[ext_resource path="res://player.gd" type="Script" id=18]
-[ext_resource path="res://sprites/characters/right walk 7.png" type="Texture" id=19]
-[ext_resource path="res://sprites/characters/right walk 5.png" type="Texture" id=20]
-[ext_resource path="res://sprites/characters/idle right 1.png" type="Texture" id=21]
-[ext_resource path="res://sprites/characters/idle right 2.png" type="Texture" id=22]
-[ext_resource path="res://sprites/characters/right walk 6.png" type="Texture" id=23]
-[ext_resource path="res://sprites/characters/fall.png" type="Texture" id=24]
-[ext_resource path="res://sprites/characters/right walk 4.png" type="Texture" id=25]
-[ext_resource path="res://act4/scene1/AnimatedSprite.gd" type="Script" id=26]
+[ext_resource path="res://movingwood.tscn" type="PackedScene" id=1]
+[ext_resource path="res://act4/scene1/enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://act4/scene1/act4scene1.gd" type="Script" id=3]
+[ext_resource path="res://sprites/act4setting/scene 1/snowfall1 copy.png" type="Texture" id=4]
+[ext_resource path="res://sprites/Act1settings/scenefive/pillar.png" type="Texture" id=5]
+[ext_resource path="res://sprites/characters/right walk 7.png" type="Texture" id=6]
+[ext_resource path="res://sprites/characters/right walk 5.png" type="Texture" id=7]
+[ext_resource path="res://sprites/characters/idle right 1.png" type="Texture" id=8]
+[ext_resource path="res://sprites/characters/idle right 2.png" type="Texture" id=9]
+[ext_resource path="res://sprites/characters/right walk 6.png" type="Texture" id=10]
+[ext_resource path="res://sprites/characters/fall.png" type="Texture" id=11]
+[ext_resource path="res://act4/scene1/AnimatedSprite.gd" type="Script" id=12]
+[ext_resource path="res://sprites/act4setting/scene 1/cloudbg.png" type="Texture" id=13]
+[ext_resource path="res://sprites/characters/jump 1.png" type="Texture" id=14]
+[ext_resource path="res://sprites/characters/right walk 8.png" type="Texture" id=15]
+[ext_resource path="res://sprites/characters/right walk 3.png" type="Texture" id=16]
+[ext_resource path="res://sprites/act 2 setting/scene 3/gun.png" type="Texture" id=17]
+[ext_resource path="res://act4/scene1/Path2D.gd" type="Script" id=18]
+[ext_resource path="res://sprites/act4setting/scene 1/brokensnowman1.png" type="Texture" id=19]
+[ext_resource path="res://act4/scene1/snowman.gd" type="Script" id=20]
+[ext_resource path="res://sounds/Walking-sound-snow.wav" type="AudioStream" id=21]
+[ext_resource path="res://act4/scene1/gun2.gd" type="Script" id=22]
+[ext_resource path="res://sounds/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3" type="AudioStream" id=23]
+[ext_resource path="res://act4/scene1/snowball.tscn" type="PackedScene" id=24]
+[ext_resource path="res://act4/scene1/gun3.gd" type="Script" id=25]
+[ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=26]
 [ext_resource path="res://sprites/act4setting/scene 1/brokensnowman2.png" type="Texture" id=27]
-[ext_resource path="res://sprites/act4setting/scene 1/brokensnowman1.png" type="Texture" id=28]
-[ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=29]
-[ext_resource path="res://act4/scene1/enemy.tscn" type="PackedScene" id=30]
-[ext_resource path="res://act4/scene1/snowman.gd" type="Script" id=31]
-[ext_resource path="res://act4/scene1/Path2D.gd" type="Script" id=32]
-[ext_resource path="res://sprites/act 2 setting/scene 3/gun.png" type="Texture" id=33]
-[ext_resource path="res://act4/scene1/gun.gd" type="Script" id=34]
-[ext_resource path="res://act4/scene1/snowball.tscn" type="PackedScene" id=35]
-[ext_resource path="res://act4/scene1/gun2.gd" type="Script" id=36]
-[ext_resource path="res://act4/scene1/gun3.gd" type="Script" id=37]
-[ext_resource path="res://sounds/Walking-sound-snow.wav" type="AudioStream" id=38]
-[ext_resource path="res://act4/scene1/act4scene1.gd" type="Script" id=39]
-[ext_resource path="res://sounds/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3" type="AudioStream" id=40]
+[ext_resource path="res://sprites/characters/right walk 4.png" type="Texture" id=28]
+[ext_resource path="res://sprites/act4setting/scene 1/snowblock.png" type="Texture" id=29]
+[ext_resource path="res://sprites/characters/right walk 2.png" type="Texture" id=30]
+[ext_resource path="res://sprites/act4setting/scene 1/snowfall2 copy.png" type="Texture" id=31]
+[ext_resource path="res://act4/scene1/gun.gd" type="Script" id=32]
+[ext_resource path="res://sprites/act4setting/scene 1/snowpath.png" type="Texture" id=33]
+[ext_resource path="res://sprites/act4setting/scene 1/snow.png" type="Texture" id=34]
+[ext_resource path="res://sprites/Act1settings/sceneone/front tree.png" type="Texture" id=35]
+[ext_resource path="res://sprites/Act1settings/sceneone/back tree.png" type="Texture" id=36]
+[ext_resource path="res://player.gd" type="Script" id=37]
+[ext_resource path="res://sprites/act4setting/scene 1/snowfall1.png" type="Texture" id=38]
+[ext_resource path="res://sprites/act4setting/scene 1/snowfall2.png" type="Texture" id=39]
+[ext_resource path="res://sprites/Act1settings/sceneone/middle tree.png" type="Texture" id=40]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 7 ), ExtResource( 1 ), ExtResource( 11 ), ExtResource( 7 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 38 ), ExtResource( 39 ), ExtResource( 31 ), ExtResource( 38 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -71,22 +71,22 @@ extents = Vector2( 1199.61, 114.416 )
 
 [sub_resource type="SpriteFrames" id=8]
 animations = [ {
-"frames": [ ExtResource( 24 ) ],
+"frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 15 ) ],
+"frames": [ ExtResource( 14 ) ],
 "loop": true,
 "name": "jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 22 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 25 ), ExtResource( 20 ), ExtResource( 23 ), ExtResource( 19 ), ExtResource( 16 ) ],
+"frames": [ ExtResource( 9 ), ExtResource( 30 ), ExtResource( 16 ), ExtResource( 28 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "walk",
 "speed": 5.0
@@ -101,7 +101,7 @@ extents = Vector2( 125.827, 350.761 )
 
 [sub_resource type="SpriteFrames" id=11]
 animations = [ {
-"frames": [ ExtResource( 28 ), ExtResource( 27 ) ],
+"frames": [ ExtResource( 19 ), ExtResource( 27 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -112,10 +112,10 @@ extents = Vector2( 136.717, 48.0395 )
 
 [sub_resource type="DynamicFont" id=13]
 size = 100
-font_data = ExtResource( 29 )
+font_data = ExtResource( 26 )
 
 [node name="Node2D" type="Node2D"]
-script = ExtResource( 39 )
+script = ExtResource( 3 )
 
 [node name="background" type="ParallaxBackground" parent="."]
 layer = -103
@@ -125,7 +125,7 @@ motion_mirroring = Vector2( 3840, 0 )
 
 [node name="Sprite" type="Sprite" parent="background/ParallaxLayer"]
 position = Vector2( 1920.26, 1075.81 )
-texture = ExtResource( 3 )
+texture = ExtResource( 13 )
 
 [node name="snow" type="ParallaxBackground" parent="."]
 
@@ -134,7 +134,7 @@ motion_mirroring = Vector2( 3840, 0 )
 
 [node name="Sprite" type="Sprite" parent="snow/ParallaxLayer"]
 position = Vector2( 1916.79, 1169.2 )
-texture = ExtResource( 8 )
+texture = ExtResource( 34 )
 
 [node name="snow2" type="ParallaxBackground" parent="."]
 layer = 1
@@ -146,7 +146,7 @@ motion_mirroring = Vector2( 3840, 0 )
 [node name="Sprite" type="Sprite" parent="snow2/ParallaxLayer"]
 position = Vector2( 1920.26, 1577.2 )
 z_index = 2
-texture = ExtResource( 8 )
+texture = ExtResource( 34 )
 
 [node name="backtree" type="ParallaxBackground" parent="."]
 layer = -102
@@ -158,7 +158,7 @@ motion_mirroring = Vector2( 7680, 0 )
 [node name="Sprite" type="Sprite" parent="backtree/ParallaxLayer"]
 position = Vector2( 3738.14, 958.51 )
 z_index = 2
-texture = ExtResource( 5 )
+texture = ExtResource( 36 )
 
 [node name="midtree" type="ParallaxBackground" parent="."]
 layer = -102
@@ -172,7 +172,7 @@ motion_mirroring = Vector2( 7680, 0 )
 [node name="Sprite" type="Sprite" parent="midtree/ParallaxLayer"]
 position = Vector2( 3798.56, 964.552 )
 z_index = 2
-texture = ExtResource( 2 )
+texture = ExtResource( 40 )
 
 [node name="fronttree" type="ParallaxBackground" parent="."]
 layer = 5
@@ -186,49 +186,42 @@ motion_mirroring = Vector2( 7680, 0 )
 position = Vector2( 3031.43, 1050.85 )
 scale = Vector2( 1, 1.17522 )
 z_index = 2
-texture = ExtResource( 6 )
+texture = ExtResource( 35 )
 
 [node name="Sprite" type="Sprite" parent="."]
 position = Vector2( 1937.44, 1134.62 )
 z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="Sprite2" type="Sprite" parent="."]
 position = Vector2( 5734.31, 1092.12 )
 z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 9539.6, 1100.57 )
 z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="Sprite4" type="Sprite" parent="."]
 position = Vector2( 13203.2, 1118.24 )
 z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="Sprite5" type="Sprite" parent="."]
 position = Vector2( 16964.3, 1113.94 )
 z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="Sprite6" type="Sprite" parent="."]
 position = Vector2( 20736, 1112.7 )
 z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="Sprite7" type="Sprite" parent="."]
-position = Vector2( 24397.8, 1112.7 )
-scale = Vector2( 1.001, 1 )
+position = Vector2( 24395.9, 1112.7 )
 z_index = 2
-texture = ExtResource( 4 )
-
-[node name="Sprite8" type="Sprite" parent="."]
-position = Vector2( 25239.7, 1112.7 )
-scale = Vector2( 1.4395, 1 )
-z_index = 2
-texture = ExtResource( 4 )
+texture = ExtResource( 33 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1898.99, 1095.11 )
@@ -236,7 +229,7 @@ z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 5612.93, 967.445 )
@@ -244,7 +237,7 @@ z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="."]
 position = Vector2( 9418.05, 1079.58 )
@@ -252,7 +245,7 @@ z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="."]
 position = Vector2( 13193.3, 1049.68 )
@@ -260,7 +253,7 @@ z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="AnimatedSprite5" type="AnimatedSprite" parent="."]
 position = Vector2( 16766.7, 1087.06 )
@@ -268,7 +261,7 @@ z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="AnimatedSprite6" type="AnimatedSprite" parent="."]
 position = Vector2( 20497, 1034.73 )
@@ -276,78 +269,78 @@ z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="AnimatedSprite7" type="AnimatedSprite" parent="."]
-position = Vector2( 24339.5, 967.445 )
+position = Vector2( 24347, 967.445 )
 z_index = 100
 frames = SubResource( 1 )
 frame = 2
 speed_scale = 0.5
-script = ExtResource( 26 )
+script = ExtResource( 12 )
 
 [node name="block" type="Sprite" parent="."]
 position = Vector2( 2544.53, 1366.81 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block2" type="Sprite" parent="."]
 position = Vector2( 3563.99, 988.444 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block5" type="Sprite" parent="."]
 position = Vector2( 15623.4, 1409.68 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block6" type="Sprite" parent="."]
 position = Vector2( 16880, 931.629 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block7" type="Sprite" parent="."]
 position = Vector2( 18080.7, 1259.56 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block8" type="Sprite" parent="."]
 position = Vector2( 19518.9, 1547.19 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block9" type="Sprite" parent="."]
 position = Vector2( 20945.4, 1427.29 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block3" type="Sprite" parent="."]
 position = Vector2( 7417.13, 659.914 )
 scale = Vector2( 2.18376, 1.34319 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="block4" type="Sprite" parent="."]
 position = Vector2( 11922.8, 764.927 )
 scale = Vector2( 5.31335, 2.13885 )
-texture = ExtResource( 13 )
+texture = ExtResource( 29 )
 
 [node name="wall" type="Sprite" parent="."]
 position = Vector2( 4296.73, 1402.54 )
 scale = Vector2( 0.368701, 0.808801 )
 z_index = 4
-texture = ExtResource( 10 )
+texture = ExtResource( 5 )
 
 [node name="wall2" type="Sprite" parent="."]
 position = Vector2( 14375.8, 1509.53 )
 scale = Vector2( 0.368701, 0.808801 )
 z_index = 4
-texture = ExtResource( 10 )
+texture = ExtResource( 5 )
 
 [node name="Path2D" type="Path2D" parent="."]
 position = Vector2( 5092.89, 1115.24 )
 scale = Vector2( 0.75464, 1 )
 curve = SubResource( 2 )
-script = ExtResource( 32 )
+script = ExtResource( 18 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -357,7 +350,7 @@ position = Vector2( -587.983, 66.7803 )
 offset = 17.4738
 rotate = false
 
-[node name="KinematicBody2D" parent="Path2D/PathFollow2D" instance=ExtResource( 12 )]
+[node name="KinematicBody2D" parent="Path2D/PathFollow2D" instance=ExtResource( 1 )]
 
 [node name="Node2D" type="Node2D" parent="."]
 position = Vector2( 5380.25, 1316.39 )
@@ -377,7 +370,7 @@ position = Vector2( 24884.9, 1478.88 )
 shape = SubResource( 3 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( 13882.9, 2503.38 )
+position = Vector2( 13897.9, 2503.38 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
@@ -433,15 +426,15 @@ shape = SubResource( 7 )
 [node name="gun" type="KinematicBody2D" parent="."]
 position = Vector2( 15602.2, 265.941 )
 rotation = 1.74533
-script = ExtResource( 34 )
+script = ExtResource( 32 )
 detect_radius = 1000
-Bullet = ExtResource( 35 )
+Bullet = ExtResource( 24 )
 
 [node name="Sprite" type="Sprite" parent="gun"]
 position = Vector2( 10.8594, 104.528 )
 rotation = 0.406662
 scale = Vector2( 0.710964, 0.636029 )
-texture = ExtResource( 33 )
+texture = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="gun"]
 
@@ -452,14 +445,14 @@ position = Vector2( 182.176, 355.962 )
 
 [node name="gun3" type="KinematicBody2D" parent="."]
 position = Vector2( 17859.6, 278.069 )
-script = ExtResource( 37 )
+script = ExtResource( 25 )
 detect_radius = 1000
-Bullet = ExtResource( 35 )
+Bullet = ExtResource( 24 )
 
 [node name="Sprite" type="Sprite" parent="gun3"]
 position = Vector2( 10.8594, 104.528 )
 scale = Vector2( 0.710964, 0.636029 )
-texture = ExtResource( 33 )
+texture = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="gun3"]
 
@@ -470,14 +463,14 @@ position = Vector2( -543.883, 58.7981 )
 
 [node name="gun4" type="KinematicBody2D" parent="."]
 position = Vector2( 19575.3, 296.618 )
-script = ExtResource( 37 )
+script = ExtResource( 25 )
 detect_radius = 1000
-Bullet = ExtResource( 35 )
+Bullet = ExtResource( 24 )
 
 [node name="Sprite" type="Sprite" parent="gun4"]
 position = Vector2( 10.8594, 104.528 )
 scale = Vector2( 0.710964, 0.636029 )
-texture = ExtResource( 33 )
+texture = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="gun4"]
 
@@ -488,14 +481,14 @@ position = Vector2( -654.129, 316.04 )
 
 [node name="gun6" type="KinematicBody2D" parent="."]
 position = Vector2( 22852.3, 593.871 )
-script = ExtResource( 37 )
+script = ExtResource( 25 )
 detect_radius = 1000
-Bullet = ExtResource( 35 )
+Bullet = ExtResource( 24 )
 
 [node name="Sprite" type="Sprite" parent="gun6"]
 position = Vector2( 10.8594, 104.528 )
 scale = Vector2( 0.710964, 0.636029 )
-texture = ExtResource( 33 )
+texture = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="gun6"]
 
@@ -507,14 +500,14 @@ position = Vector2( -470.385, 146.995 )
 [node name="gun2" type="KinematicBody2D" parent="."]
 position = Vector2( 17193.6, 1604.48 )
 z_index = 2
-script = ExtResource( 36 )
+script = ExtResource( 22 )
 detect_radius = 1000
-Bullet = ExtResource( 35 )
+Bullet = ExtResource( 24 )
 
 [node name="Sprite" type="Sprite" parent="gun2"]
 position = Vector2( 10.8594, 104.528 )
 scale = Vector2( 0.710964, 0.636029 )
-texture = ExtResource( 33 )
+texture = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="gun2"]
 
@@ -526,14 +519,14 @@ position = Vector2( -543.883, -7.34961 )
 [node name="gun5" type="KinematicBody2D" parent="."]
 position = Vector2( 21676.2, 1800.67 )
 z_index = 2
-script = ExtResource( 36 )
+script = ExtResource( 22 )
 detect_radius = 1000
-Bullet = ExtResource( 35 )
+Bullet = ExtResource( 24 )
 
 [node name="Sprite" type="Sprite" parent="gun5"]
 position = Vector2( 10.8594, 104.528 )
 scale = Vector2( 0.710964, 0.636029 )
-texture = ExtResource( 33 )
+texture = ExtResource( 17 )
 
 [node name="Timer" type="Timer" parent="gun5"]
 
@@ -543,8 +536,11 @@ position = Vector2( -529.184, 14.6996 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="gun5/visibility"]
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( 21.3153, -87.886 )
-script = ExtResource( 18 )
+position = Vector2( 13648.9, -1226.26 )
+script = ExtResource( 37 )
+__meta__ = {
+"_edit_group_": true
+}
 
 [node name="playerSprite" type="AnimatedSprite" parent="player"]
 position = Vector2( 779.075, 1818.1 )
@@ -560,7 +556,7 @@ z_index = 10
 shape = SubResource( 9 )
 
 [node name="Walk" type="AudioStreamPlayer" parent="player"]
-stream = ExtResource( 38 )
+stream = ExtResource( 21 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 position = Vector2( 1985.87, 1910.7 )
@@ -569,30 +565,30 @@ limit_left = 0
 limit_top = 0
 limit_bottom = 2160
 
-[node name="KinematicBody2D3" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D3" parent="." instance=ExtResource( 2 )]
 position = Vector2( 1375.55, 1899.37 )
 z_index = 10
 
-[node name="KinematicBody2D20" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D20" parent="." instance=ExtResource( 2 )]
 position = Vector2( 7101.05, 530.207 )
 z_index = 10
 
-[node name="KinematicBody2D21" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D21" parent="." instance=ExtResource( 2 )]
 position = Vector2( 4604.53, 1792.33 )
 z_index = 10
 
-[node name="KinematicBody2D22" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D22" parent="." instance=ExtResource( 2 )]
 position = Vector2( 10946.5, 625.081 )
 z_index = 10
 
-[node name="KinematicBody2D23" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D23" parent="." instance=ExtResource( 2 )]
 position = Vector2( 12870.6, 634.048 )
 z_index = 10
 
-[node name="KinematicBody2D2" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D2" parent="." instance=ExtResource( 2 )]
 position = Vector2( 3263.27, 893.085 )
 
-[node name="KinematicBody2D4" parent="." instance=ExtResource( 30 )]
+[node name="KinematicBody2D4" parent="." instance=ExtResource( 2 )]
 position = Vector2( 2859.81, 1241.67 )
 
 [node name="StaticBody2D2" type="StaticBody2D" parent="."]
@@ -600,7 +596,7 @@ position = Vector2( 2859.81, 1241.67 )
 [node name="Sprite" type="Sprite" parent="StaticBody2D2"]
 position = Vector2( 12039.9, 424.959 )
 scale = Vector2( 0.324402, 0.344041 )
-texture = ExtResource( 10 )
+texture = ExtResource( 5 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D2"]
 position = Vector2( 12029.7, 432.59 )
@@ -608,7 +604,7 @@ shape = SubResource( 10 )
 
 [node name="snowman" type="Area2D" parent="."]
 position = Vector2( 24245.8, 1790.43 )
-script = ExtResource( 31 )
+script = ExtResource( 20 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -634,7 +630,7 @@ __meta__ = {
 }
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 40 )
+stream = ExtResource( 23 )
 autoplay = true
 
 [connection signal="timeout" from="gun/Timer" to="gun" method="_on_Timer_timeout"]

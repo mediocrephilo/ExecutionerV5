@@ -56,6 +56,7 @@ Boysong="*res://global/boysong.tscn"
 ObstacleSound="*res://global/ObstacleSound.tscn"
 MilitaryMarch="*res://global/MilitaryMarch.tscn"
 Pariswaltz="*res://global/pariswaltz.tscn"
+Cassysong="*res://global/cassysong.tscn"
 
 [display]
 
