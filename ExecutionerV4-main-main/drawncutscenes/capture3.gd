@@ -28,17 +28,31 @@ var interact = false
 
 func _ready():
 	$Sprite.hide()
+	$Sprite2.hide()
+	$continuesprite2.hide()
+	$continuesprite.hide()
+	$RichTextLabel.hide()
+	$RichTextLabel2.hide()
 	yield(get_tree().create_timer(1), "timeout")
-	load_dialogue()
+	load_dialogue2()
 
 func _process(_delta):
-	$"continuesprite".visible = finished
+	if dialogue_index == 1 or dialogue_index == 6 or dialogue_index == 8 or dialogue_index == 10 or dialogue_index == 12 or dialogue_index == 16 or dialogue_index == 18:
+		$"continuesprite2".visible = finished
+	else:
+		$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
-		load_dialogue()
+		if dialogue_index == 0 or dialogue_index == 5 or dialogue_index == 7 or dialogue_index == 9 or dialogue_index == 11 or dialogue_index == 15 or dialogue_index == 17:
+			load_dialogue2()
+		else:
+			load_dialogue()
 		
 func load_dialogue():
+	$"continuesprite".visible = finished
 	$Sprite.show()
-	yield(get_tree().create_timer(0.5), "timeout")
+	$Sprite2.hide()
+	$RichTextLabel.show()
+	$RichTextLabel2.hide()
 	if dialogue_index < dialogue.size():
 
 		$Type.play()
@@ -47,6 +61,27 @@ func load_dialogue():
 		$RichTextLabel.percent_visible = 0
 		$Tween.interpolate_property(
 			$RichTextLabel, "percent_visible", 0, 1, 2, 
+			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
+		)
+		$Tween.start()
+	
+	else:
+		queue_free()
+
+func load_dialogue2():
+	$"continuesprite2".visible = finished
+	$Sprite2.show()
+	$Sprite.hide()
+	$RichTextLabel2.show()
+	$RichTextLabel.hide()
+	if dialogue_index < dialogue.size():
+
+		$Type.play()
+		finished = false
+		$RichTextLabel2.bbcode_text = dialogue[dialogue_index]
+		$RichTextLabel2.percent_visible = 0
+		$Tween.interpolate_property(
+			$RichTextLabel2, "percent_visible", 0, 1, 2, 
 			Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 		)
 		$Tween.start()
