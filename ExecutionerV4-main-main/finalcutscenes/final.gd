@@ -20,5 +20,5 @@ func _ready():
 	#if VideoPlayer.finished
 
 
-#func _on_Timer_timeout():
-	#$AudioStreamPlayer.play()
+func _on_Timer_timeout():
+	$AudioStreamPlayer.play()
