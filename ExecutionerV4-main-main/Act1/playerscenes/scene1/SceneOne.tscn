@@ -1,4 +1,4 @@
-[gd_scene load_steps=76 format=2]
+[gd_scene load_steps=79 format=2]
 
 [ext_resource path="res://sprites/characters/right walk 2.png" type="Texture" id=1]
 [ext_resource path="res://sprites/characters/idle right 2.png" type="Texture" id=2]
@@ -49,6 +49,8 @@
 [ext_resource path="res://Act1/playerscenes/scene1/arrows.gd" type="Script" id=47]
 [ext_resource path="res://Act1/playerscenes/scene1/upArrow.gd" type="Script" id=48]
 [ext_resource path="res://Act1/playerscenes/scene1/Area2D2.gd" type="Script" id=49]
+[ext_resource path="res://sprites/UI/GirlTextbox/arrow1.PNG" type="Texture" id=50]
+[ext_resource path="res://sprites/UI/GirlTextbox/arrow.PNG" type="Texture" id=51]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 495.271, 1199.13 )
@@ -129,8 +131,21 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 171.919, 273.334 )
 
+[sub_resource type="SpriteFrames" id=27]
+animations = [ {
+"frames": [ ExtResource( 50 ), ExtResource( 51 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+} ]
+
 [sub_resource type="SpriteFrames" id=13]
 animations = [ {
+"frames": [ ExtResource( 8 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 8 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "walk",
@@ -144,11 +159,6 @@ animations = [ {
 "frames": [ ExtResource( 3 ), ExtResource( 23 ) ],
 "loop": true,
 "name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "idle",
 "speed": 5.0
 } ]
 
@@ -478,6 +488,7 @@ position = Vector2( 6756.92, 1812.47 )
 shape = SubResource( 8 )
 
 [node name="upArrow" type="KinematicBody2D" parent="."]
+visible = false
 script = ExtResource( 48 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="upArrow"]
@@ -504,6 +515,11 @@ frames = SubResource( 11 )
 position = Vector2( 332.088, 1118.36 )
 shape = SubResource( 12 )
 disabled = true
+
+[node name="AnimatedSprite2" type="AnimatedSprite" parent="arrows"]
+position = Vector2( 427.557, 962.451 )
+scale = Vector2( 0.400537, 0.311725 )
+frames = SubResource( 27 )
 
 [node name="player" type="KinematicBody2D" parent="."]
 position = Vector2( 2576.72, 701.071 )
@@ -581,7 +597,6 @@ shape = SubResource( 17 )
 position = Vector2( 3657.56, 1406.76 )
 z_index = 2
 frames = SubResource( 18 )
-frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -592,7 +607,7 @@ position = Vector2( 6065.61, 952.736 )
 scale = Vector2( 1.04841, 1.1256 )
 z_index = 2
 frames = SubResource( 19 )
-frame = 2
+frame = 3
 playing = true
 flip_h = true
 __meta__ = {
@@ -605,7 +620,7 @@ rotation = -0.404916
 scale = Vector2( 0.666533, 0.709781 )
 z_index = 2
 frames = SubResource( 19 )
-frame = 2
+frame = 3
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -735,14 +750,14 @@ shape = SubResource( 26 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
-[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_entered"]
-[connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
+[connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
 [connection signal="body_exited" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_exited"]
-[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_entered"]
+[connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
 [connection signal="body_entered" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_entered"]
-[connection signal="body_exited" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_exited"]
+[connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_entered"]
 [connection signal="body_exited" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_exited"]
+[connection signal="body_exited" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
 [connection signal="tween_completed" from="ParallaxBackground/ParallaxLayer/dialoguebox/Tween" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="ParallaxBackground/ParallaxLayer/dialoguebox2/Tween" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Tween_tween_completed"]

@@ -10,10 +10,11 @@ const UP = Vector2(0, -1)
 var motion = Vector2()
 
 func _process(_delta):
-	
+	#if Input.is_action_just_pressed("ui_up"):
+		#$AnimatedSprite2.hide()
 	if Input.is_action_just_pressed("ui_right") or Input.is_action_just_pressed("ui_left"):
 		$AnimatedSprite.hide()
-	
+		$AnimatedSprite2.hide()
 func _physics_process(_delta):
 		
 	if Input.is_action_pressed("ui_right"):
