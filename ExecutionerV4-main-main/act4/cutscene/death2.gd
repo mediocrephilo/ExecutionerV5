@@ -51,5 +51,5 @@ func _on_Tween_tween_completed(_object, _key):
 
 
 func _on_Control_tree_exited():
-	$AudioStreamPlayer.play()
-	get_tree().change_scene("res://drawncutscenes/deadbeforelol.tscn")
+	Transition.change_scene("res://drawncutscenes/deadbeforelol.tscn")
+

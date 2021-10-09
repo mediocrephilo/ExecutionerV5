@@ -69,14 +69,14 @@ animations = [ {
 "name": "jump",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 12 ), ExtResource( 18 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 12 ), ExtResource( 20 ), ExtResource( 14 ), ExtResource( 19 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 15 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 12 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -149,7 +149,7 @@ position = Vector2( 5591.19, 1283.72 )
 scale = Vector2( 3.07375, 1.69392 )
 z_index = 2
 frames = SubResource( 2 )
-frame = 16
+frame = 29
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]

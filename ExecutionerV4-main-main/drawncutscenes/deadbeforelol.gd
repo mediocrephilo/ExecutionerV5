@@ -6,7 +6,7 @@ export var transition_duration = 2.00
 export var transition_type = 1 # TRANS_SINE
 
 func _ready():
-	$Audiostreamplayer2.play()
+	$AudioStreamPlayer2.play()
 	fade_in()
 	yield(get_tree().create_timer(3), "timeout")
 	get_tree().change_scene("res://drawncutscenes/deadlol.tscn")
