@@ -269,5 +269,4 @@ position = Vector2( 3592.97, 1822.29 )
 position = Vector2( 3360.63, 1940.94 )
 scale = Vector2( 0.398224, 0.423651 )
 frames = SubResource( 4 )
-frame = 1
 playing = true

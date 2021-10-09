@@ -1,11 +1,70 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://finalcutscenes/finale2 (1).ogv" type="VideoStream" id=1]
 [ext_resource path="res://finalcutscenes/final.gd" type="Script" id=2]
 [ext_resource path="res://sounds/Blastwave_FX_MobProtest_BW.15972.mp3" type="AudioStream" id=3]
+[ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=4]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=2]
+resource_name = "New Anim"
+length = 20.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rect_position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2258.04, -0.25, 0, 0.25, 0, -1789.2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 20 )
+}
+
+[sub_resource type="Animation" id=3]
+resource_name = "New Anim"
+length = 20.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rect_position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2258.04, -0.25, 0, 0.25, 0, -1789.2, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 20 )
+}
+
+[sub_resource type="DynamicFont" id=4]
+size = 300
+font_data = ExtResource( 4 )
+
+[sub_resource type="Animation" id=5]
+resource_name = "New Anim"
+length = 5.0
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rect_position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 2221.6, -0.25, 0, 0.25, 0, 1036.26, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 5 )
+}
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 5454.0
+margin_bottom = 3019.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="VideoPlayer" type="VideoPlayer" parent="."]
 margin_right = 3840.0
@@ -20,7 +79,124 @@ __meta__ = {
 stream = ExtResource( 3 )
 volume_db = 6.563
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 17.859
+[node name="RichTextLabel" type="RichTextLabel" parent="."]
+margin_left = 164.357
+margin_top = 2258.04
+margin_right = 4578.36
+margin_bottom = 4372.04
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "Developers
 
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
+Character Design
+
+Level Design and Art
+
+Programmers
+
+Dialogue and Story
+
+Concept
+
+Violin
+
+Piano
+
+Sound Design
+
+"
+text = "Developers
+
+Character Design
+
+Level Design and Art
+
+Programmers
+
+Dialogue and Story
+
+Concept
+
+Violin
+
+Piano
+
+Sound Design
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RichTextLabel"]
+"anims/New Anim" = SubResource( 2 )
+
+[node name="RichTextLabel2" type="RichTextLabel" parent="."]
+margin_left = 1342.0
+margin_top = 2258.0
+margin_right = 4575.0
+margin_bottom = 4420.0
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "An_Emo_Inchworm & Mathgonewrong
+
+An_Emo_Inchworm
+
+An_Emo_Inchworm
+
+An_Emo_Inchworm & Mathgonewrong
+
+Mathgonewrong
+
+An_Emo_Inchworm
+
+An_Emo_Inchworm
+
+Mathgonewrong
+
+An_Emo_Inchworm & Mathgonewrong
+
+"
+text = "An_Emo_Inchworm & Mathgonewrong
+
+An_Emo_Inchworm
+
+An_Emo_Inchworm
+
+An_Emo_Inchworm & Mathgonewrong
+
+Mathgonewrong
+
+An_Emo_Inchworm
+
+An_Emo_Inchworm
+
+Mathgonewrong
+
+An_Emo_Inchworm & Mathgonewrong
+
+"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RichTextLabel2"]
+"anims/New Anim" = SubResource( 3 )
+
+[node name="RichTextLabel3" type="RichTextLabel" parent="."]
+margin_left = 1078.08
+margin_top = 2221.6
+margin_right = 4642.08
+margin_bottom = 4002.6
+custom_fonts/normal_font = SubResource( 4 )
+bbcode_enabled = true
+bbcode_text = "EXECUTIONER"
+text = "EXECUTIONER"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="RichTextLabel3"]
+"anims/New Anim" = SubResource( 5 )
