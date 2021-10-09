@@ -53,7 +53,6 @@ script = ExtResource( 7 )
 position = Vector2( 2030.2, 923.344 )
 scale = Vector2( 1.08693, 1.15963 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="Control" type="Control" parent="."]
