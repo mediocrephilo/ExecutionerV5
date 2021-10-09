@@ -12,4 +12,5 @@ func _ready():
 
 
 func _on_AnimatedSprite_animation_finished():
+	$AnimatedSprite.stop()
 	Transition.change_scene("res://Act1/playerscenes/scene7/scene7.tscn")

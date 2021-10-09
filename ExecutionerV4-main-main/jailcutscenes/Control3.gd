@@ -3,7 +3,7 @@ extends Control
 var dialogue = [
 #<<<<<<< HEAD
 #=======
-		"IS THIS THE PHOTO YOU WANTED?",
+		"IS THIS THE PHOTO YOU ASKED FOR?",
 		". . . ",
 		"WHO'S THAT GIRL NEXT TO YOU?",
 		". . .",

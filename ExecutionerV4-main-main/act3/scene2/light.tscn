@@ -22,6 +22,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "select",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "default",
@@ -30,11 +35,6 @@ animations = [ {
 "frames": [ ExtResource( 7 ) ],
 "loop": true,
 "name": "connect",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 8 ) ],
-"loop": true,
-"name": "select",
 "speed": 5.0
 } ]
 
@@ -47,6 +47,11 @@ font_data = ExtResource( 16 )
 
 [sub_resource type="SpriteFrames" id=4]
 animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "select",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 4 ) ],
 "loop": true,
 "name": "default",
@@ -55,11 +60,6 @@ animations = [ {
 "frames": [ ExtResource( 5 ) ],
 "loop": true,
 "name": "connect",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "select",
 "speed": 5.0
 } ]
 
@@ -72,6 +72,11 @@ font_data = ExtResource( 16 )
 
 [sub_resource type="SpriteFrames" id=7]
 animations = [ {
+"frames": [ ExtResource( 10 ) ],
+"loop": true,
+"name": "select",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 12 ) ],
 "loop": true,
 "name": "default",
@@ -80,11 +85,6 @@ animations = [ {
 "frames": [ ExtResource( 11 ) ],
 "loop": true,
 "name": "connect",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
-"name": "select",
 "speed": 5.0
 } ]
 
@@ -97,6 +97,11 @@ font_data = ExtResource( 16 )
 
 [sub_resource type="SpriteFrames" id=10]
 animations = [ {
+"frames": [ ExtResource( 14 ) ],
+"loop": true,
+"name": "select",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "default",
@@ -105,11 +110,6 @@ animations = [ {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "connect",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 14 ) ],
-"loop": true,
-"name": "select",
 "speed": 5.0
 } ]
 
@@ -355,6 +355,8 @@ shape = SubResource( 22 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 19 )
+volume_db = -20.195
+pitch_scale = 0.92
 autoplay = true
 
 [connection signal="body_entered" from="red" to="." method="_on_red_body_entered"]

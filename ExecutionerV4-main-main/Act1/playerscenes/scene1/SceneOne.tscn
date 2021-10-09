@@ -110,7 +110,7 @@ extents = Vector2( 171.01, 299.887 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [  ],
+"frames": [ ExtResource( 45 ), ExtResource( 46 ) ],
 "loop": true,
 "name": "default",
 "speed": 5.0
@@ -127,13 +127,13 @@ animations = [ {
 } ]
 
 [sub_resource type="RectangleShape2D" id=12]
-extents = Vector2( 154.399, 273.334 )
+extents = Vector2( 171.919, 273.334 )
 
 [sub_resource type="SpriteFrames" id=13]
 animations = [ {
-"frames": [ ExtResource( 3 ), ExtResource( 23 ) ],
+"frames": [ ExtResource( 8 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
-"name": "jump",
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 17 ), ExtResource( 9 ) ],
@@ -141,9 +141,9 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 7 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 23 ) ],
 "loop": true,
-"name": "walk",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 8 ), ExtResource( 2 ) ],
@@ -238,14 +238,14 @@ tracks/1/keys = {
 
 [sub_resource type="SpriteFrames" id=24]
 animations = [ {
-"frames": [ ExtResource( 31 ) ],
-"loop": true,
-"name": "off",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 30 ) ],
 "loop": true,
 "name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 31 ) ],
+"loop": true,
+"name": "off",
 "speed": 5.0
 } ]
 
@@ -481,6 +481,9 @@ shape = SubResource( 8 )
 script = ExtResource( 48 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="upArrow"]
+position = Vector2( 409.435, 1095.13 )
+rotation = 1.5708
+scale = Vector2( 0.390568, 0.555338 )
 frames = SubResource( 9 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="upArrow"]
@@ -491,7 +494,7 @@ z_index = 8
 script = ExtResource( 47 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="arrows"]
-position = Vector2( 379.821, 1090.15 )
+position = Vector2( 419.444, 1079.14 )
 scale = Vector2( 0.407138, 0.580121 )
 z_index = 4
 z_as_relative = false
@@ -578,6 +581,7 @@ shape = SubResource( 17 )
 position = Vector2( 3657.56, 1406.76 )
 z_index = 2
 frames = SubResource( 18 )
+frame = 1
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -588,6 +592,7 @@ position = Vector2( 6065.61, 952.736 )
 scale = Vector2( 1.04841, 1.1256 )
 z_index = 2
 frames = SubResource( 19 )
+frame = 2
 playing = true
 flip_h = true
 __meta__ = {
@@ -600,6 +605,7 @@ rotation = -0.404916
 scale = Vector2( 0.666533, 0.709781 )
 z_index = 2
 frames = SubResource( 19 )
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -729,14 +735,14 @@ shape = SubResource( 26 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
-[connection signal="body_entered" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
-[connection signal="body_exited" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_exited"]
+[connection signal="body_entered" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_entered"]
 [connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
-[connection signal="body_entered" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_entered"]
+[connection signal="body_exited" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_exited"]
 [connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_entered"]
-[connection signal="body_exited" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_exited"]
+[connection signal="body_entered" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_entered"]
 [connection signal="body_exited" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_exited"]
+[connection signal="body_exited" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
 [connection signal="tween_completed" from="ParallaxBackground/ParallaxLayer/dialoguebox/Tween" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="ParallaxBackground/ParallaxLayer/dialoguebox2/Tween" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Tween_tween_completed"]
