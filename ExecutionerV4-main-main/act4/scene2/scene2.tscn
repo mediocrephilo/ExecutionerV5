@@ -1,4 +1,4 @@
-[gd_scene load_steps=35 format=2]
+[gd_scene load_steps=36 format=2]
 
 [ext_resource path="res://sprites/act4setting/scene2/courtfbackmount.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act4setting/scene2/courtroad.png" type="Texture" id=2]
@@ -27,6 +27,7 @@
 [ext_resource path="res://sounds/Slide On Gravel Series [SOUND EFFECT].wav" type="AudioStream" id=25]
 [ext_resource path="res://sounds/Forest-ambience.wav" type="AudioStream" id=26]
 [ext_resource path="res://sounds/cassie.wav" type="AudioStream" id=27]
+[ext_resource path="res://sprites/Act1settings/sceneone/arrows2.png" type="Texture" id=28]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 93.096
@@ -34,9 +35,9 @@ height = 309.838
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
-"frames": [ ExtResource( 24 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "down",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 11 ) ],
@@ -44,19 +45,19 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 24 ) ],
 "loop": true,
-"name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 6 ), ExtResource( 14 ) ],
-"loop": true,
-"name": "idle",
+"name": "down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 6 ), ExtResource( 14 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -79,26 +80,24 @@ radius = 119.624
 script = ExtResource( 18 )
 
 [node name="player" type="KinematicBody2D" parent="."]
-position = Vector2( 611.841, 1681.4 )
+position = Vector2( -2852.89, 1697.49 )
 z_index = 5
 script = ExtResource( 15 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="player"]
+position = Vector2( -602.633, 174.728 )
 z_index = 1
 shape = SubResource( 1 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="player"]
-position = Vector2( 25.0289, -7.57745 )
+position = Vector2( -536.772, -18.275 )
 frames = SubResource( 2 )
 animation = "down"
 speed_scale = 2.0
-__meta__ = {
-"_edit_group_": true
-}
 
 [node name="Camera2D" type="Camera2D" parent="player"]
 current = true
-limit_left = 0
+limit_left = -50000
 limit_top = 0
 limit_bottom = 2160
 
@@ -110,23 +109,43 @@ autoplay = true
 stream = ExtResource( 25 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="player"]
-position = Vector2( -4.58301, 238.315 )
+position = Vector2( -589.387, 284.671 )
 shape = SubResource( 3 )
+
+[node name="Sprite" type="Sprite" parent="player"]
+position = Vector2( -607.391, -981.309 )
+rotation = 1.5708
+scale = Vector2( 0.306417, 0.57481 )
+texture = ExtResource( 28 )
 
 [node name="StaticBody2D" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
-position = Vector2( -10.4191, 1106.47 )
+position = Vector2( -4421.93, 1185.87 )
 shape = SubResource( 4 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 4903.32, 2213.56 )
 shape = SubResource( 5 )
 
+[node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
+position = Vector2( 169.72, 2213.56 )
+shape = SubResource( 5 )
+
 [node name="front" type="Area2D" parent="."]
 
 [node name="frontmount" type="Sprite" parent="front"]
 position = Vector2( 3784.08, 1078.06 )
+scale = Vector2( 1, 1.03019 )
+texture = ExtResource( 1 )
+
+[node name="frontmount4" type="Sprite" parent="front"]
+position = Vector2( -618.39, 1182.32 )
+scale = Vector2( 1, 1.03019 )
+texture = ExtResource( 1 )
+
+[node name="frontmount5" type="Sprite" parent="front"]
+position = Vector2( -7391.55, 1474.83 )
 scale = Vector2( 1, 1.03019 )
 texture = ExtResource( 1 )
 
@@ -153,6 +172,11 @@ position = Vector2( 1243.64, 1210.11 )
 scale = Vector2( 1, 0.798853 )
 texture = ExtResource( 4 )
 
+[node name="backmount8" type="Sprite" parent="back"]
+position = Vector2( -6386.04, 1598.7 )
+scale = Vector2( 1, 0.798853 )
+texture = ExtResource( 4 )
+
 [node name="backmount5" type="Sprite" parent="back"]
 position = Vector2( 16488.1, 858.81 )
 scale = Vector2( 1, 1.11004 )
@@ -164,6 +188,11 @@ scale = Vector2( 1, 1.03019 )
 texture = ExtResource( 4 )
 
 [node name="backmount4" type="Sprite" parent="back"]
+position = Vector2( 16505.4, 552.406 )
+scale = Vector2( 1, 1.03019 )
+texture = ExtResource( 4 )
+
+[node name="backmount9" type="Sprite" parent="back"]
 position = Vector2( 16505.4, 552.406 )
 scale = Vector2( 1, 1.03019 )
 texture = ExtResource( 4 )
@@ -187,6 +216,11 @@ position = Vector2( 3793.98, 1147.4 )
 scale = Vector2( 1, 1.03019 )
 texture = ExtResource( 5 )
 
+[node name="fence5" type="Sprite" parent="fence"]
+position = Vector2( -3829.41, 1128.66 )
+scale = Vector2( 1, 1.03019 )
+texture = ExtResource( 5 )
+
 [node name="fence3" type="Sprite" parent="fence"]
 position = Vector2( 11364.7, 1143.58 )
 scale = Vector2( 1, 1.03019 )
@@ -203,6 +237,18 @@ scale = Vector2( 1.79054, 1.03019 )
 z_index = -2
 texture = ExtResource( 3 )
 
+[node name="sky3" type="Sprite" parent="."]
+position = Vector2( 2220.53, 1108.62 )
+scale = Vector2( 1.79054, 1.03019 )
+z_index = -2
+texture = ExtResource( 3 )
+
+[node name="sky4" type="Sprite" parent="."]
+position = Vector2( -3433.02, 1032.97 )
+scale = Vector2( 1.79054, 1.03019 )
+z_index = -2
+texture = ExtResource( 3 )
+
 [node name="sky2" type="Sprite" parent="."]
 position = Vector2( 18612.9, 1078.06 )
 scale = Vector2( 1.79054, 1.03019 )
@@ -215,6 +261,20 @@ script = ExtResource( 23 )
 
 [node name="road" type="Sprite" parent="road"]
 position = Vector2( 3775.44, 3062.01 )
+scale = Vector2( 1, 1.01337 )
+z_index = 3
+texture = ExtResource( 2 )
+flip_v = true
+
+[node name="road11" type="Sprite" parent="road"]
+position = Vector2( -1047.95, 3066.97 )
+scale = Vector2( 1, 1.01337 )
+z_index = 3
+texture = ExtResource( 2 )
+flip_v = true
+
+[node name="road12" type="Sprite" parent="road"]
+position = Vector2( -4013.41, 3092.19 )
 scale = Vector2( 1, 1.01337 )
 z_index = 3
 texture = ExtResource( 2 )
@@ -304,6 +364,7 @@ __meta__ = {
 shape = SubResource( 6 )
 
 [node name="Sprite" type="Sprite" parent="Area2D"]
+visible = false
 texture = ExtResource( 20 )
 
 [node name="ball" type="Area2D" parent="."]
@@ -1028,12 +1089,11 @@ shape = SubResource( 7 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 26 )
-volume_db = -20.0
+volume_db = -2.825
 autoplay = true
 
 [node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 27 )
-autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
 [connection signal="timeout" from="Timer2" to="." method="_on_Timer2_timeout"]

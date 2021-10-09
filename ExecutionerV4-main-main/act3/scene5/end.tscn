@@ -38,7 +38,7 @@ margin_top = -9151.77
 margin_right = 6510.59
 margin_bottom = -9051.77
 custom_fonts/font = SubResource( 3 )
-text = "Remember"
+text = "Remember (enter)"
 __meta__ = {
 "_edit_use_anchors_": false
 }

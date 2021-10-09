@@ -5,7 +5,7 @@ var dialogue = [
 		"But then again, we are not out of the fog just yet, are we. Tell me, did we succeed?",
 		"No! Stop. Do not tell me. Let me witness the result of our fight, even if it was for nothing.",
 		"The fact that we tried proves to me that not all of humanity has descended into darkness.",
-		"It would be a disservice to my brothers and sisters if I shied away from the end now.",
+	
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
 
