@@ -10,7 +10,7 @@ size = 100
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=2]
-size = 40
+size = 38
 font_data = ExtResource( 1 )
 
 [sub_resource type="DynamicFont" id=3]
@@ -42,8 +42,6 @@ visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
-"_edit_group_": true,
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
@@ -58,15 +56,14 @@ bbcode_enabled = true
 bbcode_text = "Sounds + Links"
 text = "Sounds + Links"
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
 [node name="RichTextLabel2" type="RichTextLabel" parent="SoundsLinks"]
-margin_left = 108.647
-margin_top = 299.719
-margin_right = 3813.65
-margin_bottom = 3182.72
+margin_left = 113.137
+margin_top = 250.331
+margin_right = 3818.14
+margin_bottom = 3133.33
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = true
@@ -101,7 +98,13 @@ Construction - https://www.zapsplat.com/sound-effect-category/construction-site/
 Factory/Warehouse - https://www.zapsplat.com/sound-effect-category/factory-and-warehouse/page/2/
 Automatic Gunfire - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/automatic-gunfire-rifle-299
 Park Ambience - https://www.zapsplat.com/sound-effect-category/parks/
-Blizzard Ambience - https://www.zapsplat.com/sound-effect-category/blizzard/"
+Blizzard Ambience - https://www.zapsplat.com/sound-effect-category/blizzard/
+Ear Ringing - SFX and GFX https://www.youtube.com/watch?v=rHTinEcgLn0
+CHT2 Cinematic Transition 101 - Soundbits
+Static TV - https://www.zapsplat.com/music/static-noise-or-interference-000/
+Obstacle Course Music - https://www.zapsplat.com/music/walk-through-darkness-a-dark-and-tense-electronic-underscore-with-eerie-droning-pads-airy-effects-and-electronic-drums/
+GameOver Sound - https://www.zapsplat.com/?s=horror+violin+stab&post_type=music&sound-effect-category-id=
+Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/"
 text = "Horror Ambience 1 by Klankbeeld - https://freesound.org/people/klankbeeld/sounds/255715/
 Closing Squeaky Door 1 by fesliyanstudios - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-squeaking-50
 Forest Ambience by Alexander - http://www.orangefreesounds.com/forest-ambience/
@@ -133,9 +136,14 @@ Construction - https://www.zapsplat.com/sound-effect-category/construction-site/
 Factory/Warehouse - https://www.zapsplat.com/sound-effect-category/factory-and-warehouse/page/2/
 Automatic Gunfire - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/automatic-gunfire-rifle-299
 Park Ambience - https://www.zapsplat.com/sound-effect-category/parks/
-Blizzard Ambience - https://www.zapsplat.com/sound-effect-category/blizzard/"
+Blizzard Ambience - https://www.zapsplat.com/sound-effect-category/blizzard/
+Ear Ringing - SFX and GFX https://www.youtube.com/watch?v=rHTinEcgLn0
+CHT2 Cinematic Transition 101 - Soundbits
+Static TV - https://www.zapsplat.com/music/static-noise-or-interference-000/
+Obstacle Course Music - https://www.zapsplat.com/music/walk-through-darkness-a-dark-and-tense-electronic-underscore-with-eerie-droning-pads-airy-effects-and-electronic-drums/
+GameOver Sound - https://www.zapsplat.com/?s=horror+violin+stab&post_type=music&sound-effect-category-id=
+Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/"
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 
