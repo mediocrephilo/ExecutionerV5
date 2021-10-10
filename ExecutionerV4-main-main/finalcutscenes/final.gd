@@ -12,8 +12,11 @@ func _ready():
 	$RichTextLabel/AnimationPlayer.play("New Anim")
 	$RichTextLabel2/AnimationPlayer.play("New Anim")
 	yield(get_tree().create_timer(10), "timeout")
+	$RichTextLabel4/AnimationPlayer.play("New Anim")
+	$RichTextLabel5/AnimationPlayer.play("New Anim")
+	yield(get_tree().create_timer(13), "timeout")
 	$RichTextLabel3/AnimationPlayer.play("New Anim")
-	yield(get_tree().create_timer(7), "timeout")
+	yield(get_tree().create_timer(6), "timeout")
 	Transition.change_scene("res://global/menu/menu.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
