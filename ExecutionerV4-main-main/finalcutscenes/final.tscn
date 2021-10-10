@@ -1,10 +1,9 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=14 format=2]
 
 [ext_resource path="res://finalcutscenes/finale2 (1).ogv" type="VideoStream" id=1]
 [ext_resource path="res://finalcutscenes/final.gd" type="Script" id=2]
 [ext_resource path="res://sounds/Blastwave_FX_MobProtest_BW.15972.mp3" type="AudioStream" id=3]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=4]
-[ext_resource path="res://sounds/menu1.wav" type="AudioStream" id=5]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -349,8 +348,5 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="RichTextLabel5"]
 "anims/New Anim" = SubResource( 9 )
-
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]
