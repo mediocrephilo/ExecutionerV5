@@ -9,6 +9,7 @@ var number = 0
 var finished = false
 var canInteract = false
 func _ready():
+	Pariswaltz.playsound()
 	gameSaver.save_game("res://Act3/scene2/bedroom1.tscn")
 	$dialoguebox.hide()
 	$Label.hide()
@@ -46,3 +47,9 @@ func _on_Tween_tween_completed(_object, _key):
 	finished = true
 	if number == 0:
 		$dialoguebox/Type2.stop()
+
+
+func _on_Area2D2_body_entered(body):
+	if body.name == "player":
+		Transition.change_scene("res://act3/scene2/hallway.tscn")
+	

@@ -1,4 +1,4 @@
-[gd_scene load_steps=28 format=2]
+[gd_scene load_steps=30 format=2]
 
 [ext_resource path="res://sprites/act3settings/bed.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act3settings/stairs.png" type="Texture" id=2]
@@ -19,6 +19,7 @@
 [ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=17]
 [ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=18]
 [ext_resource path="res://sounds/211192__yuval__small-clock-in-room.wav" type="AudioStream" id=19]
+[ext_resource path="res://act3/scene2/broomexit.gd" type="Script" id=20]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -77,6 +78,9 @@ animations = [ {
 "name": "default",
 "speed": 5.0
 } ]
+
+[sub_resource type="RectangleShape2D" id=9]
+extents = Vector2( 155.372, 1125.07 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -237,8 +241,16 @@ __meta__ = {
 stream = ExtResource( 19 )
 autoplay = true
 
+[node name="Area2D2" type="Area2D" parent="."]
+script = ExtResource( 20 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
+position = Vector2( 3913.28, 1492.31 )
+shape = SubResource( 9 )
+
 [connection signal="body_entered" from="chest" to="chest" method="_on_chest_body_entered"]
 [connection signal="body_exited" from="chest" to="chest" method="_on_chest_body_exited"]
 [connection signal="tween_completed" from="chest/dialoguebox/Tween" to="chest" method="_on_Tween_tween_completed"]
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
+[connection signal="body_entered" from="Area2D2" to="chest" method="_on_Area2D2_body_entered"]

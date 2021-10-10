@@ -7,7 +7,7 @@ var dialogue = [
 		"You've all got to work hard to raise your rank,", 
 		"so let's have regular meetings. Don't worry, I'm here for you.",
 		"Now, where should we start?",
-		"Hmm . . . I suppose we might as well begin from the beginning.",
+		"Hmm . . . I suppose we might as well start from the beginning.",
 ]
 var reddialogue = [
 		"i still don't understand the story about that bird . . ."

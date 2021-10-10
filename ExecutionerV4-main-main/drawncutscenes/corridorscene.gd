@@ -28,6 +28,9 @@ var finished = false
 var interact = false
 
 func _ready():
+	RoomSound.stopsound()
+	JailSound.stopsound()
+	
 	$Sprite.hide()
 	$AnimatedSprite.play("2")
 	yield(get_tree().create_timer(1), "timeout")

@@ -4,6 +4,8 @@ extends Node2D
 var yay = false
 func _ready():
 	JailSound.playsound()
+	ForestSound.stopsound()
+	CitySound.stopsound()
 	gameSaver.save_game("res://Act3/jailscenes/jail5.tscn")
 	#$dialoguebox2/continuesprite.hide()
 #func _process(delta):
