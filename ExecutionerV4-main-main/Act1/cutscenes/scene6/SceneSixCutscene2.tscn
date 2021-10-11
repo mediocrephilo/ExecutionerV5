@@ -1,4 +1,4 @@
-[gd_scene load_steps=25 format=2]
+[gd_scene load_steps=26 format=2]
 
 [ext_resource path="res://Act1/cutscenes/scene6/Diary2Cutscene.gd" type="Script" id=1]
 [ext_resource path="res://sounds/Simple-Book-Page-Turn-www.fesliyanstudios.com-www.fesliyanstudios.com.wav" type="AudioStream" id=2]
@@ -78,6 +78,10 @@ tracks/3/keys = {
 "times": PoolRealArray( 0, 1 )
 }
 
+[sub_resource type="DynamicFont" id=4]
+size = 100
+font_data = ExtResource( 3 )
+
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 1 )
 
@@ -120,3 +124,14 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ColorRect"]
 anims/fade = SubResource( 3 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 1939.1
+margin_top = 46.5849
+margin_right = 2461.1
+margin_bottom = 146.585
+custom_fonts/font = SubResource( 4 )
+text = "[Esc] to exit"
+__meta__ = {
+"_edit_use_anchors_": false
+}

@@ -131,7 +131,7 @@ animations = [ {
 [sub_resource type="RectangleShape2D" id=12]
 extents = Vector2( 171.919, 273.334 )
 
-[sub_resource type="SpriteFrames" id=27]
+[sub_resource type="SpriteFrames" id=13]
 animations = [ {
 "frames": [ ExtResource( 50 ), ExtResource( 51 ) ],
 "loop": true,
@@ -139,13 +139,8 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=13]
+[sub_resource type="SpriteFrames" id=14]
 animations = [ {
-"frames": [ ExtResource( 8 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "idle",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 8 ), ExtResource( 1 ), ExtResource( 4 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 10 ), ExtResource( 6 ), ExtResource( 7 ) ],
 "loop": true,
 "name": "walk",
@@ -160,22 +155,27 @@ animations = [ {
 "loop": true,
 "name": "jump",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
 } ]
 
-[sub_resource type="CapsuleShape2D" id=14]
+[sub_resource type="CapsuleShape2D" id=15]
 radius = 92.5304
 height = 393.103
 
-[sub_resource type="RectangleShape2D" id=15]
+[sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 5944.11, 137.664 )
 
-[sub_resource type="RectangleShape2D" id=16]
+[sub_resource type="RectangleShape2D" id=17]
 extents = Vector2( 103.199, 1097.02 )
 
-[sub_resource type="RectangleShape2D" id=17]
+[sub_resource type="RectangleShape2D" id=18]
 extents = Vector2( 997.533, 1448.23 )
 
-[sub_resource type="SpriteFrames" id=18]
+[sub_resource type="SpriteFrames" id=19]
 animations = [ {
 "frames": [ ExtResource( 26 ), ExtResource( 24 ), ExtResource( 26 ) ],
 "loop": true,
@@ -183,7 +183,7 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="SpriteFrames" id=19]
+[sub_resource type="SpriteFrames" id=20]
 animations = [ {
 "frames": [ ExtResource( 26 ), ExtResource( 24 ), ExtResource( 26 ), ExtResource( 26 ) ],
 "loop": true,
@@ -191,36 +191,12 @@ animations = [ {
 "speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=20]
+[sub_resource type="RectangleShape2D" id=21]
 extents = Vector2( 206.324, 347.55 )
 
-[sub_resource type="DynamicFont" id=21]
+[sub_resource type="DynamicFont" id=22]
 size = 100
 font_data = ExtResource( 12 )
-
-[sub_resource type="Animation" id=22]
-length = 2.0
-loop = true
-tracks/0/type = "bezier"
-tracks/0/path = NodePath(".:position:x")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/keys = {
-"points": PoolRealArray( 4061.7, -0.25, 0, 0.25, 0, 4061.7, -0.25, 0, 0.25, 0, 4061.7, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
-tracks/1/type = "bezier"
-tracks/1/path = NodePath(".:position:y")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/keys = {
-"points": PoolRealArray( 1683.75, -0.25, 0, 0.25, 0, 1640, -0.25, 0, 0.25, 0, 1683.75, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 1, 2 )
-}
 
 [sub_resource type="Animation" id=23]
 length = 2.0
@@ -246,23 +222,47 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 1, 2 )
 }
 
-[sub_resource type="SpriteFrames" id=24]
+[sub_resource type="Animation" id=24]
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 4061.7, -0.25, 0, 0.25, 0, 4061.7, -0.25, 0, 0.25, 0, 4061.7, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1683.75, -0.25, 0, 0.25, 0, 1640, -0.25, 0, 0.25, 0, 1683.75, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+
+[sub_resource type="SpriteFrames" id=25]
 animations = [ {
-"frames": [ ExtResource( 30 ) ],
-"loop": true,
-"name": "default",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 31 ) ],
 "loop": true,
 "name": "off",
 "speed": 5.0
+}, {
+"frames": [ ExtResource( 30 ) ],
+"loop": true,
+"name": "default",
+"speed": 5.0
 } ]
 
-[sub_resource type="RectangleShape2D" id=25]
+[sub_resource type="RectangleShape2D" id=26]
 extents = Vector2( 150.722, 531.328 )
 
-[sub_resource type="RectangleShape2D" id=26]
+[sub_resource type="RectangleShape2D" id=27]
 extents = Vector2( 351.766, 930.81 )
 
 [node name="scene 1" type="Node2D"]
@@ -519,7 +519,7 @@ disabled = true
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="arrows"]
 position = Vector2( 427.557, 962.451 )
 scale = Vector2( 0.400537, 0.311725 )
-frames = SubResource( 27 )
+frames = SubResource( 13 )
 
 [node name="player" type="KinematicBody2D" parent="."]
 position = Vector2( 2576.72, 701.071 )
@@ -533,14 +533,14 @@ __meta__ = {
 position = Vector2( -2169.96, 957.149 )
 scale = Vector2( 0.869016, 0.900177 )
 z_as_relative = false
-frames = SubResource( 13 )
+frames = SubResource( 14 )
 animation = "jump"
 speed_scale = 1.5
 
 [node name="playerCollision" type="CollisionShape2D" parent="player"]
 light_mask = 3
 position = Vector2( -2207.59, 1016.72 )
-shape = SubResource( 14 )
+shape = SubResource( 15 )
 __meta__ = {
 "_edit_group_": true
 }
@@ -576,27 +576,27 @@ __meta__ = {
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 4209.42, 2101.33 )
-shape = SubResource( 15 )
+shape = SubResource( 16 )
 __meta__ = {
 "_edit_lock_": true
 }
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 16492.9, 2087.27 )
-shape = SubResource( 15 )
+shape = SubResource( 16 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 41.0424, 1220.69 )
-shape = SubResource( 16 )
+shape = SubResource( 17 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D"]
 position = Vector2( 13922.5, 953.556 )
-shape = SubResource( 17 )
+shape = SubResource( 18 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 3657.56, 1406.76 )
 z_index = 2
-frames = SubResource( 18 )
+frames = SubResource( 19 )
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -606,7 +606,7 @@ __meta__ = {
 position = Vector2( 6065.61, 952.736 )
 scale = Vector2( 1.04841, 1.1256 )
 z_index = 2
-frames = SubResource( 19 )
+frames = SubResource( 20 )
 frame = 3
 playing = true
 flip_h = true
@@ -619,7 +619,7 @@ position = Vector2( 2712.67, 648.158 )
 rotation = -0.404916
 scale = Vector2( 0.666533, 0.709781 )
 z_index = 2
-frames = SubResource( 19 )
+frames = SubResource( 20 )
 frame = 3
 playing = true
 __meta__ = {
@@ -631,7 +631,7 @@ script = ExtResource( 49 )
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 10359.5, 2470.14 )
-shape = SubResource( 20 )
+shape = SubResource( 21 )
 
 [node name="ParallaxBackground" type="ParallaxBackground" parent="."]
 layer = 2
@@ -665,7 +665,7 @@ margin_left = 2396.0
 margin_top = 1684.0
 margin_right = 4802.0
 margin_bottom = 1964.0
-custom_fonts/normal_font = SubResource( 21 )
+custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -678,7 +678,7 @@ texture = ExtResource( 41 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ParallaxBackground/ParallaxLayer/dialoguebox/continuesprite"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 22 )
+"anims/New Anim" = SubResource( 23 )
 
 [node name="Type" type="AudioStreamPlayer" parent="ParallaxBackground/ParallaxLayer/dialoguebox"]
 stream = ExtResource( 42 )
@@ -709,7 +709,7 @@ margin_left = 2396.0
 margin_top = 1684.0
 margin_right = 4802.0
 margin_bottom = 1964.0
-custom_fonts/normal_font = SubResource( 21 )
+custom_fonts/normal_font = SubResource( 22 )
 bbcode_enabled = true
 __meta__ = {
 "_edit_use_anchors_": false
@@ -722,7 +722,7 @@ texture = ExtResource( 41 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="ParallaxBackground/ParallaxLayer/dialoguebox2/continuesprite"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 23 )
+"anims/New Anim" = SubResource( 24 )
 
 [node name="Type" type="AudioStreamPlayer" parent="ParallaxBackground/ParallaxLayer/dialoguebox2"]
 stream = ExtResource( 42 )
@@ -735,29 +735,29 @@ script = ExtResource( 32 )
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="lamp"]
 position = Vector2( 14213.6, 1042.87 )
 z_index = -1
-frames = SubResource( 24 )
+frames = SubResource( 25 )
 animation = "off"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="lamp"]
 position = Vector2( 11964.1, 1333.13 )
-shape = SubResource( 25 )
+shape = SubResource( 26 )
 
 [node name="jump" type="Area2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="jump"]
 position = Vector2( 9912.08, 1355.4 )
-shape = SubResource( 26 )
+shape = SubResource( 27 )
 
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
-[connection signal="body_entered" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_entered"]
 [connection signal="body_entered" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_entered"]
-[connection signal="body_exited" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_exited"]
+[connection signal="body_entered" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_entered"]
 [connection signal="body_exited" from="Area2D3" to="Area2D3" method="_on_Area2D3_body_exited"]
-[connection signal="body_entered" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_entered"]
+[connection signal="body_exited" from="Area2D3" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Area2D3_body_exited"]
 [connection signal="body_entered" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_entered"]
-[connection signal="body_exited" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_exited"]
+[connection signal="body_entered" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_entered"]
 [connection signal="body_exited" from="Area2D4" to="Area2D4" method="_on_Area2D4_body_exited"]
+[connection signal="body_exited" from="Area2D4" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Area2D4_body_exited"]
 [connection signal="body_entered" from="Area2D2" to="Area2D2" method="_on_Area2D2_body_entered"]
 [connection signal="tween_completed" from="ParallaxBackground/ParallaxLayer/dialoguebox/Tween" to="ParallaxBackground/ParallaxLayer/dialoguebox" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="ParallaxBackground/ParallaxLayer/dialoguebox2/Tween" to="ParallaxBackground/ParallaxLayer/dialoguebox2" method="_on_Tween_tween_completed"]

@@ -1,8 +1,8 @@
 extends Area2D
 
 var dialogue = [
-		". . .",
-		"I FEEL LIKE I'VE BEEN HIT BY A SEMI. HAVE I BEEN HERE BEFORE?",
+		". . . I'VE BEEN HERE BEFORE",
+		"THIS EXACT STORE. . . THIS WAS WHERE HE STOLE IT",
 		"OH ATLAS . . . I THINK I KNOW WHAT'S GOING ON HERE . . . KID? YOU HERE?",
 ]
 var dialogue_index = 0
@@ -26,9 +26,9 @@ func _on_bake_body_exited(body):
 		
 func _process(_delta):
 	$"dialoguebox/continuesprite".visible = finished
-	if Input.is_action_just_pressed("ui_accept") and canInteract == true and dialogue_index < 2:
+	if Input.is_action_just_pressed("ui_accept") and canInteract == true and dialogue_index < 3:
 		load_dialogue()
-	if Input.is_action_just_pressed("ui_accept") and dialogue_index >= 2:
+	if Input.is_action_just_pressed("ui_accept") and dialogue_index >= 3:
 		$dialoguebox/RichTextLabel.hide()
 		$dialoguebox/TextureRect.hide()
 		$dialoguebox/continuesprite.hide()

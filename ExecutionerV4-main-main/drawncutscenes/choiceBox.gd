@@ -6,7 +6,7 @@ var choice = [
 ]
 var choice2 = [
 	"[center] GOOD. BY THE WAY, THAT TIE LOOKS GREAT ON YOU",
-	"[center] OKAY, MOM. . . THAT'S A NICE SHIRT"
+	"[center] OKAY, ''MOM''. . . THAT'S A NICE SHIRT"
 ]
 var choice3 = [
 	"[center] DON'T.",

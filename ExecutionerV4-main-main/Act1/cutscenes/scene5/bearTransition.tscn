@@ -40,9 +40,9 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
+"frames": [ ExtResource( 3 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 9 ) ],
 "loop": true,
-"name": "idle",
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 12 ) ],
@@ -50,14 +50,14 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 11 ), ExtResource( 5 ), ExtResource( 6 ), ExtResource( 8 ), ExtResource( 7 ), ExtResource( 10 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 4 ), ExtResource( 3 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -290,7 +290,7 @@ motion_mirroring = Vector2( 4000, 4000 )
 [node name="AnimatedSprite" type="AnimatedSprite" parent="ParallaxBackground2/ParallaxLayer"]
 position = Vector2( 3903.21, 483.921 )
 frames = SubResource( 8 )
-frame = 4
+frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true
@@ -300,14 +300,13 @@ __meta__ = {
 position = Vector2( 1044.25, -684.493 )
 scale = Vector2( 0.63002, 0.628466 )
 frames = SubResource( 9 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="ParallaxBackground2/ParallaxLayer"]
 position = Vector2( 3667.61, -1808.34 )
 scale = Vector2( 1.22074, 1.11504 )
 frames = SubResource( 10 )
-frame = 2
 playing = true
 __meta__ = {
 "_edit_lock_": true

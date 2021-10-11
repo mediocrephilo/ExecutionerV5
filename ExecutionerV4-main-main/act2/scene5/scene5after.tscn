@@ -72,9 +72,9 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=10]
 animations = [ {
-"frames": [ ExtResource( 11 ), ExtResource( 2 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 22 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 19 ) ],
 "loop": true,
-"name": "idle",
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 3 ) ],
@@ -82,14 +82,14 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 6 ), ExtResource( 20 ), ExtResource( 12 ), ExtResource( 22 ), ExtResource( 9 ), ExtResource( 18 ), ExtResource( 19 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ) ],
 "loop": true,
 "name": "jump",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 11 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "idle",
 "speed": 5.0
 } ]
 
@@ -164,7 +164,7 @@ margin_top = 437.387
 margin_right = 6839.93
 margin_bottom = 537.387
 custom_fonts/font = SubResource( 3 )
-text = "Climb"
+text = "Climb (enter)"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -269,7 +269,7 @@ limit_bottom = 2140
 position = Vector2( 2718.82, 1445.85 )
 scale = Vector2( 3.81954, 1.45944 )
 frames = SubResource( 12 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite"]

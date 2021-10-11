@@ -32,9 +32,9 @@ margin_bottom = 1970.0
 custom_fonts/normal_font = SubResource( 1 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "Elphabolon, XX
+bbcode_text = "Elphabon, XX
 	I'm cold . . . it's cold . . . Arthur says I don't have to wait much longer. They took him away yesterday. I ate some chicken but I think it went bad because I threw up. It's so cold that I can't think. I wish father would come visit. Where is he? Why isn't he here? Why am I alone? It's so cold . . . the people who took Arthur laughed at me because I was dirty. All except for one of them who had long black hair covering their eyes. I tried to talk to that guard but they seemed disgusted by me and pushed me "
-text = "Elphabolon, XX
+text = "Elphabon, XX
 	I'm cold . . . it's cold . . . Arthur says I don't have to wait much longer. They took him away yesterday. I ate some chicken but I think it went bad because I threw up. It's so cold that I can't think. I wish father would come visit. Where is he? Why isn't he here? Why am I alone? It's so cold . . . the people who took Arthur laughed at me because I was dirty. All except for one of them who had long black hair covering their eyes. I tried to talk to that guard but they seemed disgusted by me and pushed me "
 __meta__ = {
 "_edit_use_anchors_": false

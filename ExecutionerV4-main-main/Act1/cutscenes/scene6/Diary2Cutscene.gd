@@ -24,7 +24,7 @@ func _ready():
 	$ColorRect/AnimationPlayer.play("fade")
 
 func _input(event):
-	if Input.is_action_just_pressed("ui_accept") and canInteract == true:
+	if Input.is_action_just_pressed("ui_cancel") and canInteract == true:
 		Transition.change_scene("res://Act1/playerscenes/scene6/scenesixone.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

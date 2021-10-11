@@ -34,24 +34,14 @@ animations = [ {
 "name": "3",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ), ExtResource( 4 ) ],
+"frames": [ ExtResource( 10 ) ],
 "loop": true,
-"name": "kalm",
+"name": "4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "happ",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "1",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 10 ) ],
-"loop": true,
-"name": "4",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ), ExtResource( 5 ) ],
@@ -62,6 +52,16 @@ animations = [ {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "2",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 7 ), ExtResource( 4 ) ],
+"loop": true,
+"name": "kalm",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "1",
 "speed": 5.0
 } ]
 
@@ -144,7 +144,7 @@ frame = 1
 position = Vector2( 2214.63, 446.539 )
 scale = Vector2( 1, 0.43358 )
 frames = SubResource( 2 )
-frame = 6
+frame = 3
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Control"]
