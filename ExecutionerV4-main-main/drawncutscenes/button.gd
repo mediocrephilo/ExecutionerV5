@@ -4,10 +4,11 @@ extends Control
 var dialogue = [
 #<<<<<<< HEAD
 #=======
-	"Before my capture . . . the resistance placed bombs around the E.L.F factories.",
+	"Before I died . . . the resistance placed bombs around the E.L.F factories.",
 	"Seeing as I have the sole detonator, I assume they haven't been blown up yet.",
 	"Take it. All you have to do is press the big red button, and everything can come to an end.",
-	"Maybe this can be your redemption. Maybe not. At least we will have done something."
+	"Well, maybe not everything. But consequences are something for others to deal with, right?",
+	"Maybe this can be your redemption. Maybe not. At least you will have done something."
 ]
 var dialogue_index = 0
 var finished = false
@@ -19,7 +20,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 	
@@ -49,4 +50,4 @@ func _on_Tween_tween_completed(_object, _key):
 
 
 func _on_Control_tree_exited():
-	Transition.change_scene("res://act3/jailscenes/jailafter.tscn")
+	Transition.change_scene("res://act3/jailscenes/black.tscn")

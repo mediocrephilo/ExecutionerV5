@@ -56,14 +56,14 @@ _data = {
 
 [sub_resource type="SpriteFrames" id=6]
 animations = [ {
-"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 24 ), ExtResource( 21 ) ],
 "loop": true,
 "name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 22 ) ],

@@ -1,0 +1,85 @@
+[gd_scene load_steps=8 format=2]
+
+[ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://sprites/UI/dialoguebox.png" type="Texture" id=2]
+[ext_resource path="res://sprites/UI/continuesprite.png" type="Texture" id=3]
+[ext_resource path="res://act3/jailscenes/dialoguebox.gd" type="Script" id=4]
+[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=5]
+
+[sub_resource type="DynamicFont" id=1]
+size = 100
+font_data = ExtResource( 1 )
+
+[sub_resource type="Animation" id=2]
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:y")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 1620, -0.25, 0, 0.25, 0, 1640, -0.25, 0, 0.25, 0, 1620, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+
+[node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 5108.0
+margin_bottom = 2693.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="dialoguebox" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+script = ExtResource( 4 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Type" type="AudioStreamPlayer" parent="dialoguebox"]
+stream = ExtResource( 5 )
+
+[node name="TextureRect" type="TextureRect" parent="dialoguebox"]
+margin_left = 609.0
+margin_top = 1550.0
+margin_right = 2978.0
+margin_bottom = 2050.0
+texture = ExtResource( 2 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="dialoguebox"]
+anchor_right = 17.776
+anchor_bottom = 13.082
+margin_left = 767.0
+margin_top = 1659.0
+margin_right = 2116.96
+margin_bottom = 1434.72
+custom_fonts/normal_font = SubResource( 1 )
+bbcode_enabled = true
+bbcode_text = " "
+text = " "
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="continuesprite" type="Sprite" parent="dialoguebox"]
+position = Vector2( 1831.17, 1620 )
+scale = Vector2( 1.53765, 1.95808 )
+texture = ExtResource( 3 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialoguebox/continuesprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 2 )
+
+[node name="Tween" type="Tween" parent="dialoguebox"]
+
+[connection signal="tween_completed" from="dialoguebox/Tween" to="dialoguebox" method="_on_Tween_tween_completed"]
