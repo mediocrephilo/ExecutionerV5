@@ -3,7 +3,8 @@ extends Control
 
 # Declare member variables here. Examples:
 # var a = 2
-
+var dialogue = ['',
+				]
 var dialogue_index = 0
 var finished = false
 
