@@ -41,7 +41,6 @@ config/windows_native_icon="res://global/menu/icon.ico"
 
 gameSaver="*res://global/gameSaver.gd"
 GameOver="*res://global/gameover/gameOver.tscn"
-JailSound="*res://global/JailSound.tscn"
 ForestSound="*res://global/ForestSound.tscn"
 HorrorSound="*res://global/HorrorSound.tscn"
 SewerSound="*res://global/SewerSound.tscn"
@@ -58,6 +57,7 @@ ObstacleSound="*res://global/ObstacleSound.tscn"
 MilitaryMarch="*res://global/MilitaryMarch.tscn"
 Pariswaltz="*res://global/pariswaltz.tscn"
 Cassysong="*res://global/cassysong.tscn"
+JailSound="*res://global/jailSound.tscn"
 
 [display]
 
