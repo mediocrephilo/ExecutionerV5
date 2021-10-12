@@ -12,7 +12,7 @@ func _physics_process(delta):
 	if prev_child_count != get_child_count():
 		prev_child_count = get_child_count()
 		_find_platforms()
-	orbit_angle_offset +=  -2* PI * delta / float(rotation_duration)
+	orbit_angle_offset +=  2* PI * delta / float(rotation_duration)
 	orbit_angle_offset = wrapf(orbit_angle_offset, -PI, PI)
 	_update_platforms()
 

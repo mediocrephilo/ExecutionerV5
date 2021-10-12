@@ -1,4 +1,4 @@
-[gd_scene load_steps=50 format=2]
+[gd_scene load_steps=51 format=2]
 
 [ext_resource path="res://sprites/act 2 setting/scene 4/sky.png" type="Texture" id=1]
 [ext_resource path="res://act3/scene5/player2.gd" type="Script" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://act3/scene5/Area2D3.gd" type="Script" id=34]
 [ext_resource path="res://act3/scene5/obstaclecouse.gd" type="Script" id=35]
 [ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=36]
+[ext_resource path="res://orbitcenter2.gd" type="Script" id=37]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 487.299, 71.4017 )
@@ -61,11 +62,6 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 22 ) ],
 "loop": true,
 "name": "jump",
@@ -74,6 +70,11 @@ animations = [ {
 "frames": [ ExtResource( 25 ) ],
 "loop": true,
 "name": "fall",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 23 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -88,7 +89,7 @@ _data = {
 
 [sub_resource type="Curve2D" id=9]
 _data = {
-"points": PoolVector2Array( 0, 0, 0, 0, 2058.54, 2397.72, 0, 0, 0, 0, 3009.58, -9966.51 )
+"points": PoolVector2Array( 0, 0, 0, 0, 2058.54, 2397.72, 0, 0, 0, 0, 2141.73, 1753.65, 0, 0, 0, 0, 3009.58, -9966.51 )
 }
 
 [sub_resource type="RectangleShape2D" id=10]
@@ -283,7 +284,7 @@ z_index = -1
 texture = ExtResource( 8 )
 
 [node name="player2" type="KinematicBody2D" parent="."]
-position = Vector2( 2185.09, 1734.01 )
+position = Vector2( 2347.96, 1778.66 )
 script = ExtResource( 2 )
 __meta__ = {
 "_edit_group_": true
@@ -346,12 +347,6 @@ position = Vector2( 1283.19, -154.42 )
 rotation = -0.00405938
 scale = Vector2( 0.5, 1 )
 
-[node name="orbitcenter" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1906.37, -8297.39 )
-
-[node name="orbitcenter2" parent="." instance=ExtResource( 11 )]
-position = Vector2( 1762.41, -2227.27 )
-
 [node name="Path2D2" type="Path2D" parent="."]
 curve = SubResource( 8 )
 script = ExtResource( 13 )
@@ -410,7 +405,7 @@ script = ExtResource( 18 )
 
 [node name="PathFollow2D" type="PathFollow2D" parent="bigboi"]
 position = Vector2( 2058.54, 2397.72 )
-rotation = -1.49415
+rotation = -1.44225
 
 [node name="Area2D" type="Area2D" parent="bigboi/PathFollow2D"]
 position = Vector2( -1509.86, 2851.11 )
@@ -495,6 +490,14 @@ script = ExtResource( 34 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D4"]
 position = Vector2( 560.143, -3458.64 )
 shape = SubResource( 13 )
+
+[node name="orbitcenter" parent="." instance=ExtResource( 11 )]
+position = Vector2( 1886.02, -2448.86 )
+script = ExtResource( 37 )
+
+[node name="orbitcenter2" parent="." instance=ExtResource( 11 )]
+position = Vector2( 2187.12, -8113.33 )
+script = ExtResource( 37 )
 
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D" to="bigboi/PathFollow2D/Area2D" method="_on_Area2D_body_entered"]
 [connection signal="body_entered" from="bigboi/PathFollow2D/Area2D2" to="bigboi/PathFollow2D/Area2D2" method="_on_Area2D_body_entered"]
