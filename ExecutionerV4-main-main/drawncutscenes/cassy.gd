@@ -79,7 +79,7 @@ func _process(_delta):
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 15:
 		load_dialogue(dialogue8, 1)
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 16:
-		Transition.change_scene("res://Act2/cutscenes/scene1/cellscene.tscn")
+		Transition.change_scene("res://act2/cutscenes/title.tscn")
 	
 func load_dialogue(dialogue_type, type):
 	dialogue_line = 0

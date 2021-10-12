@@ -54,7 +54,6 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
-}, {
 "frames": [ ExtResource( 13 ) ],
 "loop": true,
 "name": "jump",
