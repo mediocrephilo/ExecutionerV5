@@ -1,7 +1,7 @@
 [gd_scene load_steps=14 format=2]
 
-[ext_resource path="res://finalcutscenes/endingamvBest.ogv" type="VideoStream" id=1]
-[ext_resource path="res://finalcutscenes/final.gd" type="Script" id=2]
+[ext_resource path="res://finalcutscenes/endingamvBest2ndV.ogv" type="VideoStream" id=1]
+[ext_resource path="res://finalcutscenes/final2.gd" type="Script" id=2]
 [ext_resource path="res://sounds/Blastwave_FX_MobProtest_BW.15972.mp3" type="AudioStream" id=3]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=4]
 
@@ -106,7 +106,6 @@ __meta__ = {
 margin_right = 3840.0
 margin_bottom = 2160.0
 stream = ExtResource( 1 )
-autoplay = true
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -237,9 +236,6 @@ __meta__ = {
 [node name="AnimationPlayer" type="AnimationPlayer" parent="RichTextLabel3"]
 "anims/New Anim" = SubResource( 5 )
 
-[node name="Timer" type="Timer" parent="."]
-wait_time = 16.587
-
 [node name="RichTextLabel4" type="RichTextLabel" parent="."]
 margin_left = 145.691
 margin_top = -2500.0
@@ -355,5 +351,3 @@ __meta__ = {
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="RichTextLabel5"]
 "anims/New Anim" = SubResource( 9 )
-
-[connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

@@ -18,4 +18,4 @@ func _ready():
 
 func _on_Timer_timeout():
 	HorrorSound.stopsound()
-	Transition.change_scene("res://finalcutscenes/final.tscn")
+	Transition.change_scene("res://jailcutscenes/jailLast.tscn")

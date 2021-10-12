@@ -37,7 +37,6 @@ animations = [ {
 position = Vector2( 1936.91, 1064.46 )
 scale = Vector2( 1.01277, 1.04823 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]
@@ -97,12 +96,14 @@ __meta__ = {
 position = Vector2( 2924.02, 493.912 )
 scale = Vector2( 0.208793, 0.229551 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="dialoguebox2"]
 position = Vector2( 2921.5, 722.221 )
 scale = Vector2( 0.208793, 0.229551 )
 frames = SubResource( 3 )
+frame = 1
 playing = true
 flip_v = true
 
