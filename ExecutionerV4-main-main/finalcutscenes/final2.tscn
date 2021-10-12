@@ -69,7 +69,7 @@ tracks/0/loop_wrap = true
 tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
-"points": PoolRealArray( 2258.04, -0.25, 0, 0.25, 0, -2182.3, -0.25, 0, 0.25, 0 ),
+"points": PoolRealArray( 2258.04, -0.25, 0, 0.25, 0, -2500, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 20 )
 }
 
@@ -242,9 +242,9 @@ wait_time = 16.587
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="."]
 margin_left = 145.691
-margin_top = 2258.04
+margin_top = -2500.0
 margin_right = 3677.69
-margin_bottom = 4994.04
+margin_bottom = 236.0
 custom_fonts/normal_font = SubResource( 6 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = true
@@ -285,7 +285,11 @@ CHT2 Cinematic Transition 101 - Soundbits
 Static TV - https://www.zapsplat.com/music/static-noise-or-interference-000/
 Obstacle Course Music - https://www.zapsplat.com/music/walk-through-darkness-a-dark-and-tense-electronic-underscore-with-eerie-droning-pads-airy-effects-and-electronic-drums/
 GameOver Sound - https://www.zapsplat.com/?s=horror+violin+stab&post_type=music&sound-effect-category-id=
-Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/"
+Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/
+Music Box Music - Ring Around the Rosie
+Violin Piece 3 - Zigeunerweisen, Sarasate
+Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell
+Button Click - https://www.zapsplat.com/page/3/?s=button+multimedia&post_type=music&sound-effect-category-id"
 text = "Horror Ambience 1 by Klankbeeld - https://freesound.org/people/klankbeeld/sounds/255715/
 Closing Squeaky Door 1 by fesliyanstudios - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/door-squeaking-50
 Forest Ambience by Alexander - http://www.orangefreesounds.com/forest-ambience/
@@ -323,9 +327,12 @@ CHT2 Cinematic Transition 101 - Soundbits
 Static TV - https://www.zapsplat.com/music/static-noise-or-interference-000/
 Obstacle Course Music - https://www.zapsplat.com/music/walk-through-darkness-a-dark-and-tense-electronic-underscore-with-eerie-droning-pads-airy-effects-and-electronic-drums/
 GameOver Sound - https://www.zapsplat.com/?s=horror+violin+stab&post_type=music&sound-effect-category-id=
-Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/"
+Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/
+Music Box Music - Ring Around the Rosie
+Violin Piece 3 - Zigeunerweisen, Sarasate
+Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell
+Button Click - https://www.zapsplat.com/page/3/?s=button+multimedia&post_type=music&sound-effect-category-id"
 __meta__ = {
-"_edit_lock_": true,
 "_edit_use_anchors_": false
 }
 

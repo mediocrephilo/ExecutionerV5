@@ -167,7 +167,8 @@ GameOver Sound - https://www.zapsplat.com/?s=horror+violin+stab&post_type=music&
 Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/
 Music Box Music - Ring Around the Rosie
 Violin Piece 3 - Zigeunerweisen, Sarasate
-Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell"
+Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell
+Button Click - https://www.zapsplat.com/page/3/?s=button+multimedia&post_type=music&sound-effect-category-id"
 text = "Construction - https://www.zapsplat.com/sound-effect-category/construction-site/page/3/
 Factory/Warehouse - https://www.zapsplat.com/sound-effect-category/factory-and-warehouse/page/2/
 Automatic Gunfire - https://www.fesliyanstudios.com/royalty-free-sound-effects-download/automatic-gunfire-rifle-299
@@ -181,7 +182,8 @@ GameOver Sound - https://www.zapsplat.com/?s=horror+violin+stab&post_type=music&
 Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/
 Music Box Music - Ring Around the Rosie
 Violin Piece 3 - Zigeunerweisen, Sarasate
-Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell"
+Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell
+Button Click - https://www.zapsplat.com/page/3/?s=button+multimedia&post_type=music&sound-effect-category-id"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -331,12 +333,12 @@ position = Vector2( 3592.97, 1822.29 )
 position = Vector2( 3360.63, 1940.94 )
 scale = Vector2( 0.398224, 0.423651 )
 frames = SubResource( 4 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 441.037, 1961.12 )
 scale = Vector2( 0.398224, 0.423651 )
 frames = SubResource( 4 )
+frame = 1
 playing = true
 flip_h = true
