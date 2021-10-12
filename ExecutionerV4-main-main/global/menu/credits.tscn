@@ -126,7 +126,6 @@ __meta__ = {
 }
 
 [node name="SoundsLinks2" type="Control" parent="."]
-visible = false
 margin_right = 40.0
 margin_bottom = 40.0
 __meta__ = {
@@ -183,6 +182,20 @@ Text Scroll 2 - https://www.zapsplat.com/music/game-tone-toggle-or-scroll-3/
 Music Box Music - Ring Around the Rosie
 Violin Piece 3 - Zigeunerweisen, Sarasate
 Military March - Pack Up Your Troubles In Your Old Kit Bag, And Smile, Smile, Smile, Felix Powell"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="RichTextLabel4" type="RichTextLabel" parent="SoundsLinks2"]
+margin_left = 113.0
+margin_top = 1205.78
+margin_right = 3532.43
+margin_bottom = 1356.78
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+bbcode_enabled = true
+bbcode_text = "The Ones Who Walk Away From Omelas - Ursula K. Le Guin"
+text = "The Ones Who Walk Away From Omelas - Ursula K. Le Guin"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -318,12 +331,12 @@ position = Vector2( 3592.97, 1822.29 )
 position = Vector2( 3360.63, 1940.94 )
 scale = Vector2( 0.398224, 0.423651 )
 frames = SubResource( 4 )
+frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="."]
 position = Vector2( 441.037, 1961.12 )
 scale = Vector2( 0.398224, 0.423651 )
 frames = SubResource( 4 )
-frame = 1
 playing = true
 flip_h = true
