@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zapsplat_multimedia_button_click_004_68776.mp3-dafd8be83bf130858a3784418d5a9b9e.mp3str"
+
+[deps]
+
+source_file="res://sounds/zapsplat_multimedia_button_click_004_68776.mp3"
+dest_files=[ "res://.import/zapsplat_multimedia_button_click_004_68776.mp3-dafd8be83bf130858a3784418d5a9b9e.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
