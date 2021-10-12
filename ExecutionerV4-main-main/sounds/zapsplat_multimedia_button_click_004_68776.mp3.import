@@ -11,5 +11,5 @@ dest_files=[ "res://.import/zapsplat_multimedia_button_click_004_68776.mp3-dafd8
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0
