@@ -3,9 +3,11 @@ extends Control
 var dialogue = [
 #<<<<<<< HEAD
 #=======
-		"HEY, DOZING OFF AGAIN?",
-		"CONSIDERING THAT YOU ONLY HAVE TWO DAYS LEFT, YOU MIGHT WANNA BE AWAKE TO TREASURE EVERY MOMENT.",
-		"ANYWAYS, I GOT THE PICTURE YOU WANTED."
+		"IT'S TIME, PRISONER.",
+		"LISTEN . . . 161, I AM SORRY ABOUT ALL THIS. REALLY.",
+		"I WAS A FAN, YOU KNOW?",
+		"WELL, I GUESS IT'S ALL IN THE PAST NOW. GET YOURSELF READY TO DIE.",
+		". . . YOU NEED A MINUTE? SURE. WHY NOT?",
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
 var dialogue_index = 0
@@ -14,17 +16,15 @@ var interact = false
 var doneScene = false
 
 func _ready():
-	JailSound.playsound()
-	Boysong.stopsound()
 	$Sprite.hide()
-	$AnimatedSprite.play("3")
+	$AnimatedSprite.play("1")
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
 
 func _process(_delta):
-	if doneScene == true:
-		Transition.change_scene("res://jailcutscenes/pic.tscn")
 	$"continuesprite".visible = finished
+	if doneScene == true:
+		Transition.change_scene("res://finalcutscenes/buttonfinal.tscn")
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		
@@ -43,12 +43,13 @@ func load_dialogue():
 		)
 		$Tween.start()
 		if dialogue_index == 2:
-			$AnimatedSprite.play("2")
+			$AnimatedSprite.play("3")
+		if dialogue_index == 3:
+			$AnimatedSprite.play("1")
 	else:
 		doneScene = true
-		
+	
 func _on_Tween_tween_completed(_object, _key):
 	finished = true
 	$Type.stop()
 	dialogue_index +=1
-
