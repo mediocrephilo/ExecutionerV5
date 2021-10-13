@@ -11,6 +11,7 @@ func _ready():
 	$AnimatedSprite.hide()
 	$People.show()
 	$SoundsLinks.hide()
+	$SoundsLinks2.hide()
 	yield(get_tree().create_timer(3), "timeout")
 	$AnimatedSprite.show()
 	
@@ -19,6 +20,7 @@ func _process(delta):
 	if Input.is_action_just_pressed("ui_right"):
 		if page == 0:
 			$People.hide()
+			$SoundsLinks2.hide()
 			$SoundsLinks.show()
 			yield(get_tree().create_timer(3), "timeout")
 			$AnimatedSprite2.show()

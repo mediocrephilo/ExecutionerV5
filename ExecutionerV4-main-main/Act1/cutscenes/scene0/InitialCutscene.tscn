@@ -173,10 +173,10 @@ __meta__ = {
 anims/line3 = SubResource( 4 )
 
 [node name="RichTextLabel3" type="RichTextLabel" parent="."]
-margin_left = 937.79
-margin_top = 471.716
-margin_right = 4152.79
-margin_bottom = 1785.72
+margin_left = 743.0
+margin_top = 472.0
+margin_right = 4153.0
+margin_bottom = 1786.0
 custom_fonts/normal_font = SubResource( 1 )
 bbcode_enabled = true
 bbcode_text = "
