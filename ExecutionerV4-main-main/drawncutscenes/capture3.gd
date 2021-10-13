@@ -17,7 +17,7 @@ var dialogue = [
 		"Well, it was worth a try.",
 		". . .  . . .",
 		"My name is Paris.",
-		"PARIS . . . THE FALLEN PRINCE OF TROY.",
+		"PARIS . . . THE COWARDLY PRINCE.",
 		"You know your mythology, I'm impressed.",
 		"I WILL REMEMBER YOU, PARIS . . . TRAITOR.",
 		"Well, as long as someone does. I'll hold you to that promise, 161."
