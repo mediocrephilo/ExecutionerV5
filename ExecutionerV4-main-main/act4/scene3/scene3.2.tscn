@@ -40,12 +40,12 @@ scale = Vector2( 1.02242, 1.03066 )
 frames = SubResource( 1 )
 
 [node name="Label" type="Label" parent="door"]
-margin_left = 1720.88
-margin_top = 149.642
-margin_right = 2144.88
-margin_bottom = 249.642
+margin_left = 1617.61
+margin_top = 145.152
+margin_right = 2354.61
+margin_bottom = 245.152
 custom_fonts/font = SubResource( 2 )
-text = "Open lock"
+text = "Open lock [Enter]"
 __meta__ = {
 "_edit_use_anchors_": false
 }

@@ -40,12 +40,12 @@ scale = Vector2( 1.02242, 1.03066 )
 frames = SubResource( 1 )
 
 [node name="Label" type="Label" parent="door"]
-margin_left = 1720.88
-margin_top = 149.642
-margin_right = 2144.88
-margin_bottom = 249.642
+margin_left = 1649.15
+margin_top = 153.418
+margin_right = 2305.15
+margin_bottom = 253.418
 custom_fonts/font = SubResource( 2 )
-text = "Proceed"
+text = "Proceed [Enter]"
 __meta__ = {
 "_edit_use_anchors_": false
 }
