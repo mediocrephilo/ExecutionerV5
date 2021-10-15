@@ -34,24 +34,19 @@ animations = [ {
 "name": "1",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 8 ) ],
-"loop": true,
-"name": "3",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "2",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "3",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 7 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "kalm",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 2 ), ExtResource( 5 ) ],
-"loop": true,
-"name": "blush",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
@@ -62,6 +57,11 @@ animations = [ {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "4",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "blush",
 "speed": 5.0
 } ]
 
@@ -144,14 +144,14 @@ frame = 1
 position = Vector2( 2214.63, 446.539 )
 scale = Vector2( 1, 0.43358 )
 frames = SubResource( 2 )
-frame = 1
+frame = 6
 playing = true
 
 [node name="AnimatedSprite3" type="AnimatedSprite" parent="Control"]
 position = Vector2( 2272.79, 538.857 )
 scale = Vector2( 1.06687, 0.733301 )
 frames = SubResource( 3 )
-frame = 2
+frame = 5
 playing = true
 
 [node name="Type" type="AudioStreamPlayer" parent="Control"]
@@ -252,11 +252,9 @@ stream = ExtResource( 25 )
 volume_db = -20.0
 autoplay = true
 
-[connection signal="tree_exited" from="Control" to="Control" method="_on_Control_tree_exited"]
-[connection signal="tween_completed" from="Control/Tween" to="choiceBox" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="Control/Tween" to="Control" method="_on_Tween_tween_completed"]
+[connection signal="tween_completed" from="Control/Tween" to="choiceBox" method="_on_Tween_tween_completed"]
 [connection signal="tween_started" from="Control/Tween" to="choiceBox" method="_on_Tween_tween_started"]
-[connection signal="tree_exited" from="choiceBox" to="choiceBox" method="_on_choiceBox_tree_exited"]
 [connection signal="tween_completed" from="choiceBox/hhh" to="choiceBox" method="_on_hhh_tween_completed"]
 [connection signal="tween_started" from="choiceBox/hhh" to="choiceBox" method="_on_hhh_tween_started"]
 [connection signal="tween_completed" from="choiceBox/aks" to="choiceBox" method="_on_aks_tween_completed"]
