@@ -29,6 +29,11 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 9 ) ],
+"loop": true,
+"name": "1",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "3",
@@ -39,19 +44,14 @@ animations = [ {
 "name": "2",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 9 ) ],
-"loop": true,
-"name": "1",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 7 ), ExtResource( 4 ) ],
 "loop": true,
 "name": "kalm",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 10 ) ],
+"frames": [ ExtResource( 2 ), ExtResource( 5 ) ],
 "loop": true,
-"name": "4",
+"name": "blush",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
@@ -59,9 +59,9 @@ animations = [ {
 "name": "happ",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 10 ) ],
 "loop": true,
-"name": "blush",
+"name": "4",
 "speed": 5.0
 } ]
 
@@ -131,7 +131,6 @@ position = Vector2( 1900.28, 1909.67 )
 scale = Vector2( 1.35088, 1.3549 )
 frames = SubResource( 1 )
 animation = "happ"
-frame = 1
 playing = true
 
 [node name="AnimatedSprite2" type="AnimatedSprite" parent="Control"]
@@ -152,7 +151,7 @@ playing = true
 position = Vector2( 2272.79, 538.857 )
 scale = Vector2( 1.06687, 0.733301 )
 frames = SubResource( 3 )
-frame = 5
+frame = 2
 playing = true
 
 [node name="Type" type="AudioStreamPlayer" parent="Control"]
@@ -232,13 +231,13 @@ __meta__ = {
 position = Vector2( 3010.44, 1725.3 )
 scale = Vector2( 0.326183, 0.299013 )
 frames = SubResource( 8 )
-frame = 1
 playing = true
 
 [node name="AnimatedSprite4" type="AnimatedSprite" parent="choiceBox"]
 position = Vector2( 3013.16, 1937.22 )
 scale = Vector2( 0.309881, 0.342485 )
 frames = SubResource( 9 )
+frame = 1
 playing = true
 flip_v = true
 
@@ -254,8 +253,8 @@ volume_db = -20.0
 autoplay = true
 
 [connection signal="tree_exited" from="Control" to="Control" method="_on_Control_tree_exited"]
-[connection signal="tween_completed" from="Control/Tween" to="Control" method="_on_Tween_tween_completed"]
 [connection signal="tween_completed" from="Control/Tween" to="choiceBox" method="_on_Tween_tween_completed"]
+[connection signal="tween_completed" from="Control/Tween" to="Control" method="_on_Tween_tween_completed"]
 [connection signal="tween_started" from="Control/Tween" to="choiceBox" method="_on_Tween_tween_started"]
 [connection signal="tree_exited" from="choiceBox" to="choiceBox" method="_on_choiceBox_tree_exited"]
 [connection signal="tween_completed" from="choiceBox/hhh" to="choiceBox" method="_on_hhh_tween_completed"]

@@ -119,5 +119,5 @@ func _on_Tween_tween_completed(_object, _key):
 	dialogue_line +=1
 
 
-func _on_Control_tree_exited():
-	Transition.change_scene("res://act2/cutscenes/title.tscn")
+#func _on_Control_tree_exited():
+	#Transition.change_scene("res://act2/cutscenes/title.tscn")
