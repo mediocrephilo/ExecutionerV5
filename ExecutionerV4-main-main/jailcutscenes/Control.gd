@@ -30,7 +30,6 @@ func _process(_delta):
 	$"continuesprite".visible = finished
 	if doneScene == true:
 		Transition.change_scene("res://drawncutscenes/cassy.tscn")
-		JailSound.stopsound()
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		

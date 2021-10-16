@@ -43,7 +43,6 @@ var interact = false
 
 func _ready():
 	$AnimatedSprite.play("happ")
-	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue(dialogue, 0)
 
 func _process(_delta):
@@ -83,7 +82,6 @@ func _process(_delta):
 	
 func load_dialogue(dialogue_type, type):
 	dialogue_line = 0
-	yield(get_tree().create_timer(0.5), "timeout")
 	if dialogue_line < dialogue_type.size():
 		$Type.play()
 		finished = false
@@ -118,6 +116,3 @@ func _on_Tween_tween_completed(_object, _key):
 	dialogue_index +=1
 	dialogue_line +=1
 
-
-#func _on_Control_tree_exited():
-	#Transition.change_scene("res://act2/cutscenes/title.tscn")

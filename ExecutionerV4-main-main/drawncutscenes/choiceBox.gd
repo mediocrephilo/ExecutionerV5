@@ -71,7 +71,6 @@ func load_dialogue(choicenumber):
 		Tween.TRANS_LINEAR, Tween.EASE_IN_OUT
 	)
 	$hhh.start()
-	print("adsfdgf")
 	
 func load_dialogue2(choicenumber):
 	yield(get_tree().create_timer(3), "timeout")
