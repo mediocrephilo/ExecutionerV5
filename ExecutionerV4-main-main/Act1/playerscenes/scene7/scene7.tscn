@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://player.gd" type="Script" id=1]
 [ext_resource path="res://sprites/characters/fall.png" type="Texture" id=2]
@@ -36,6 +36,7 @@
 [ext_resource path="res://sprites/Act1settings/sceneseven/deathclown3.PNG" type="Texture" id=34]
 [ext_resource path="res://sprites/Act1settings/sceneseven/deathclown1.PNG" type="Texture" id=35]
 [ext_resource path="res://Act1/playerscenes/scene7/scene7.gd" type="Script" id=36]
+[ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=37]
 
 [sub_resource type="RectangleShape2D" id=1]
 extents = Vector2( 3926.3, 183.43 )
@@ -45,9 +46,9 @@ extents = Vector2( 345.366, 1491.12 )
 
 [sub_resource type="SpriteFrames" id=3]
 animations = [ {
-"frames": [ ExtResource( 6 ), ExtResource( 15 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 5 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 6 ) ],
 "loop": true,
-"name": "walk",
+"name": "idle",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 2 ) ],
@@ -55,14 +56,14 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 6 ), ExtResource( 15 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 5 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 3 ) ],
 "loop": true,
 "name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "idle",
 "speed": 5.0
 } ]
 
@@ -83,6 +84,11 @@ extents = Vector2( 1755.97, 173.467 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
+"frames": [ ExtResource( 33 ) ],
+"loop": false,
+"name": "default",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 35 ), ExtResource( 32 ), ExtResource( 34 ), ExtResource( 31 ), ExtResource( 33 ) ],
 "loop": false,
 "name": "reversenom",
@@ -92,11 +98,6 @@ animations = [ {
 "loop": false,
 "name": "nom",
 "speed": 7.0
-}, {
-"frames": [ ExtResource( 33 ) ],
-"loop": false,
-"name": "default",
-"speed": 5.0
 } ]
 
 [sub_resource type="RectangleShape2D" id=10]
@@ -124,6 +125,10 @@ extents = Vector2( 29126.1, 735.203 )
 
 [sub_resource type="RectangleShape2D" id=16]
 extents = Vector2( 6161.55, 919.199 )
+
+[sub_resource type="DynamicFont" id=17]
+size = 100
+font_data = ExtResource( 37 )
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 36 )
@@ -172,7 +177,7 @@ flip_h = true
 position = Vector2( 3456.22, 1734.82 )
 shape = SubResource( 4 )
 
-[node name="Walk" type="AudioStreamPlayer2D" parent="player"]
+[node name="Walk" type="AudioStreamPlayer" parent="player"]
 stream = ExtResource( 25 )
 
 [node name="Camera2D" type="Camera2D" parent="player"]
@@ -1615,6 +1620,17 @@ script = ExtResource( 23 )
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area2D2"]
 position = Vector2( 10062.3, 3056.63 )
 shape = SubResource( 16 )
+
+[node name="Label" type="Label" parent="."]
+margin_left = 316.177
+margin_top = 1069.62
+margin_right = 2463.18
+margin_bottom = 1169.62
+custom_fonts/font = SubResource( 17 )
+text = "the ground feels shaky: don't stay too long . . . "
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [connection signal="body_entered" from="deathclownR" to="deathclownR" method="_on_deathclownR_body_entered"]
 [connection signal="body_entered" from="deathclownR2" to="deathclownR2" method="_on_deathclownR_body_entered"]
