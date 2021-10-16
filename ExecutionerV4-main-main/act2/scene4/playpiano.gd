@@ -22,6 +22,8 @@ func _ready():
 	$A.hide()
 	
 func _process(delta):
+	if Input.is_action_just_pressed("ui_cancel"):
+		Transition.change_scene("res://act2/scene4/bread.tscn")
 	if progression == 0:
 		$AnimatedSprite.show()
 	if progression == 8:
