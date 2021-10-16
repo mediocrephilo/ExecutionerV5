@@ -12,9 +12,10 @@ func _ready():
 	$dialoguebox.hide()
 func _on_beepbeephang_body_entered(body):
 	if body.name == "player":
-		$Label.show()
 		$AnimatedSprite.play("default")
 		canInteract = true
+		if finished == true:
+			$Label.show()
 		
 func _on_beepbeephang_body_exited(body):
 	if body.name == "player":

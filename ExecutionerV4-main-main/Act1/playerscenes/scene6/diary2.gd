@@ -11,7 +11,6 @@ func _ready():
 	$dialoguebox.hide()
 func _on_diary2_body_entered(body):
 	if body.name == "player":
-		$Label.show()
 		$AnimatedSprite.play("default")
 		canInteract = true
 

@@ -1,9 +1,10 @@
 extends Control
 
 var dialogue = [
-		"I  DON'T UNDERSTAND.",
-		"I HAVEN'T THOUGHT OF HIM IN YEARS . . .",
-		"WHAT WAS HIS NAME?",
+		"I'M . . . SORRY.",
+		". . . IT'S RATHER COLD.",
+		"I DON'T FEEL LIKE I SHOULD STICK AROUND MUCH LONGER.",
+		"WAIT . . . I FEEL LIKE I HEAR SOMEONE LAUGHING.",
 ]
 
 var dialogue_index = 0
@@ -14,14 +15,14 @@ func _ready():
 	load_dialogue()
 func _process(delta):
 	$"continuesprite".visible = finished
-	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index < 3:
+	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index < 4:
 		load_dialogue()
-	if Input.is_action_just_pressed("ui_accept") and dialogue_index >= 3:
+	if Input.is_action_just_pressed("ui_accept") and dialogue_index >= 4:
 		$RichTextLabel.hide()
 		$TextureRect.hide()
 		$continuesprite.hide()
 		$Type.stop()
-	if dialogue_index >= 3:
+	if dialogue_index >= 4:
 		$continuesprite.hide()
 func load_dialogue():
 	finished = false;

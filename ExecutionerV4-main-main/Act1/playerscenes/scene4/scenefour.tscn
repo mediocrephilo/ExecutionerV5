@@ -54,14 +54,14 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ) ],
-"loop": true,
-"name": "fall",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 16 ), ExtResource( 11 ), ExtResource( 9 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 7 ), ExtResource( 15 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "walk",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ) ],
+"loop": true,
+"name": "fall",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 14 ) ],
@@ -608,7 +608,7 @@ scroll_base_scale = Vector2( 0.7, 0.7 )
 position = Vector2( 4609.94, 719.193 )
 scale = Vector2( 0.598925, 0.600942 )
 frames = SubResource( 9 )
-frame = 12
+frame = 22
 playing = true
 flip_h = true
 
@@ -616,7 +616,7 @@ flip_h = true
 position = Vector2( 1458.69, 696.195 )
 scale = Vector2( 0.598925, 0.600942 )
 frames = SubResource( 10 )
-frame = 9
+frame = 10
 playing = true
 
 [node name="Sprite" type="Sprite" parent="ParallaxBackground5/ParallaxLayer"]

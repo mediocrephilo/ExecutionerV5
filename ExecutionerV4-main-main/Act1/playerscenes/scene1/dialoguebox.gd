@@ -3,7 +3,7 @@ extends Control
 
 var dialogue = [
 		"IT SAYS, ''HERETIC, WHAT IS YOUR NAME?''",
-		"I KNOW I'M LONELY",
+		"I KNOW I'M UNSTABLE",
 		"BUT I'M NOT GOING TO TALK TO A PIECE OF WOOD"
 ]
 var dialogue_index = 0

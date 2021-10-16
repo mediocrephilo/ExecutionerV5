@@ -75,13 +75,13 @@ __meta__ = {
 stream = ExtResource( 6 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 1217.7
-margin_top = 25.9086
-margin_right = 1985.7
-margin_bottom = 125.909
+margin_left = 1682.23
+margin_top = 1964.1
+margin_right = 2450.23
+margin_bottom = 2064.1
 custom_fonts/font = SubResource( 3 )
 custom_colors/font_color = Color( 1, 1, 1, 1 )
-text = "Press ESC to exit"
+text = "exit [esc]"
 __meta__ = {
 "_edit_use_anchors_": false
 }

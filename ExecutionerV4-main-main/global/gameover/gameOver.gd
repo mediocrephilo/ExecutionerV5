@@ -6,14 +6,17 @@ extends Node2D
 # var b = "text"
 var path = "text"
 var changen = false
+var num = 0
 
 func _process(_delta):
 	if changen == true:
 		$ColorRect.show()
 		$AnimatedSprite.show()
 		$RichTextLabel.show()
-		$AudioStreamPlayer.play()
-		$AudioStreamPlayer2.play()
+		if num == 0:
+			$AudioStreamPlayer.play()
+			$AudioStreamPlayer2.play()
+			num += 1
 		
 	if changen == false:
 		$ColorRect.hide()
@@ -21,6 +24,8 @@ func _process(_delta):
 		$AudioStreamPlayer.stop()
 		$AudioStreamPlayer2.stop()
 		$RichTextLabel.hide()
+		if num == 1:
+			num = 0
 		
 	if Input.is_action_just_pressed("ui_select") and changen == true:
 		Transition.change_scene(path)

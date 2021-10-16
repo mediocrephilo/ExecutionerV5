@@ -126,12 +126,12 @@ __meta__ = {
 anims/fade = SubResource( 3 )
 
 [node name="Label" type="Label" parent="."]
-margin_left = 1939.1
-margin_top = 46.5849
-margin_right = 2461.1
-margin_bottom = 146.585
+margin_left = 1643.1
+margin_top = 33.1306
+margin_right = 2165.1
+margin_bottom = 133.131
 custom_fonts/font = SubResource( 4 )
-text = "[Esc] to exit"
+text = "exit [esc]"
 __meta__ = {
 "_edit_use_anchors_": false
 }

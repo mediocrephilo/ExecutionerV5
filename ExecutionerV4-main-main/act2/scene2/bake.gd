@@ -25,7 +25,6 @@ func _on_bake_body_exited(body):
 		canInteract = false;
 		
 func _process(_delta):
-	$"dialoguebox/continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and canInteract == true and dialogue_index < 3:
 		load_dialogue()
 	if Input.is_action_just_pressed("ui_accept") and dialogue_index >= 3:
@@ -37,6 +36,7 @@ func _process(_delta):
 		
 func load_dialogue():
 	finished = false;
+	$dialoguebox/continuesprite.hide()
 	$dialoguebox/RichTextLabel.show()
 	$dialoguebox/TextureRect.show()
 	$dialoguebox/Type.play()
@@ -53,5 +53,6 @@ func load_dialogue():
 		$dialoguebox/continuesprite.hide()
 func _on_Tween_tween_completed(_object, _key):
 	finished = true
+	$dialoguebox/continuesprite.show()
 	$dialoguebox/Type.stop()
 	dialogue_index += 1
