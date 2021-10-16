@@ -1,10 +1,12 @@
 extends Control
 var dialogue = [
-		". . . Dogs, the lot of them. The Corps only know how to follow whatever orders they are given,",
+		". . .  . . . Damn them!",
+		"Dogs, the whole bunch. The Corps only know how to follow whatever orders they are given,",
 		"and lick their masters boots for awards. Thinking for yourself? Never heard of it.", 
 		". . . You know, they say that good men will die for their country, and blind men will kill for it.",
 		"Excuse me for my outburst. It's just . . . the way Eali pushes its naive ideology makes me sick.",
-		"Let us move on, then.",
+		". . .  . . .",
+		"Give me a moment . . . then let us move on.",
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
 

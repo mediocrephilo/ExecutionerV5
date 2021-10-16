@@ -10,7 +10,7 @@ extends Node2D
 func _ready():
 	RoomSound.playsound()
 	Pariswaltz.playsound()
-	gameSaver.save_game("res://Act3/scene2/intersection.tscn")
+	gameSaver.save_game("res://act3/scene2/intersection.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 #	pass

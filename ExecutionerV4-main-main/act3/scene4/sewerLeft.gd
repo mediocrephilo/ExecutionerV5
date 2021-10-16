@@ -17,9 +17,9 @@ func _ready():
 
 func _on_leftExit_body_entered(body):
 	if body.name == "player":
-		Transition.change_scene("res://Act3/scene4/maze2.tscn")
+		Transition.change_scene("res://act3/scene4/maze2.tscn")
 
 
 func _on_rightExit_body_entered(body):
 	if body.name == "player":
-			Transition.change_scene("res://Act3/scene4/SewerEntrance1.tscn")
+			Transition.change_scene("res://act3/scene4/sewerEntrance1.tscn")

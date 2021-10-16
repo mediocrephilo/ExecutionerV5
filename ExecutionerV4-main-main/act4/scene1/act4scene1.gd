@@ -8,7 +8,7 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	gameSaver.save_game("res://Act4/scene1/act4scene1.tscn")
+	gameSaver.save_game("res://act4/scene1/act4scene1.tscn")
 	Cassysong.playsound()
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

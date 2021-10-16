@@ -8,7 +8,7 @@ extends Area2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	gameSaver.save_game("res://Act3/scene4/Scene4Surface.tscn")
+	gameSaver.save_game("res://act3/scene4/Scene4Surface.tscn")
 	$AnimatedSprite2.hide()
 	
 
@@ -30,5 +30,5 @@ func _on_pothole_body_exited(body):
 		
 func _input(event):
 	if Input.is_action_pressed("ui_down"):
-			Transition.change_scene("res://Act3/scene4/sewerEntrance.tscn")
+			Transition.change_scene("res://act3/scene4/sewerEntrance.tscn")
 		

@@ -20,7 +20,7 @@ var interact = false
 
 func _ready():
 	MilitaryMarch.playsound()
-	$Control/Sprite.hide()
+	$Control/Sprite.hide() 
 	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
 

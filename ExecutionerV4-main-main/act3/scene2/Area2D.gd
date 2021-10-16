@@ -3,7 +3,7 @@ extends Area2D
 var canInteract = false
 func _ready():
 	RoomSound.playsound()
-	gameSaver.save_game("res://Act3/scene2/hallway.tscn")
+	gameSaver.save_game("res://act3/scene2/hallway.tscn")
 	$Label.hide()
 
 func _input(event):

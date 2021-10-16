@@ -3,7 +3,7 @@ extends Control
 var dialogue = [
 #<<<<<<< HEAD
 #=======
-		"... Elphabon, XX",
+		". . . Elphabon, XX",
 		"It’s been so long since father visited.",
 		"I don't think he's allowed to see me again. Ever. . .",
 		"The guard with the long black hair came in today and took Cindy." , 
@@ -24,7 +24,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 9:

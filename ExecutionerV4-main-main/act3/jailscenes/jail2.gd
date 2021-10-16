@@ -8,7 +8,7 @@ var yay = false
 func _ready():
 	MilitaryMarch.stopsound()
 	JailSound.playsound()
-	gameSaver.save_game("res://Act3/jailscenes/jail2.tscn")
+	gameSaver.save_game("res://act3/jailscenes/jail2.tscn")
 	$dialoguebox/continuesprite.hide()
 	$Label.hide()
 func _process(delta):

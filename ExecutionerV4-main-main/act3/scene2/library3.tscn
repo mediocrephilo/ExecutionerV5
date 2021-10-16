@@ -28,11 +28,21 @@
 [ext_resource path="res://sprites/act3settings/shelf1.png" type="Texture" id=26]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=27]
 [ext_resource path="res://act3/scene2/Sa.gd" type="Script" id=28]
-[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=29]
 [ext_resource path="res://sounds/Squeaky-Wooden-Floor-Footsteps--Fast--www.fesliyanstudios.com.wav" type="AudioStream" id=30]
+[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=31]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 5 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 8 ) ],
 "loop": true,
 "name": "jump",
@@ -41,16 +51,6 @@ animations = [ {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 9 ), ExtResource( 11 ), ExtResource( 4 ), ExtResource( 7 ), ExtResource( 12 ), ExtResource( 10 ), ExtResource( 15 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 5 ), ExtResource( 9 ) ],
-"loop": true,
-"name": "idle",
 "speed": 5.0
 } ]
 
@@ -315,6 +315,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book/dialoguebox"]
+stream = ExtResource( 31 )
 
 [node name="TextureRect" type="TextureRect" parent="book/dialoguebox"]
 margin_right = 1500.0
@@ -384,6 +385,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book2/dialoguebox"]
+stream = ExtResource( 31 )
 
 [node name="TextureRect" type="TextureRect" parent="book2/dialoguebox"]
 margin_right = 1500.0
@@ -453,6 +455,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book3/dialoguebox"]
+stream = ExtResource( 31 )
 
 [node name="TextureRect" type="TextureRect" parent="book3/dialoguebox"]
 margin_right = 1500.0
@@ -522,7 +525,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book4/dialoguebox"]
-stream = ExtResource( 29 )
+stream = ExtResource( 31 )
 
 [node name="TextureRect" type="TextureRect" parent="book4/dialoguebox"]
 margin_right = 1500.0

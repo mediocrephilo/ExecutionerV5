@@ -9,4 +9,4 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	
-	gameSaver.save_game("res://Act3/scene2/bathroom.tscn")
+	gameSaver.save_game("res://act3/scene2/bathroom.tscn")

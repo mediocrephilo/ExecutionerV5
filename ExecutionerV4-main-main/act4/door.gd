@@ -3,7 +3,7 @@ extends Area2D
 var canInteract = false
 func _ready():
 	FactorySound.playsound()
-	gameSaver.save_game("res://Act4/scene5/scene5.tscn")
+	gameSaver.save_game("res://act4/scene5/scene5.tscn")
 	Cassysong.playsound()
 	$Label.hide()
 

@@ -3,7 +3,7 @@ extends Node2D
 var yay = false
 func _ready():
 	JailSound.playsound()
-	gameSaver.save_game("res://Act3/jailscenes/jail3.tscn")
+	gameSaver.save_game("res://act3/jailscenes/jail3.tscn")
 	$dialoguebox/continuesprite.hide()
 	$Label.hide()
 func _process(delta):

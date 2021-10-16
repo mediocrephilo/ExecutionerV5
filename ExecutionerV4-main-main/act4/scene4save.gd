@@ -10,7 +10,7 @@ extends Node2D
 func _ready():
 	Cassysong.playsound()
 	ForestSound.playsound()
-	gameSaver.save_game("res://Act4/scene5/scene4.tscn")
+	gameSaver.save_game("res://act4/scene5/scene4.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

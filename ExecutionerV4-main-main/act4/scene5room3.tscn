@@ -61,9 +61,9 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 6 ), ExtResource( 18 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 11 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 7 ) ],
 "loop": true,
-"name": "walk",
+"name": "jump",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 24 ) ],
@@ -71,9 +71,9 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 6 ), ExtResource( 18 ), ExtResource( 8 ), ExtResource( 15 ), ExtResource( 5 ), ExtResource( 2 ), ExtResource( 11 ), ExtResource( 9 ) ],
 "loop": true,
-"name": "jump",
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -131,7 +131,7 @@ position = Vector2( 5591.19, 1283.72 )
 scale = Vector2( 3.07375, 1.69392 )
 z_index = 2
 frames = SubResource( 2 )
-frame = 18
+frame = 7
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]

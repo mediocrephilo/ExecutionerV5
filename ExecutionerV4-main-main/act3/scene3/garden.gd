@@ -9,7 +9,7 @@ extends Node2D
 # Called when the node enters the scene tree for the first time.
 
 func _ready():
-	gameSaver.save_game("res://Act3/scene3/garden.tscn")
+	gameSaver.save_game("res://act3/scene3/garden.tscn")
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):

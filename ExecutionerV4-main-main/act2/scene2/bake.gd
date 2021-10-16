@@ -33,6 +33,7 @@ func _process(_delta):
 		$dialoguebox/TextureRect.hide()
 		$dialoguebox/continuesprite.hide()
 		$dialoguebox/Type.stop()
+		$AnimatedSprite.stop()
 		
 func load_dialogue():
 	finished = false;

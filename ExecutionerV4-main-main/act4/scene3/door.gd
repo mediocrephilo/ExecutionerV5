@@ -4,7 +4,7 @@ var canInteract = false
 
 func _ready():
 	RoomSound.playsound()
-	gameSaver.save_game("res://Act4/scene3/scene3.tscn")
+	gameSaver.save_game("res://act4/scene3/scene3.tscn")
 	Cassysong.playsound()
 	$Label.hide()
 

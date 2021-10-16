@@ -6,7 +6,7 @@ func _ready():
 	JailSound.playsound()
 	ForestSound.stopsound()
 	CitySound.stopsound()
-	gameSaver.save_game("res://Act3/jailscenes/jail5.tscn")
+	gameSaver.save_game("res://act3/jailscenes/jail5.tscn")
 	#$dialoguebox2/continuesprite.hide()
 #func _process(delta):
 	#if Input.is_action_just_pressed("ui_accept") and yay == true:

@@ -10,7 +10,7 @@ extends Node2D
 
 func _ready():
 	FactorySound.playsound()
-	gameSaver.save_game("res://Act3/scene3/norma3.tscn")
+	gameSaver.save_game("res://act3/scene3/norma3.tscn")
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

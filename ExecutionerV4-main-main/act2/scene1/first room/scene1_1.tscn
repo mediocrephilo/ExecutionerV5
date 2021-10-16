@@ -1,4 +1,4 @@
-[gd_scene load_steps=53 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://sprites/act 2 setting/scene1/buildings1.png" type="Texture" id=1]
 [ext_resource path="res://sprites/act 2 setting/scene1/black background.png" type="Texture" id=2]
@@ -29,12 +29,13 @@
 [ext_resource path="res://act2/scene1/first room/enter2.gd" type="Script" id=27]
 [ext_resource path="res://act2/scene1/first room/enter5.gd" type="Script" id=28]
 [ext_resource path="res://act2/scene1/first room/dialoguebox.gd" type="Script" id=29]
-[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=30]
+[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=30]
 [ext_resource path="res://sprites/UI/dialoguebox.png" type="Texture" id=31]
 [ext_resource path="res://sounds/sneaker-shoe-on-concrete-floor-slow-pace-2-www.FesliyanStudios.com.mp3" type="AudioStream" id=32]
 [ext_resource path="res://act2/scene1/first room/scene1_1.gd" type="Script" id=33]
 [ext_resource path="res://sounds/zapsplat_human_child_boy_6_years_laugh_short_005_19739.mp3" type="AudioStream" id=34]
 [ext_resource path="res://sounds/255715__klankbeeld__horror-ambience-78-130322-00.wav" type="AudioStream" id=35]
+[ext_resource path="res://sprites/UI/continuesprite.png" type="Texture" id=36]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -46,6 +47,11 @@ animations = [ {
 
 [sub_resource type="SpriteFrames" id=2]
 animations = [ {
+"frames": [ ExtResource( 19 ), ExtResource( 20 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 17 ) ],
 "loop": true,
 "name": "fall",
@@ -59,11 +65,6 @@ animations = [ {
 "frames": [ ExtResource( 18 ) ],
 "loop": true,
 "name": "jump",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 19 ), ExtResource( 20 ) ],
-"loop": true,
-"name": "idle",
 "speed": 5.0
 } ]
 
@@ -118,6 +119,31 @@ font_data = ExtResource( 23 )
 [sub_resource type="DynamicFont" id=17]
 size = 100
 font_data = ExtResource( 23 )
+
+[sub_resource type="Animation" id=18]
+resource_name = "New Anim"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"points": PoolRealArray( 2100, -0.25, 0, 0.25, 0, 2100, -0.25, 0, 0.25, 0, 2100, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1500, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 1500, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 33 )
@@ -386,6 +412,15 @@ __meta__ = {
 stream = ExtResource( 30 )
 
 [node name="Tween" type="Tween" parent="dialoguebox"]
+
+[node name="continuesprite" type="Sprite" parent="dialoguebox"]
+position = Vector2( 2100, 1600 )
+scale = Vector2( 1.31444, 1.92604 )
+texture = ExtResource( 36 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="dialoguebox/continuesprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 18 )
 
 [node name="Sprite3" type="Sprite" parent="."]
 position = Vector2( 3852.94, 1117.9 )

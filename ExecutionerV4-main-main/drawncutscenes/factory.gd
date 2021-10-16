@@ -5,9 +5,9 @@ var dialogue = [
 #=======
 
 		"They always tell me that I’m lucky, but I don’t get what they mean. Something about factories, something about E.L.F",
-		"... ... ...",
+		". . .  . . .  . . .",
 		"but I’m scared. . . I don’t want to go . . . ",
-		"..."
+		". . ."
 ]
 var dialogue_index = 0
 var finished = false
@@ -19,7 +19,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 3:

@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://sprites/act3settings/mirror/FE9D868E-EC0A-47C8-A335-257D5D8F87FF.JPG" type="Texture" id=1]
 [ext_resource path="res://sprites/act3settings/mirror/miror1.png" type="Texture" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=9]
 [ext_resource path="res://sprites/act3settings/mirror/D4644180-E72B-45D3-96DC-B6AD9F0E061D.JPG" type="Texture" id=10]
 [ext_resource path="res://sounds/ftus_building_abandoned_derelict_water_drips_distant_traffic_625.mp3" type="AudioStream" id=11]
+[ext_resource path="res://sounds/255715__klankbeeld__horror-ambience-78-130322-00.wav" type="AudioStream" id=12]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -24,14 +25,14 @@ animations = [ {
 "name": "frame",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "everythin",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 10 ) ],
 "loop": true,
 "name": "scary",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 2 ) ],
+"loop": true,
+"name": "everythin",
 "speed": 5.0
 } ]
 
@@ -65,6 +66,14 @@ tracks/1/keys = {
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 5 )
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 5041.0
+margin_bottom = 2586.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1931.86, 1006.8 )
@@ -122,6 +131,11 @@ stream = ExtResource( 7 )
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )
 autoplay = true
+
+[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+
+[node name="AudioStreamPlayer3" type="AudioStreamPlayer" parent="."]
 
 [connection signal="tree_exited" from="." to="." method="_on_Node2D_tree_exited"]
 [connection signal="tree_exited" from="dialoguebox" to="." method="_on_dialoguebox_tree_exited"]

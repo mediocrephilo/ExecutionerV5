@@ -53,7 +53,6 @@ tracks/1/keys = {
 position = Vector2( 1933.5, 1101.78 )
 scale = Vector2( 1.0027, 1.02839 )
 frames = SubResource( 1 )
-frame = 1
 playing = true
 
 [node name="Control" type="Control" parent="."]
@@ -79,8 +78,8 @@ anchor_right = 82.775
 anchor_bottom = 47.325
 margin_left = 356.0
 margin_top = 108.0
-margin_right = -449.0
-margin_bottom = 155.0
+margin_right = -339.0
+margin_bottom = 231.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true

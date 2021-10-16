@@ -49,6 +49,9 @@ func load_dialogue():
 		$dialoguebox/Tween.start()
 		if dialogue_index == 6:
 			$AnimatedSprite.play("scary")
+			$AudioStreamPlayer.stop()
+			$AudioStreamPlayer2.play()
+			$AudioStreamPlayer3.play()
 	else:
 		queue_free()
 

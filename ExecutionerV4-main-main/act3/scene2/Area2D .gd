@@ -2,7 +2,7 @@ extends Area2D
 var canInteract = false
 func _ready():
 	RoomSound.playsound()
-	gameSaver.save_game("res://Act3/scene2/downstairs.tscn")
+	gameSaver.save_game("res://act3/scene2/downstairs.tscn")
 	$Label.hide()
 func _on_Area2D_body_entered(body):
 	if body.name == "player":

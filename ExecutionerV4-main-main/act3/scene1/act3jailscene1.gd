@@ -3,7 +3,7 @@ extends Node2D
 var yay = false
 func _ready():
 	JailSound.playsound()
-	gameSaver.save_game("res://Act3/scene1/act3jailscene1.tscn")
+	gameSaver.save_game("res://act3/scene1/act3jailscene1.tscn")
 	$Label2.hide()
 func _process(delta):
 	if Input.is_action_just_pressed("ui_accept") and yay == true:

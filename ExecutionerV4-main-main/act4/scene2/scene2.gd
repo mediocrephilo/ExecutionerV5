@@ -7,7 +7,7 @@ extends Node2D
 #	var ball = BALL.instance()
 #	add_child(ball)
 func _ready():
-	gameSaver.save_game("res://Act4/scene2/scene2.tscn")
+	gameSaver.save_game("res://act4/scene2/scene2.tscn")
 	Cassysong.playsound()
 #func _on_Timer2_timeout():
 #	var ball2 = BALL2.instance()

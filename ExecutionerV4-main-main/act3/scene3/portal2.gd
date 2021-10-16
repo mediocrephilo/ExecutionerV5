@@ -8,8 +8,8 @@ func _ready():
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_interact") and canInteract == true:
-			Transition.change_scene("res://drawncutscenes/garden2.tscn")
-			FactorySound.stopsound()
+		Transition.change_scene("res://drawncutscenes/garden2.tscn")
+		FactorySound.stopsound()
 
 
 func _on_portal_body_entered(body):

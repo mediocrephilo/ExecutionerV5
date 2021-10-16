@@ -16,7 +16,7 @@
 [ext_resource path="res://sprites/act3settings/stairs.png" type="Texture" id=14]
 [ext_resource path="res://sprites/characters/fall.png" type="Texture" id=15]
 [ext_resource path="res://sprites/characters/idle right 1.png" type="Texture" id=16]
-[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=17]
+[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=17]
 [ext_resource path="res://sprites/characters/right walk 3.png" type="Texture" id=18]
 [ext_resource path="res://sprites/characters/right walk 7.png" type="Texture" id=19]
 [ext_resource path="res://sprites/characters/right walk 6.png" type="Texture" id=20]
@@ -33,6 +33,16 @@
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
+"frames": [ ExtResource( 16 ), ExtResource( 21 ) ],
+"loop": true,
+"name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 13 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 25 ) ],
+"loop": true,
+"name": "walk",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 23 ) ],
 "loop": true,
 "name": "jump",
@@ -41,16 +51,6 @@ animations = [ {
 "frames": [ ExtResource( 15 ) ],
 "loop": true,
 "name": "fall",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 21 ), ExtResource( 22 ), ExtResource( 18 ), ExtResource( 24 ), ExtResource( 13 ), ExtResource( 20 ), ExtResource( 19 ), ExtResource( 25 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 16 ), ExtResource( 21 ) ],
-"loop": true,
-"name": "idle",
 "speed": 5.0
 } ]
 
@@ -315,6 +315,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book/dialoguebox"]
+stream = ExtResource( 17 )
 
 [node name="TextureRect" type="TextureRect" parent="book/dialoguebox"]
 margin_right = 1500.0
@@ -384,6 +385,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book2/dialoguebox"]
+stream = ExtResource( 17 )
 
 [node name="TextureRect" type="TextureRect" parent="book2/dialoguebox"]
 margin_right = 1500.0
@@ -453,6 +455,7 @@ __meta__ = {
 }
 
 [node name="Type" type="AudioStreamPlayer" parent="book3/dialoguebox"]
+stream = ExtResource( 17 )
 
 [node name="TextureRect" type="TextureRect" parent="book3/dialoguebox"]
 margin_right = 1500.0

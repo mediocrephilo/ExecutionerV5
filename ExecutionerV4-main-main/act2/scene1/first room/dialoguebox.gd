@@ -10,17 +10,19 @@ var dialogue_index = 0
 var number = 0
 var finished = true
 func _ready():
-	#$continuesprite.hide()
+	$continuesprite.hide()
 	load_dialogue()
 func _process(delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index < 3:
 		load_dialogue()
 	if Input.is_action_just_pressed("ui_accept") and dialogue_index >= 3:
 		$RichTextLabel.hide()
 		$TextureRect.hide()
-		#$continuesprite.hide()
+		$continuesprite.hide()
 		$Type.stop()
+	if dialogue_index >= 3:
+		$continuesprite.hide()
 func load_dialogue():
 	finished = false;
 	$RichTextLabel.show()
@@ -36,7 +38,8 @@ func load_dialogue():
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		$RichTextLabel.hide()
 		$TextureRect.hide()
-		#$continuesprite.hide()
+		$continuesprite.hide()
+
 func _on_Tween_tween_completed(_object, _key):
 	finished = true
 	$Type.stop()
