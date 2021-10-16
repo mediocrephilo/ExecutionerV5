@@ -1,12 +1,13 @@
 extends Control
 var dialogue = [
-		". . . PRETENTIOUS ASSHOLE",
+		". . .  . . .",
+		"PRETENTIOUS ASSHOLE",
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
 
 var dialogue_index = 0
 var number = 0
-var finished = true
+var finished = false
 var canInteract = false
 
 func _ready():

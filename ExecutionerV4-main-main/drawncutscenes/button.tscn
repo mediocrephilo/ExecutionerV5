@@ -7,7 +7,7 @@
 [ext_resource path="res://drawncutscenes/button.gd" type="Script" id=5]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=6]
 [ext_resource path="res://sounds/ftus_building_abandoned_derelict_water_drips_distant_traffic_625.mp3" type="AudioStream" id=7]
-[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=8]
+[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=8]
 [ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=9]
 
 [sub_resource type="SpriteFrames" id=1]

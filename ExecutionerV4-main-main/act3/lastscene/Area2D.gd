@@ -18,4 +18,5 @@ func _on_Area2D_body_exited(body):
 
 func _input(event):
 	if Input.is_action_just_pressed("ui_accept") and canInteract == true:
+		JailSound.stopsound()
 		Transition.change_scene("res://drawncutscenes/corridorscene.tscn")

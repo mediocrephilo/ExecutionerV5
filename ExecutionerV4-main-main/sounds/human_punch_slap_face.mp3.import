@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/human_punch_slap_face.mp3-a813023f14dc16e27d93a6440e4295f6.mp3str"
+
+[deps]
+
+source_file="res://sounds/human_punch_slap_face.mp3"
+dest_files=[ "res://.import/human_punch_slap_face.mp3-a813023f14dc16e27d93a6440e4295f6.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

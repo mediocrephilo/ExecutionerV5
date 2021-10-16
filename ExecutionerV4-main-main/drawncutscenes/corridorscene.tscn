@@ -1,4 +1,4 @@
-[gd_scene load_steps=20 format=2]
+[gd_scene load_steps=22 format=2]
 
 [ext_resource path="res://drawncutscenes/corriderscene6.png" type="Texture" id=1]
 [ext_resource path="res://drawncutscenes/corriderscene8.png" type="Texture" id=2]
@@ -16,7 +16,8 @@
 [ext_resource path="res://sounds/cassy.wav" type="AudioStream" id=14]
 [ext_resource path="res://sounds/ftus_electromanetic_field_street_light_002_335.mp3" type="AudioStream" id=15]
 [ext_resource path="res://sounds/ftus_building_abandoned_derelict_water_drips_distant_traffic_625.mp3" type="AudioStream" id=16]
-[ext_resource path="res://sounds/zapsplat_foley_footstep_single_boys_sneaker_on_concrete_001_50911.mp3" type="AudioStream" id=17]
+[ext_resource path="res://sounds/human_punch_slap_face.mp3" type="AudioStream" id=17]
+[ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=18]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -25,9 +26,9 @@ animations = [ {
 "name": "2",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 3 ), ExtResource( 9 ) ],
+"frames": [ ExtResource( 7 ), ExtResource( 2 ) ],
 "loop": true,
-"name": "1",
+"name": "5",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 4 ), ExtResource( 1 ) ],
@@ -35,20 +36,45 @@ animations = [ {
 "name": "3",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 3 ), ExtResource( 9 ) ],
+"loop": true,
+"name": "1",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 6 ) ],
 "loop": true,
 "name": "4",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 7 ), ExtResource( 2 ) ],
-"loop": true,
-"name": "5",
 "speed": 5.0
 } ]
 
 [sub_resource type="DynamicFont" id=2]
 size = 100
 font_data = ExtResource( 12 )
+
+[sub_resource type="Animation" id=3]
+resource_name = "New Anim"
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"points": PoolRealArray( 2590, -0.25, 0, 0.25, 0, 2590, -0.25, 0, 0.25, 0, 2590, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1570, -0.25, 0, 0.25, 0, 1700, -0.25, 0, 0.25, 0, 1590, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
 
 [node name="Node2D" type="Node2D"]
 
@@ -104,6 +130,15 @@ volume_db = -30.0
 autoplay = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="Control"]
+
+[node name="continuesprite" type="Sprite" parent="Control"]
+position = Vector2( 2590, 1700 )
+scale = Vector2( 1.31444, 1.92604 )
+texture = ExtResource( 18 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/continuesprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 14 )
