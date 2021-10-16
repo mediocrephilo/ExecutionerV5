@@ -28,10 +28,10 @@ func _ready():
 
 func _process(_delta):
 	$"continuesprite".visible = finished
-	if doneScene == true:
-		Transition.change_scene("res://drawncutscenes/cassy.tscn")
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
+		if dialogue_index == 10:
+			Transition.change_scene("res://drawncutscenes/cassy.tscn")
 		
 func load_dialogue():
 	$Sprite.show()

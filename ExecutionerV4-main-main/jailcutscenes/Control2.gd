@@ -43,8 +43,6 @@ func load_dialogue():
 		$Tween.start()
 		if dialogue_index == 2:
 			$AnimatedSprite.play("2")
-	else:
-		doneScene = true
 		
 func _on_Tween_tween_completed(_object, _key):
 	finished = true
