@@ -16,13 +16,13 @@ func _ready():
 #	pass
 
 
-func _on_enter_body_entered(body):
+func _on_enter_body_entered(_body):
 	pass # Replace with function body.
 
 
-func _on_enter3_body_entered(body):
+func _on_enter3_body_entered(_body):
 	pass # Replace with function body.
 
 
-func _on_enter3_body_exited(body):
+func _on_enter3_body_exited(_body):
 	pass # Replace with function body.

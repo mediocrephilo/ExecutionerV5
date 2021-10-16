@@ -24,6 +24,6 @@ func fade_out():
 	$Tween.start()
 	# when the tween ends, the music will be stopped
 
-func _on_Tween_tween_completed(object, key):
+func _on_Tween_tween_completed(_object, _key):
 	# stop the music -- otherwise it continues to run at silent volume
 	$AudioStreamPlayer.stop()

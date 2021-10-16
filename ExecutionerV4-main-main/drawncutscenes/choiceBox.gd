@@ -113,11 +113,11 @@ func _on_hhh_tween_started(_object, _key):
 	$RichTextLabel.show()
 	$RichTextLabel2.show()
 
-func _on_aks_tween_started(object, key):
+func _on_aks_tween_started(_object, _key):
 	$RichTextLabel4.show()
 
 
-func _on_aks_tween_completed(object, key):
+func _on_aks_tween_completed(_object, _key):
 	$AnimatedSprite3.show()
 	finished = true
 	$type.stop()
