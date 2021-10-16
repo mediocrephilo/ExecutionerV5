@@ -13,4 +13,4 @@ func _ready():
 
 func _on_pothole_body_entered(body):
 	if body.name == "player" and Input.is_action_pressed("ui_down"):
-		Transition.change_scene("res://Act3/scene4/sewerEntrance.tscn")
+		Transition.change_scene("res://act3/scene4/sewerEntrance.tscn")
