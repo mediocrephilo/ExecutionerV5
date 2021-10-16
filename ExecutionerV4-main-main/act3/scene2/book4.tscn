@@ -88,7 +88,7 @@ margin_right = 2140.24
 margin_bottom = 2105.46
 custom_fonts/font = SubResource( 2 )
 custom_colors/font_color = Color( 0, 0, 0, 1 )
-text = "leave (esc)"
+text = "leave [esc]"
 __meta__ = {
 "_edit_use_anchors_": false
 }

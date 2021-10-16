@@ -8,5 +8,5 @@ extends Node2D
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	
+	Pariswaltz.playsound()
 	gameSaver.save_game("res://act3/scene2/bathroom.tscn")

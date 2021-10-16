@@ -5,7 +5,7 @@ extends Node2D
 # var a = 2
 # var b = "text"
 var progression = 0
-
+var num = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -26,8 +26,9 @@ func _process(delta):
 		Transition.change_scene("res://act2/scene4/bread.tscn")
 	if progression == 0:
 		$AnimatedSprite.show()
-	if progression == 8:
+	if progression == 8 and num == 0:
 		Transition.change_scene("res://act2/scene4/bread2.tscn")
+		num = 1
 	if Input.is_action_just_pressed("one"):
 		if progression == 6:
 			progression += 1

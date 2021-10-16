@@ -84,7 +84,7 @@ margin_top = 1040.76
 margin_right = 4530.84
 margin_bottom = 1535.76
 custom_fonts/font = SubResource( 1 )
-text = "Remember (space)"
+text = "Remember [Space]"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -119,7 +119,7 @@ margin_top = 912.835
 margin_right = 3190.29
 margin_bottom = 1012.84
 custom_fonts/font = SubResource( 4 )
-text = "Talk (space)"
+text = "Talk [Space]"
 __meta__ = {
 "_edit_use_anchors_": false
 }

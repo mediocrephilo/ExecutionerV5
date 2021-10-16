@@ -34,7 +34,7 @@ __meta__ = {
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 1919.13, 1082.83 )
 frames = SubResource( 1 )
-frame = 1
+frame = 2
 playing = true
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
