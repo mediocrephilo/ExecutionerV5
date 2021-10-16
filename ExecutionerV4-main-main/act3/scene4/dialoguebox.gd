@@ -6,7 +6,7 @@ extends Control
 # var b = "text"
 var dialogue = [
 		"Let's see . . .",
-		"Well, that's strange.",
+		"Curiouser and curiouser.",
 		"The next few pages seem to be some sort of fairy tale.",
 		"''Once upon a time, on a star far, far away, there lived a little bird.''",
 		"''He had wings of gold that shone bright in the dark around him and talons of flame that protected him from both heat and frost.''",

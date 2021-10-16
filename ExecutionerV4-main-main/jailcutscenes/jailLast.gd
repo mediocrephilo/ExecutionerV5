@@ -5,7 +5,8 @@ var dialogue = [
 #=======
 		"IT'S TIME, PRISONER.",
 		"LISTEN . . . 161, I AM SORRY ABOUT ALL THIS. REALLY.",
-		"I WAS A FAN, YOU KNOW? BUT DON'T TELL THE HIGHER UPS I SAID TOLD YOU THAT.",
+		"I WAS A FAN, YOU KNOW? BEFORE THE REBELLION.",
+		"BUT DON'T TELL THE HIGHER UPS I SAID THAT.",
 		"THEY MIGHT THINK I'M SOME KIND OF EALI SYMPATHIZER.",
 		"WELL, I GUESS IT'S ALL IN THE PAST NOW. GET YOURSELF READY.",
 		". . . YOU NEED A MINUTE? SURE. WHY NOT?",
@@ -24,10 +25,10 @@ func _ready():
 
 func _process(_delta):
 	$"continuesprite".visible = finished
-	if doneScene == true:
-		Transition.change_scene("res://finalcutscenes/buttonfinal.tscn")
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
+		if dialogue_index == 7:
+			Transition.change_scene("res://finalcutscenes/buttonfinal.tscn")
 		
 func load_dialogue():
 	$Sprite.show()

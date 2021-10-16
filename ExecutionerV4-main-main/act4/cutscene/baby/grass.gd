@@ -12,11 +12,11 @@ var dialogue = [
 		"No, it's okay, I just did really bad.",
 		"I'm just bad at physicals in general. . . I'm not strong, or fast, and I'm pretty clumsy too.",
 		"I'm way better at art and music though . . . but the Corps don't care as much for those.",
-		"Actually. . . I might have a chance at joining the EALI Philharmonic Orchestra, but I heard it's too competitive. . .",
-		". . .   . . .   . . .",
+		"Actually . . . I might have a chance at joining the EALI Philharmonic Orchestra, but I heard it's too competitive. . .",
+		". . .  . . .  . . .",
 		"Honestly, I'm just scared . . . My parents would be so disappointed in me if I don't at least make it into the Scouts",
 		"It should be easy for you though, you're number one in almost every test! I wish I could be more like you . . .",
-		". . . Yeah... I guess I should train some more. . .",
+		". . . Yeah . . . I guess I should train some more. . .",
 		"It's just that I can't focus at all on Corps training! It's so boring, and all the running makes me sick . . .",
 		"It's okay . . . maybe I'll be better when I'm older!"
 

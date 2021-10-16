@@ -29,7 +29,11 @@ extents = Vector2( 258.494, 2532.24 )
 [sub_resource type="RectangleShape2D" id=4]
 extents = Vector2( 596.371, 1563.2 )
 
-[sub_resource type="SpriteFrames" id=5]
+[sub_resource type="DynamicFont" id=5]
+size = 100
+font_data = ExtResource( 14 )
+
+[sub_resource type="SpriteFrames" id=6]
 animations = [ {
 "frames": [ ExtResource( 7 ), ExtResource( 6 ), ExtResource( 8 ) ],
 "loop": true,
@@ -37,8 +41,7 @@ animations = [ {
 "speed": 1.0
 } ]
 
-[sub_resource type="Animation" id=6]
-resource_name = "New Anim"
+[sub_resource type="Animation" id=7]
 length = 40.0
 loop = true
 tracks/0/type = "bezier"
@@ -62,8 +65,7 @@ tracks/1/keys = {
 "times": PoolRealArray( 0, 40 )
 }
 
-[sub_resource type="Animation" id=7]
-resource_name = "New Anim"
+[sub_resource type="Animation" id=8]
 length = 30.0
 loop = true
 tracks/0/type = "bezier"
@@ -87,12 +89,11 @@ tracks/1/keys = {
 "times": PoolRealArray( 1, 30 )
 }
 
-[sub_resource type="DynamicFont" id=8]
+[sub_resource type="DynamicFont" id=9]
 size = 100
 font_data = ExtResource( 14 )
 
-[sub_resource type="Animation" id=9]
-resource_name = "New Anim"
+[sub_resource type="Animation" id=10]
 length = 2.0
 loop = true
 tracks/0/type = "bezier"
@@ -115,10 +116,6 @@ tracks/1/keys = {
 "points": PoolRealArray( 139.435, -0.25, 0, 0.25, 0, 250, -0.25, 0, 0.25, 0, 139.435, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 1, 2 )
 }
-
-[sub_resource type="DynamicFont" id=10]
-size = 100
-font_data = ExtResource( 14 )
 
 [node name="Node2D" type="Node2D"]
 
@@ -168,19 +165,30 @@ script = ExtResource( 4 )
 position = Vector2( 973.3, 1195.57 )
 shape = SubResource( 4 )
 
+[node name="Label" type="Label" parent="Area2D"]
+margin_left = 905.618
+margin_top = 46.5978
+margin_right = 1136.62
+margin_bottom = 146.598
+custom_fonts/font = SubResource( 5 )
+text = "Enter"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
 [node name="player" parent="." instance=ExtResource( 5 )]
 position = Vector2( 3394.78, 1415.81 )
 
 [node name="AnimatedSprite" type="AnimatedSprite" parent="."]
 position = Vector2( 7028.91, 1536.95 )
 scale = Vector2( 3.43735, 1.08666 )
-frames = SubResource( 5 )
-frame = 2
+frames = SubResource( 6 )
+frame = 1
 playing = true
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="AnimatedSprite"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 6 )
+"anims/New Anim" = SubResource( 7 )
 
 [node name="Sprite6" type="Sprite" parent="."]
 position = Vector2( 9555.96, 1361.35 )
@@ -189,7 +197,7 @@ texture = ExtResource( 9 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Sprite6"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 7 )
+"anims/New Anim" = SubResource( 8 )
 
 [node name="dialoguebox" type="Control" parent="."]
 margin_right = 40.0
@@ -215,7 +223,7 @@ margin_left = 663.0
 margin_top = 292.0
 margin_right = 3531.0
 margin_bottom = 637.0
-custom_fonts/normal_font = SubResource( 8 )
+custom_fonts/normal_font = SubResource( 9 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 __meta__ = {
 "_edit_use_anchors_": false
@@ -233,7 +241,7 @@ texture = ExtResource( 15 )
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="dialoguebox/continuesprite"]
 autoplay = "New Anim"
-"anims/New Anim" = SubResource( 9 )
+"anims/New Anim" = SubResource( 10 )
 
 [node name="Sprite7" type="Sprite" parent="."]
 position = Vector2( 3935.13, 1055.62 )
@@ -245,16 +253,6 @@ position = Vector2( 3806.11, 1026.3 )
 scale = Vector2( 1.04429, 1.03751 )
 texture = ExtResource( 13 )
 
-[node name="Label" type="Label" parent="."]
-margin_left = 905.618
-margin_top = 46.5978
-margin_right = 1136.62
-margin_bottom = 146.598
-custom_fonts/font = SubResource( 10 )
-text = "Enter"
-__meta__ = {
-"_edit_use_anchors_": false
-}
-
 [connection signal="body_entered" from="Area2D" to="Area2D" method="_on_Area2D_body_entered"]
+[connection signal="body_exited" from="Area2D" to="Area2D" method="_on_Area2D_body_exited"]
 [connection signal="tween_completed" from="dialoguebox/Tween" to="dialoguebox" method="_on_Tween_tween_completed"]

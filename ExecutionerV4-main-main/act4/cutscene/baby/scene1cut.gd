@@ -5,7 +5,7 @@ var dialogue = [
 #=======
 		"Hi! What's your name? I'm so happy I'm not the only kid!",
 		"These meetings are so boring, right? There's nothing to play with!",
-		"What's the point of all this, anyways? Who cares about the EALI? I want to play in the snow!",
+		"What's the point of all this, anyways? Who cares about EALI? I want to play in the snow!",
 		"It's all just boring adult stuff.",
 		". . . Why do you look so scared? It's not like anyone can hear us",
 		"Haha, you're such a scaredy cat! . . . It's funny! Do you want to be friends?",
@@ -29,7 +29,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		

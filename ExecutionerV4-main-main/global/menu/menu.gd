@@ -24,4 +24,4 @@ func _process(_delta):
 	if Input.is_action_just_pressed("five"):
 		Transition.change_scene("res://act3/scene1/act3jailscene1.tscn")
 	if Input.is_action_just_pressed("six"):
-		Transition.change_scene("res://drawncutscenes/capture1.tscn")
+		Transition.change_scene("res://act3/jailscenes/jail3.tscn")

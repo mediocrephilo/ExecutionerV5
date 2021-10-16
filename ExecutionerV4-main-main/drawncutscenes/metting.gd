@@ -14,7 +14,9 @@ var dialogue = [
 		"That said, I will give you one opportunity to leave. Stand, and be forgotten. Stay, and be condemned.",
 		". . . Good. Now we may begin.",
 		"The bombs have been placed under the E.L.F factory, and I have the detonator.",
-		"Good riddance to that place. I for one surely won't miss it"
+		"Good riddance. However, remember the factories are not our only objective. ",
+		"To make sure nothing like this ever happens again, we . . .",
+		"are going to have to do some serious spring cleaning.",
 		
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
@@ -28,7 +30,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	#$"continuesprite".visible = finished
+	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		

@@ -7,7 +7,7 @@ var dialogue = [
 		". . . . . . . . . Hey.",
 		"I'm alright, I know you didn't mean to hit me.",
 		"I'm sorry, I know I shouldn't tell you what to do . . . I really was just trying to help you . . .",
-		"What you did to those kids . . . and Paris... the people really hate you for that.",
+		"What you did to those kids . . . and Paris . . . the people really hate you for that.",
 		"I was just trying to keep you safe.",
 		"Yes, I understand. The Corps is your thing, you get to make the decisions, but it just isn't for me",
 		". . . I came here to say goodbye. I'm leaving.",

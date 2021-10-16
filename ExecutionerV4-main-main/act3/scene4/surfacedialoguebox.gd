@@ -4,8 +4,8 @@ extends Control
 var dialogue = [
 		"This is . . .",
 		"Well, we've jumped ahead quite a number of years.",
-		"You see that pothole?",
-		"''What you seek lies under your feet.''",
+		"That's strange . . . I seem to have acquired a book.",
+		"''What you seek lies under your feet,'' it says.",
 		". . . The sewer. You're going into the sewer."
 ]
 var dialogue_index = 0

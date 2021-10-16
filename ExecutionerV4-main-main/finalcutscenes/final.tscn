@@ -61,7 +61,7 @@ font_data = ExtResource( 4 )
 
 [sub_resource type="Animation" id=7]
 resource_name = "New Anim"
-length = 20.0
+length = 22.0
 tracks/0/type = "bezier"
 tracks/0/path = NodePath(".:rect_position:y")
 tracks/0/interp = 1
@@ -70,7 +70,7 @@ tracks/0/imported = false
 tracks/0/enabled = true
 tracks/0/keys = {
 "points": PoolRealArray( 2258.04, -0.25, 0, 0.25, 0, -2500, -0.25, 0, 0.25, 0 ),
-"times": PoolRealArray( 0, 20 )
+"times": PoolRealArray( 0, 22 )
 }
 
 [sub_resource type="DynamicFont" id=8]
@@ -241,9 +241,9 @@ wait_time = 16.587
 
 [node name="RichTextLabel4" type="RichTextLabel" parent="."]
 margin_left = 145.691
-margin_top = -2500.0
+margin_top = -2305.68
 margin_right = 3677.69
-margin_bottom = 236.0
+margin_bottom = 430.323
 custom_fonts/normal_font = SubResource( 6 )
 custom_colors/default_color = Color( 1, 1, 1, 1 )
 bbcode_enabled = true

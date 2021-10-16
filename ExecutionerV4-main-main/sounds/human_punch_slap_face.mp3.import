@@ -11,5 +11,5 @@ dest_files=[ "res://.import/human_punch_slap_face.mp3-a813023f14dc16e27d93a6440e
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

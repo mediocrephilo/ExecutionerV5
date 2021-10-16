@@ -1,4 +1,4 @@
-[gd_scene load_steps=15 format=2]
+[gd_scene load_steps=17 format=2]
 
 [ext_resource path="res://drawncutscenes/image1.png" type="Texture" id=1]
 [ext_resource path="res://drawncutscenes/image2.png" type="Texture" id=2]
@@ -12,6 +12,7 @@
 [ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=10]
 [ext_resource path="res://sounds/cassy.wav" type="AudioStream" id=11]
 [ext_resource path="res://sounds/211192__yuval__small-clock-in-room.wav" type="AudioStream" id=12]
+[ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=13]
 
 [sub_resource type="SpriteFrames" id=1]
 animations = [ {
@@ -20,14 +21,14 @@ animations = [ {
 "name": "3",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 2 ), ExtResource( 6 ) ],
-"loop": true,
-"name": "2",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 1 ), ExtResource( 3 ) ],
 "loop": true,
 "name": "1",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 6 ) ],
+"loop": true,
+"name": "2",
 "speed": 5.0
 } ]
 
@@ -36,7 +37,39 @@ size = 100
 outline_color = Color( 0, 0, 0, 1 )
 font_data = ExtResource( 8 )
 
+[sub_resource type="Animation" id=3]
+length = 2.0
+loop = true
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = false
+tracks/0/keys = {
+"points": PoolRealArray( 2460, -0.25, 0, 0.25, 0, 2460, -0.25, 0, 0.25, 0, 2460, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 1500, -0.25, 0, 0.25, 0, 1590, -0.25, 0, 0.25, 0, 1500, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 1, 2 )
+}
+
 [node name="Node2D" type="Node2D"]
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_right = 4837.0
+margin_bottom = 2603.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
 
 [node name="Control" type="Control" parent="."]
 margin_right = 40.0
@@ -71,11 +104,18 @@ margin_bottom = 1913.0
 custom_fonts/normal_font = SubResource( 2 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
-bbcode_text = "\\"
-text = "\\"
 __meta__ = {
 "_edit_use_anchors_": false
 }
+
+[node name="continuesprite" type="Sprite" parent="Control"]
+position = Vector2( 2460, 1590 )
+scale = Vector2( 1.31444, 1.92604 )
+texture = ExtResource( 13 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Control/continuesprite"]
+autoplay = "New Anim"
+"anims/New Anim" = SubResource( 3 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 11 )

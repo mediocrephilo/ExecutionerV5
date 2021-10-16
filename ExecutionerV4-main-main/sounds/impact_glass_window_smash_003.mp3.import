@@ -11,5 +11,5 @@ dest_files=[ "res://.import/impact_glass_window_smash_003.mp3-60de2f03e1ad391851
 
 [params]
 
-loop=true
+loop=false
 loop_offset=0

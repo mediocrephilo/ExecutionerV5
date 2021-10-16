@@ -19,7 +19,7 @@
 [ext_resource path="res://sprites/UI/GirlTextbox/arrow1.PNG" type="Texture" id=17]
 [ext_resource path="res://sprites/UI/the-unseen/the unseen.ttf" type="DynamicFontData" id=18]
 [ext_resource path="res://act3/scene4/surfacedialoguebox.gd" type="Script" id=19]
-[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=20]
+[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=20]
 [ext_resource path="res://sprites/UI/continuesprite copy.png" type="Texture" id=21]
 [ext_resource path="res://sounds/zapsplat_nature_wind_cold_blizzard_constant_designed_45641.mp3" type="AudioStream" id=22]
 
@@ -239,7 +239,7 @@ flip_v = true
 position = Vector2( 6829.6, 1042.93 )
 z_index = -1
 frames = SubResource( 9 )
-frame = 8
+frame = 5
 playing = true
 
 [node name="Sprite" type="Sprite" parent="."]

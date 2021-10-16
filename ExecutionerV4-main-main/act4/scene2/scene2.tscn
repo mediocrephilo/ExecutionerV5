@@ -40,9 +40,9 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
-"frames": [ ExtResource( 7 ) ],
+"frames": [ ExtResource( 24 ) ],
 "loop": true,
-"name": "jump",
+"name": "down",
 "speed": 5.0
 }, {
 "frames": [ ExtResource( 11 ) ],
@@ -50,14 +50,14 @@ animations = [ {
 "name": "fall",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 14 ), ExtResource( 9 ), ExtResource( 13 ), ExtResource( 12 ), ExtResource( 17 ), ExtResource( 10 ), ExtResource( 16 ), ExtResource( 8 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 24 ) ],
-"loop": true,
-"name": "down",
 "speed": 5.0
 } ]
 
@@ -113,7 +113,7 @@ position = Vector2( -589.387, 284.671 )
 shape = SubResource( 3 )
 
 [node name="Sprite" type="Sprite" parent="player"]
-position = Vector2( -607.391, -981.309 )
+position = Vector2( -607.391, -600 )
 rotation = 1.5708
 scale = Vector2( 0.306417, 0.57481 )
 texture = ExtResource( 28 )
@@ -220,6 +220,9 @@ texture = ExtResource( 5 )
 position = Vector2( -3829.41, 1128.66 )
 scale = Vector2( 1, 1.03019 )
 texture = ExtResource( 5 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="fence3" type="Sprite" parent="fence"]
 position = Vector2( 11364.7, 1143.58 )
@@ -242,12 +245,18 @@ position = Vector2( 2220.53, 1108.62 )
 scale = Vector2( 1.79054, 1.03019 )
 z_index = -2
 texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sky4" type="Sprite" parent="."]
 position = Vector2( -3433.02, 1032.97 )
 scale = Vector2( 1.79054, 1.03019 )
 z_index = -2
 texture = ExtResource( 3 )
+__meta__ = {
+"_edit_lock_": true
+}
 
 [node name="sky2" type="Sprite" parent="."]
 position = Vector2( 18612.9, 1078.06 )
