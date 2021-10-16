@@ -25,7 +25,8 @@ func _process(_delta):
 	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
-		
+		if dialogue_index == 7:
+			Transition.change_scene("res://act3/initialscenes/title.tscn")
 func load_dialogue():
 	$Sprite.show()
 	yield(get_tree().create_timer(0.5), "timeout")
@@ -42,15 +43,9 @@ func load_dialogue():
 		$Tween.start()
 		if dialogue_index == 5:
 			$AnimatedSprite.play("2")
-	else:
-		queue_free()
-	
+
 func _on_Tween_tween_completed(_object, _key):
 	finished = true
 	$Type.stop()
 	dialogue_index +=1
 
-
-
-func _on_Control_tree_exited():
-	Transition.change_scene("res://act3/initialscenes/title.tscn")
