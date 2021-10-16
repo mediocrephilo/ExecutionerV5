@@ -18,7 +18,6 @@ func _ready():
 	Boysong.stopsound()
 	$Sprite.hide()
 	$AnimatedSprite.play("3")
-	yield(get_tree().create_timer(1), "timeout")
 	load_dialogue()
 
 func _process(_delta):
