@@ -11,7 +11,7 @@
 [ext_resource path="res://sprites/UI/dialoguebox copy.png" type="Texture" id=9]
 [ext_resource path="res://act3/jailscenes/paris2.gd" type="Script" id=10]
 [ext_resource path="res://act3/jailscenes/dialoguebox4.gd" type="Script" id=11]
-[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=12]
+[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -63,7 +63,7 @@ tracks/1/loop_wrap = true
 tracks/1/imported = false
 tracks/1/enabled = true
 tracks/1/keys = {
-"points": PoolRealArray( 1530.1, -0.25, 0, 0.25, 0, 1600, -0.25, 0, 0.25, 0, 1530.1, -0.25, 0, 0.25, 0 ),
+"points": PoolRealArray( 1530.1, -0.25, 0, 0.25, 0, 1650, -0.25, 0, 0.25, 0, 1530.1, -0.25, 0, 0.25, 0 ),
 "times": PoolRealArray( 0, 1, 2 )
 }
 
@@ -84,7 +84,7 @@ margin_top = 954.033
 margin_right = 3347.21
 margin_bottom = 1054.03
 custom_fonts/font = SubResource( 1 )
-text = "Remember (space)"
+text = "Remember [Space]"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -119,7 +119,7 @@ margin_top = 912.835
 margin_right = 3190.29
 margin_bottom = 1012.84
 custom_fonts/font = SubResource( 4 )
-text = "Talk (space)"
+text = "Talk [Space]"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -156,7 +156,7 @@ modulate = Color( 0.847059, 0.847059, 0.847059, 1 )
 margin_left = 1102.0
 margin_top = 1527.0
 margin_right = 3669.0
-margin_bottom = 2190.0
+margin_bottom = 2123.0
 texture = ExtResource( 9 )
 expand = true
 __meta__ = {
@@ -167,7 +167,7 @@ __meta__ = {
 margin_left = 1270.0
 margin_top = 1633.0
 margin_right = 3443.0
-margin_bottom = 2085.0
+margin_bottom = 1999.0
 custom_fonts/normal_font = SubResource( 7 )
 custom_colors/default_color = Color( 0, 0, 0, 1 )
 bbcode_enabled = true
@@ -176,7 +176,7 @@ __meta__ = {
 }
 
 [node name="continuesprite" type="Sprite" parent="dialoguebox"]
-position = Vector2( 2642.84, 1600 )
+position = Vector2( 2642.84, 1650 )
 scale = Vector2( 1.31444, 1.92604 )
 texture = ExtResource( 8 )
 

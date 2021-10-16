@@ -52,7 +52,6 @@ func _on_paris_body_exited(body):
 		canInteract = false
 		
 func _process(_delta):
-	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index < 15:
 		load_dialogue()
 	if Input.is_action_just_pressed("ui_accept") and finished == true and dialogue_index == 15:
@@ -76,6 +75,7 @@ func _process(_delta):
 		#Transition.change_scene("")
 		
 func load_dialogue():
+	$continuesprite.hide()
 	$TextureRect.show()
 	$RichTextLabel.show()
 	yield(get_tree().create_timer(0.5), "timeout")
@@ -147,6 +147,7 @@ func load_dialogue():
 func _on_Tween_tween_completed(_object, _key):
 	finished = true
 	$Type.stop()
+	$continuesprite.show()
 
 
 

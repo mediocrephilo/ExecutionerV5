@@ -1,10 +1,10 @@
 extends Control
 var dialogue = [
 		"I knew it! I knew I had memories of the rebellion, but it wouldn't have been the first time my mind played tricks on me.",
-		"I am a coward by nature, and I was afraid of thinking of it, for fear that when I came to my senses, it would have given me a false hope.",
-		"But then again, we are not out of the fog just yet, are we. Tell me, did we succeed?",
-		"No! Stop. Do not tell me. Let me witness the result of our fight, even if it was for nothing.",
-		"The fact that we tried proves to me that not all of humanity has descended into darkness.",
+		"I'm a coward, and I was afraid of thinking of it, just in case it was all just a figment of my imagination.",
+		"But then again, we are not out of the fog just yet, are we? Tell me, did we succeed?",
+		"No! Wait . . . It's better if I do not know.",
+		"The fact that we tried is enough for me.",
 	
 #>>>>>>> f0599f3fa4c9156509b07ab3f949457bf47c4d97
 ]
@@ -28,13 +28,13 @@ func _on_paris_body_exited(body):
 		canInteract = false
 		
 func _process(_delta):
-	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
 		load_dialogue()
 		
 func load_dialogue():
 	$TextureRect.show()
 	$RichTextLabel.show()
+	$continuesprite.hide()
 	yield(get_tree().create_timer(0.5), "timeout")
 	if dialogue_index < dialogue.size():
 
@@ -52,6 +52,7 @@ func load_dialogue():
 		queue_free()
 	
 func _on_Tween_tween_completed(_object, _key):
+	$continuesprite.show()
 	finished = true
 	$Type.stop()
 	dialogue_index +=1

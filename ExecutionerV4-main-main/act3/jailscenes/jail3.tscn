@@ -11,7 +11,7 @@
 [ext_resource path="res://sprites/UI/dialoguebox copy.png" type="Texture" id=9]
 [ext_resource path="res://act3/jailscenes/paris2.gd" type="Script" id=10]
 [ext_resource path="res://act3/jailscenes/dialoguebox3.gd" type="Script" id=11]
-[ext_resource path="res://sounds/458587__inspectorj__ui-mechanical-text-scroll-03-fx-01-loop-[AudioTrimmer.com].wav" type="AudioStream" id=12]
+[ext_resource path="res://sounds/fast-pace-Typing-on-mechanical-keyboard-1-www.FesliyanStudios.com.wav" type="AudioStream" id=12]
 
 [sub_resource type="DynamicFont" id=1]
 size = 100
@@ -81,7 +81,7 @@ margin_top = 948.696
 margin_right = 3345.89
 margin_bottom = 1048.7
 custom_fonts/font = SubResource( 1 )
-text = "Remember (space)"
+text = "Remember [Space]"
 __meta__ = {
 "_edit_use_anchors_": false
 }
@@ -116,7 +116,7 @@ margin_top = 912.835
 margin_right = 3190.29
 margin_bottom = 1012.84
 custom_fonts/font = SubResource( 4 )
-text = "Talk (space)"
+text = "Talk [Space]"
 __meta__ = {
 "_edit_use_anchors_": false
 }

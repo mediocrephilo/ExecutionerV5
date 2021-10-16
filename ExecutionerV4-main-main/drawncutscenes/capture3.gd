@@ -48,6 +48,7 @@ func _process(_delta):
 			load_dialogue()
 		
 func load_dialogue():
+	finished = false
 	$"continuesprite".visible = finished
 	$Sprite.show()
 	$Sprite2.hide()
@@ -69,6 +70,7 @@ func load_dialogue():
 		queue_free()
 
 func load_dialogue2():
+	finished = false
 	$"continuesprite2".visible = finished
 	$Sprite2.show()
 	$Sprite.hide()
