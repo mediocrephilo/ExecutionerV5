@@ -71,7 +71,7 @@ script = ExtResource( 10 )
 position = Vector2( 1943.7, 1034.96 )
 scale = Vector2( 1.071, 1.10752 )
 frames = SubResource( 1 )
-frame = 15
+frame = 26
 playing = true
 
 [node name="player" parent="." instance=ExtResource( 2 )]
