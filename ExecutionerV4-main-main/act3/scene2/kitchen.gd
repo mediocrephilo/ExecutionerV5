@@ -8,6 +8,7 @@ const KNIFE6 = preload("res://act3/scene2/knife6.tscn")
 const KNIFE7 = preload("res://act3/scene2/knife7.tscn")
 
 func _ready():
+	Pariswaltz.playsound()
 	RoomSound.playsound()
 	gameSaver.save_game("res://act3/scene2/kitchen.tscn")
 	

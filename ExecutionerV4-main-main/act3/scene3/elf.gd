@@ -40,4 +40,5 @@ func _on_Tween_tween_completed(_object, _key):
 	finished = true
 	if number == 0:
 		$dialoguebox/Type2.stop()
+		ForestSound.stopsound()
 		Transition.change_scene("res://act3/scene3/normal.tscn")

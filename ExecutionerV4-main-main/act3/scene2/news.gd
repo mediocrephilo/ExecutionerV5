@@ -1,6 +1,7 @@
 extends Node2D
 
 func _ready():
+	Pariswaltz.playsound()
 	RoomSound.playsound()
 
 func _input(event):
