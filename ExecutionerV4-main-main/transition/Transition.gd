@@ -15,7 +15,7 @@ func change_scene(path):
 	yield(animation_player, "animation_finished")
 	assert(get_tree().change_scene(path) == OK)
 	animation_player.play("Fade")
-	yield(animation_player, "animation_finished")
+	yield(get_tree().create_timer(1), "timeout")
 	emit_signal("scene_changed")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
