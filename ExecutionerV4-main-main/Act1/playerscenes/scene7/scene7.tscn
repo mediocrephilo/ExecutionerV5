@@ -51,6 +51,11 @@ animations = [ {
 "name": "idle",
 "speed": 5.0
 }, {
+"frames": [ ExtResource( 3 ) ],
+"loop": true,
+"name": "jump",
+"speed": 5.0
+}, {
 "frames": [ ExtResource( 2 ) ],
 "loop": true,
 "name": "fall",
@@ -59,11 +64,6 @@ animations = [ {
 "frames": [ ExtResource( 6 ), ExtResource( 15 ), ExtResource( 8 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 12 ), ExtResource( 5 ) ],
 "loop": true,
 "name": "walk",
-"speed": 5.0
-}, {
-"frames": [ ExtResource( 3 ) ],
-"loop": true,
-"name": "jump",
 "speed": 5.0
 } ]
 
@@ -1508,11 +1508,11 @@ shape = SubResource( 13 )
 [node name="StaticBody2D6" type="StaticBody2D" parent="."]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="StaticBody2D6"]
-position = Vector2( -5583.95, 30.2108 )
+position = Vector2( -5582.59, 72.3244 )
 shape = SubResource( 14 )
 
 [node name="CollisionShape2D2" type="CollisionShape2D" parent="StaticBody2D6"]
-position = Vector2( -6293.9, 35.246 )
+position = Vector2( -6296.62, 67.8501 )
 shape = SubResource( 14 )
 
 [node name="CollisionShape2D3" type="CollisionShape2D" parent="StaticBody2D6"]
@@ -1520,7 +1520,7 @@ position = Vector2( -6540.63, 55.3866 )
 shape = SubResource( 14 )
 
 [node name="CollisionShape2D4" type="CollisionShape2D" parent="StaticBody2D6"]
-position = Vector2( -6540.63, 55.3866 )
+position = Vector2( -6546.06, 93.4247 )
 shape = SubResource( 14 )
 
 [node name="CollisionShape2D5" type="CollisionShape2D" parent="StaticBody2D6"]
