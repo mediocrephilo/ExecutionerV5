@@ -21,7 +21,7 @@ func _ready():
 	load_dialogue()
 
 func _process(_delta):
-	if doneScene == true:
+	if dialogue_index == 3 and Input.is_action_just_pressed("ui_accept") and finished == true:
 		Transition.change_scene("res://jailcutscenes/pic.tscn")
 	$"continuesprite".visible = finished
 	if Input.is_action_just_pressed("ui_accept") and finished == true:
