@@ -19,7 +19,7 @@ func _ready():
 	yield(get_tree().create_timer(13), "timeout")
 	$RichTextLabel3/AnimationPlayer.play("New Anim")
 	yield(get_tree().create_timer(9), "timeout")
-	Transition.change_scene("res://global/menu/menu.tscn")
+	Transition.change_scene("res://finalcutscenes/conclusion2.tscn")
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 #func _process(delta):
 	#if VideoPlayer.finished

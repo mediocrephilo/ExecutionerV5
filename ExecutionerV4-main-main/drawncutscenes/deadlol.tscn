@@ -1,9 +1,8 @@
-[gd_scene load_steps=5 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://drawncutscenes/image4 copy 2.png" type="Texture" id=1]
 [ext_resource path="res://drawncutscenes/deadlol.gd" type="Script" id=2]
 [ext_resource path="res://sounds/Ear Ringing Sound Effect.mp3" type="AudioStream" id=3]
-[ext_resource path="res://sounds/zapsplat_human_male_med_fast_breathing_panting_panic_71413.mp3" type="AudioStream" id=4]
 
 [node name="Node2D" type="Node2D"]
 script = ExtResource( 2 )
@@ -19,10 +18,6 @@ autostart = true
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
-autoplay = true
-
-[node name="AudioStreamPlayer2" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
 autoplay = true
 
 [connection signal="timeout" from="Timer" to="." method="_on_Timer_timeout"]

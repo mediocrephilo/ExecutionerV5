@@ -1,0 +1,86 @@
+[gd_scene load_steps=18 format=2]
+
+[ext_resource path="res://sprites/UI/baskerville-cufonfonts/BASKE9.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/easytoread.png" type="Texture" id=2]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621171359.PNG" type="Texture" id=3]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621172006.PNG" type="Texture" id=4]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621171513.PNG" type="Texture" id=5]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621170901.PNG" type="Texture" id=6]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621164706.PNG" type="Texture" id=7]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621165015.PNG" type="Texture" id=8]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621170122.PNG" type="Texture" id=9]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621164448.PNG" type="Texture" id=10]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621171659.PNG" type="Texture" id=11]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621171130.PNG" type="Texture" id=12]
+[ext_resource path="res://sprites/Act1settings/scenetwo/diary/Untitled682-20200621171909.PNG" type="Texture" id=13]
+[ext_resource path="res://sounds/Simple-Book-Page-Turn-www.fesliyanstudios.com-www.fesliyanstudios.com.wav" type="AudioStream" id=14]
+[ext_resource path="res://finalcutscenes/conclusion2.gd" type="Script" id=15]
+
+[sub_resource type="DynamicFont" id=1]
+size = 95
+font_data = ExtResource( 1 )
+
+[sub_resource type="SpriteFrames" id=2]
+animations = [ {
+"frames": [ ExtResource( 10 ), ExtResource( 7 ), ExtResource( 8 ), ExtResource( 9 ), ExtResource( 6 ), ExtResource( 12 ), ExtResource( 3 ), ExtResource( 5 ), ExtResource( 11 ), ExtResource( 13 ), ExtResource( 4 ), ExtResource( 2 ), ExtResource( 2 ) ],
+"loop": false,
+"name": "default",
+"speed": 7.0
+} ]
+
+[node name="Node2D" type="Node2D"]
+script = ExtResource( 15 )
+
+[node name="Control" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Control"]
+anchor_left = 22.475
+anchor_top = 4.625
+anchor_right = 57.575
+anchor_bottom = 43.65
+margin_left = 6.10352e-05
+margin_top = 27.0
+margin_right = -3.99976
+margin_bottom = 72.0001
+custom_fonts/normal_font = SubResource( 1 )
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+bbcode_enabled = true
+bbcode_text = "Confidential Report VI
+6 Months post Troy takeover
+
+Outer city reporting food shortages, electricity cuts, lack of clean water, etc. 
+Proposed solution 1: massive infrastructure updates by cutting funds for Troy and cabinet leaders. Will incite discontent and unlikely to pass. Name: Paris Act.
+Proposed solution 2: reopening of still-standing infrastructure at no additional cost. May cause widespread but easily-silenced protesting. Likely to pass. Name: 161 Act.
+
+
+"
+text = "Confidential Report VI
+6 Months post Troy takeover
+
+Outer city reporting food shortages, electricity cuts, lack of clean water, etc. 
+Proposed solution 1: massive infrastructure updates by cutting funds for Troy and cabinet leaders. Will incite discontent and unlikely to pass. Name: Paris Act.
+Proposed solution 2: reopening of still-standing infrastructure at no additional cost. May cause widespread but easily-silenced protesting. Likely to pass. Name: 161 Act.
+
+
+"
+__meta__ = {
+"_edit_use_anchors_": true
+}
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="."]
+position = Vector2( 1920.59, 1081.27 )
+z_index = -463
+frames = SubResource( 2 )
+frame = 12
+speed_scale = 3.0
+__meta__ = {
+"_edit_lock_": true
+}
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 14 )
