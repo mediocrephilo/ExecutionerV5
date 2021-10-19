@@ -62,14 +62,14 @@ extents = Vector2( 2103.66, 168.596 )
 
 [sub_resource type="SpriteFrames" id=9]
 animations = [ {
-"frames": [ ExtResource( 9 ), ExtResource( 21 ), ExtResource( 11 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 16 ), ExtResource( 12 ) ],
-"loop": true,
-"name": "walk",
-"speed": 5.0
-}, {
 "frames": [ ExtResource( 20 ), ExtResource( 9 ) ],
 "loop": true,
 "name": "idle",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 9 ), ExtResource( 21 ), ExtResource( 11 ), ExtResource( 15 ), ExtResource( 2 ), ExtResource( 3 ), ExtResource( 16 ), ExtResource( 12 ) ],
+"loop": true,
+"name": "walk",
 "speed": 5.0
 } ]
 
@@ -194,7 +194,7 @@ visible = false
 position = Vector2( 2519.75, 867.674 )
 scale = Vector2( 1.57678, 1.42284 )
 frames = SubResource( 11 )
-frame = 4
+frame = 9
 playing = true
 
 [connection signal="body_entered" from="door2" to="door2" method="_on_door2_body_entered"]
